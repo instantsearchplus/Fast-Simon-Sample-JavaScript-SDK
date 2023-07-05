@@ -1,0 +1,4835 @@
+.fast-swatch-color-fallback{
+    background: white;
+}
+
+.fast-swatch-color-indianred, .isp-product-color-swatch-indianred {
+    background: #cd5c5c;
+}
+
+.fast-swatch-color-lightcoral, .isp-product-color-swatch-lightcoral {
+    background: #f08080;
+}
+
+.fast-swatch-color-salmon, .isp-product-color-swatch-salmon {
+    background: #fa8072;
+}
+
+.fast-swatch-color-darksalmon, .isp-product-color-swatch-darksalmon {
+    background: #e9967a;
+}
+
+.fast-swatch-color-lightsalmon, .isp-product-color-swatch-lightsalmon {
+    background: #ffa07a;
+}
+
+.fast-swatch-color-crimson, .isp-product-color-swatch-crimson {
+    background: #dc143c;
+}
+
+.fast-swatch-color-red, .isp-product-color-swatch-red {
+    background: #ff0000;
+}
+
+.fast-swatch-color-firebrick, .isp-product-color-swatch-firebrick {
+    background: #b22222;
+}
+
+.fast-swatch-color-darkred, .isp-product-color-swatch-darkred {
+    background: #8b0000;
+}
+
+.fast-swatch-color-pink, .isp-product-color-swatch-pink {
+    background: #ffc0cb;
+}
+
+.fast-swatch-color-lightpink, .isp-product-color-swatch-lightpink {
+    background: #ffb6c1;
+}
+
+.fast-swatch-color-hotpink, .isp-product-color-swatch-hotpink {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-deeppink, .isp-product-color-swatch-deeppink {
+    background: #ff1493;
+}
+
+.fast-swatch-color-mediumvioletred, .isp-product-color-swatch-mediumvioletred {
+    background: #c71585;
+}
+
+.fast-swatch-color-palevioletred, .isp-product-color-swatch-palevioletred {
+    background: #db7093;
+}
+
+.fast-swatch-color-coral, .isp-product-color-swatch-coral {
+    background: #ff7f50;
+}
+
+.fast-swatch-color-tomato, .isp-product-color-swatch-tomato {
+    background: #ff6347;
+}
+
+.fast-swatch-color-orangered, .isp-product-color-swatch-orangered {
+    background: #ff4500;
+}
+
+.fast-swatch-color-darkorange, .isp-product-color-swatch-darkorange {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-orange, .isp-product-color-swatch-orange {
+    background: #ffa500;
+}
+
+.fast-swatch-color-gold, .isp-product-color-swatch-gold {
+    background: #ffd700;
+}
+
+.fast-swatch-color-yellow, .isp-product-color-swatch-yellow {
+    background: #ffff00;
+}
+
+.fast-swatch-color-lightyellow, .isp-product-color-swatch-lightyellow {
+    background: #ffffe0;
+}
+
+.fast-swatch-color-lemonchiffon, .isp-product-color-swatch-lemonchiffon {
+    background: #fffacd;
+}
+
+.fast-swatch-color-lightgoldenrodyellow, .isp-product-color-swatch-lightgoldenrodyellow {
+    background: #fafad2;
+}
+
+.fast-swatch-color-papayawhip, .isp-product-color-swatch-papayawhip {
+    background: #ffefd5;
+}
+
+.fast-swatch-color-moccasin, .isp-product-color-swatch-moccasin {
+    background: #ffe4b5;
+}
+
+.fast-swatch-color-peachpuff, .isp-product-color-swatch-peachpuff {
+    background: #ffdab9;
+}
+
+.fast-swatch-color-palegoldenrod, .isp-product-color-swatch-palegoldenrod {
+    background: #eee8aa;
+}
+
+.fast-swatch-color-khaki, .isp-product-color-swatch-khaki {
+    background: #f0e68c;
+}
+
+.fast-swatch-color-darkkhaki, .isp-product-color-swatch-darkkhaki {
+    background: #bdb76b;
+}
+
+.fast-swatch-color-lavender, .isp-product-color-swatch-lavender {
+    background: #e6e6fa;
+}
+
+.fast-swatch-color-thistle, .isp-product-color-swatch-thistle {
+    background: #d8bfd8;
+}
+
+.fast-swatch-color-plum, .isp-product-color-swatch-plum {
+    background: #dda0dd;
+}
+
+.fast-swatch-color-violet, .isp-product-color-swatch-violet {
+    background: #ee82ee;
+}
+
+.fast-swatch-color-orchid, .isp-product-color-swatch-orchid {
+    background: #da70d6;
+}
+
+.fast-swatch-color-fuchsia, .isp-product-color-swatch-fuchsia {
+    background: #ff00ff;
+}
+
+.fast-swatch-color-magenta, .isp-product-color-swatch-magenta {
+    background: #ff00ff;
+}
+
+.fast-swatch-color-mediumorchid, .isp-product-color-swatch-mediumorchid {
+    background: #ba55d3;
+}
+
+.fast-swatch-color-mediumpurple, .isp-product-color-swatch-mediumpurple {
+    background: #9370db;
+}
+
+.fast-swatch-color-rebeccapurple, .isp-product-color-swatch-rebeccapurple {
+    background: #663399;
+}
+
+.fast-swatch-color-blueviolet, .isp-product-color-swatch-blueviolet {
+    background: #8a2be2;
+}
+
+.fast-swatch-color-darkviolet, .isp-product-color-swatch-darkviolet {
+    background: #9400d3;
+}
+
+.fast-swatch-color-darkorchid, .isp-product-color-swatch-darkorchid {
+    background: #9932cc;
+}
+
+.fast-swatch-color-darkmagenta, .isp-product-color-swatch-darkmagenta {
+    background: #8b008b;
+}
+
+.fast-swatch-color-purple, .isp-product-color-swatch-purple {
+    background: #800080;
+}
+
+.fast-swatch-color-indigo, .isp-product-color-swatch-indigo {
+    background: #4b0082;
+}
+
+.fast-swatch-color-slateblue, .isp-product-color-swatch-slateblue {
+    background: #6a5acd;
+}
+
+.fast-swatch-color-darkslateblue, .isp-product-color-swatch-darkslateblue {
+    background: #483d8b;
+}
+
+.fast-swatch-color-mediumslateblue, .isp-product-color-swatch-mediumslateblue {
+    background: #7b68ee;
+}
+
+.fast-swatch-color-greenyellow, .isp-product-color-swatch-greenyellow {
+    background: #adff2f;
+}
+
+.fast-swatch-color-chartreuse, .isp-product-color-swatch-chartreuse {
+    background: #7fff00;
+}
+
+.fast-swatch-color-lawngreen, .isp-product-color-swatch-lawngreen {
+    background: #7cfc00;
+}
+
+.fast-swatch-color-lime, .isp-product-color-swatch-lime {
+    background: #00ff00;
+}
+
+.fast-swatch-color-limegreen, .isp-product-color-swatch-limegreen {
+    background: #32cd32;
+}
+
+.fast-swatch-color-palegreen, .isp-product-color-swatch-palegreen {
+    background: #98fb98;
+}
+
+.fast-swatch-color-lightgreen, .isp-product-color-swatch-lightgreen {
+    background: #90ee90;
+}
+
+.fast-swatch-color-mediumspringgreen, .isp-product-color-swatch-mediumspringgreen {
+    background: #00fa9a;
+}
+
+.fast-swatch-color-springgreen, .isp-product-color-swatch-springgreen {
+    background: #00ff7f;
+}
+
+.fast-swatch-color-mediumseagreen, .isp-product-color-swatch-mediumseagreen {
+    background: #3cb371;
+}
+
+.fast-swatch-color-seagreen, .isp-product-color-swatch-seagreen {
+    background: #2e8b57;
+}
+
+.fast-swatch-color-forestgreen, .isp-product-color-swatch-forestgreen {
+    background: #228b22;
+}
+
+.fast-swatch-color-green, .isp-product-color-swatch-green {
+    background: #008000;
+}
+
+.fast-swatch-color-darkgreen, .isp-product-color-swatch-darkgreen {
+    background: #006400;
+}
+
+.fast-swatch-color-yellowgreen, .isp-product-color-swatch-yellowgreen {
+    background: #9acd32;
+}
+
+.fast-swatch-color-olivedrab, .isp-product-color-swatch-olivedrab {
+    background: #6b8e23;
+}
+
+.fast-swatch-color-olive, .isp-product-color-swatch-olive {
+    background: #808000;
+}
+
+.fast-swatch-color-darkolivegreen, .isp-product-color-swatch-darkolivegreen {
+    background: #556b2f;
+}
+
+.fast-swatch-color-mediumaquamarine, .isp-product-color-swatch-mediumaquamarine {
+    background: #66cdaa;
+}
+
+.fast-swatch-color-darkseagreen, .isp-product-color-swatch-darkseagreen {
+    background: #8fbc8b;
+}
+
+.fast-swatch-color-lightseagreen, .isp-product-color-swatch-lightseagreen {
+    background: #20b2aa;
+}
+
+.fast-swatch-color-darkcyan, .isp-product-color-swatch-darkcyan {
+    background: #008b8b;
+}
+
+.fast-swatch-color-teal, .isp-product-color-swatch-teal {
+    background: #008080;
+}
+
+.fast-swatch-color-aqua, .isp-product-color-swatch-aqua {
+    background: #00ffff;
+}
+
+.fast-swatch-color-cyan, .isp-product-color-swatch-cyan {
+    background: #00ffff;
+}
+
+.fast-swatch-color-lightcyan, .isp-product-color-swatch-lightcyan {
+    background: #e0ffff;
+}
+
+.fast-swatch-color-paleturquoise, .isp-product-color-swatch-paleturquoise {
+    background: #afeeee;
+}
+
+.fast-swatch-color-aquamarine, .isp-product-color-swatch-aquamarine {
+    background: #7fffd4;
+}
+
+.fast-swatch-color-turquoise, .isp-product-color-swatch-turquoise {
+    background: #40e0d0;
+}
+
+.fast-swatch-color-mediumturquoise, .isp-product-color-swatch-mediumturquoise {
+    background: #48d1cc;
+}
+
+.fast-swatch-color-darkturquoise, .isp-product-color-swatch-darkturquoise {
+    background: #00ced1;
+}
+
+.fast-swatch-color-cadetblue, .isp-product-color-swatch-cadetblue {
+    background: #5f9ea0;
+}
+
+.fast-swatch-color-steelblue, .isp-product-color-swatch-steelblue {
+    background: #4682b4;
+}
+
+.fast-swatch-color-lightsteelblue, .isp-product-color-swatch-lightsteelblue {
+    background: #b0c4de;
+}
+
+.fast-swatch-color-powderblue, .isp-product-color-swatch-powderblue {
+    background: #b0e0e6;
+}
+
+.fast-swatch-color-lightblue, .isp-product-color-swatch-lightblue {
+    background: #add8e6;
+}
+
+.fast-swatch-color-skyblue, .isp-product-color-swatch-skyblue {
+    background: #87ceeb;
+}
+
+.fast-swatch-color-lightskyblue, .isp-product-color-swatch-lightskyblue {
+    background: #87cefa;
+}
+
+.fast-swatch-color-deepskyblue, .isp-product-color-swatch-deepskyblue {
+    background: #00bfff;
+}
+
+.fast-swatch-color-dodgerblue, .isp-product-color-swatch-dodgerblue {
+    background: #1e90ff;
+}
+
+.fast-swatch-color-cornflowerblue, .isp-product-color-swatch-cornflowerblue {
+    background: #6495ed;
+}
+
+.fast-swatch-color-royalblue, .isp-product-color-swatch-royalblue {
+    background: #4169e1;
+}
+
+.fast-swatch-color-blue, .isp-product-color-swatch-blue {
+    background: #0000ff;
+}
+
+.fast-swatch-color-mediumblue, .isp-product-color-swatch-mediumblue {
+    background: #0000cd;
+}
+
+.fast-swatch-color-darkblue, .isp-product-color-swatch-darkblue {
+    background: #00008b;
+}
+
+.fast-swatch-color-navy, .isp-product-color-swatch-navy {
+    background: #000080;
+}
+
+.fast-swatch-color-midnightblue, .isp-product-color-swatch-midnightblue {
+    background: #191970;
+}
+
+.fast-swatch-color-cornsilk, .isp-product-color-swatch-cornsilk {
+    background: #fff8dc;
+}
+
+.fast-swatch-color-blanchedalmond, .isp-product-color-swatch-blanchedalmond {
+    background: #ffebcd;
+}
+
+.fast-swatch-color-bisque, .isp-product-color-swatch-bisque {
+    background: #ffe4c4;
+}
+
+.fast-swatch-color-navajowhite, .isp-product-color-swatch-navajowhite {
+    background: #ffdead;
+}
+
+.fast-swatch-color-wheat, .isp-product-color-swatch-wheat {
+    background: #f5deb3;
+}
+
+.fast-swatch-color-burlywood, .isp-product-color-swatch-burlywood {
+    background: #deb887;
+}
+
+.fast-swatch-color-tan, .isp-product-color-swatch-tan {
+    background: #d2b48c;
+}
+
+.fast-swatch-color-rosybrown, .isp-product-color-swatch-rosybrown {
+    background: #bc8f8f;
+}
+
+.fast-swatch-color-sandybrown, .isp-product-color-swatch-sandybrown {
+    background: #f4a460;
+}
+
+.fast-swatch-color-goldenrod, .isp-product-color-swatch-goldenrod {
+    background: #daa520;
+}
+
+.fast-swatch-color-darkgoldenrod, .isp-product-color-swatch-darkgoldenrod {
+    background: #b8860b;
+}
+
+.fast-swatch-color-peru, .isp-product-color-swatch-peru {
+    background: #cd853f;
+}
+
+.fast-swatch-color-chocolate, .isp-product-color-swatch-chocolate {
+    background: #d2691e;
+}
+
+.fast-swatch-color-saddlebrown, .isp-product-color-swatch-saddlebrown {
+    background: #8b4513;
+}
+
+.fast-swatch-color-sienna, .isp-product-color-swatch-sienna {
+    background: #a0522d;
+}
+
+.fast-swatch-color-brown, .isp-product-color-swatch-brown {
+    background: #a52a2a;
+}
+
+.fast-swatch-color-maroon, .isp-product-color-swatch-maroon {
+    background: #800000;
+}
+
+.fast-swatch-color-white, .isp-product-color-swatch-white {
+    background: #ffffff;
+}
+
+.fast-swatch-color-snow, .isp-product-color-swatch-snow {
+    background: #fffafa;
+}
+
+.fast-swatch-color-honeydew, .isp-product-color-swatch-honeydew {
+    background: #f0fff0;
+}
+
+.fast-swatch-color-mintcream, .isp-product-color-swatch-mintcream {
+    background: #f5fffa;
+}
+
+.fast-swatch-color-azure, .isp-product-color-swatch-azure {
+    background: #f0ffff;
+}
+
+.fast-swatch-color-aliceblue, .isp-product-color-swatch-aliceblue {
+    background: #f0f8ff;
+}
+
+.fast-swatch-color-ghostwhite, .isp-product-color-swatch-ghostwhite {
+    background: #f8f8ff;
+}
+
+.fast-swatch-color-whitesmoke, .isp-product-color-swatch-whitesmoke {
+    background: #f5f5f5;
+}
+
+.fast-swatch-color-seashell, .isp-product-color-swatch-seashell {
+    background: #fff5ee;
+}
+
+.fast-swatch-color-beige, .isp-product-color-swatch-beige {
+    background: #f5f5dc;
+}
+
+.fast-swatch-color-oldlace, .isp-product-color-swatch-oldlace {
+    background: #fdf5e6;
+}
+
+.fast-swatch-color-floralwhite, .isp-product-color-swatch-floralwhite {
+    background: #fffaf0;
+}
+
+.fast-swatch-color-ivory, .isp-product-color-swatch-ivory {
+    background: #fffff0;
+}
+
+.fast-swatch-color-antiquewhite, .isp-product-color-swatch-antiquewhite {
+    background: #faebd7;
+}
+
+.fast-swatch-color-linen, .isp-product-color-swatch-linen {
+    background: #faf0e6;
+}
+
+.fast-swatch-color-lavenderblush, .isp-product-color-swatch-lavenderblush {
+    background: #fff0f5;
+}
+
+.fast-swatch-color-mistyrose, .isp-product-color-swatch-mistyrose {
+    background: #ffe4e1;
+}
+
+.fast-swatch-color-gainsboro, .isp-product-color-swatch-gainsboro {
+    background: #dcdcdc;
+}
+
+.fast-swatch-color-lightgray, .isp-product-color-swatch-lightgray {
+    background: #d3d3d3;
+}
+
+.fast-swatch-color-silver, .isp-product-color-swatch-silver {
+    background: #c0c0c0;
+}
+
+.fast-swatch-color-darkgray, .isp-product-color-swatch-darkgray {
+    background: #a9a9a9;
+}
+
+.fast-swatch-color-gray, .isp-product-color-swatch-gray {
+    background: #808080;
+}
+
+.fast-swatch-color-dimgray, .isp-product-color-swatch-dimgray {
+    background: #696969;
+}
+
+.fast-swatch-color-lightslategray, .isp-product-color-swatch-lightslategray {
+    background: #778899;
+}
+
+.fast-swatch-color-slategray, .isp-product-color-swatch-slategray {
+    background: #708090;
+}
+
+.fast-swatch-color-darkslategray, .isp-product-color-swatch-darkslategray {
+    background: #2f4f4f;
+}
+
+.fast-swatch-color-black, .isp-product-color-swatch-black {
+    background: #000000;
+}
+
+.fast-swatch-color-natural, .isp-product-color-swatch-natural {
+    background: #fffaf0;
+}
+
+.fast-swatch-color-cognac, .isp-product-color-swatch-cognac {
+    background: #9f381d;
+}
+
+.fast-swatch-color-stone, .isp-product-color-swatch-stone {
+    background: #fff6d6;
+}
+
+.fast-swatch-color-snuff, .isp-product-color-swatch-snuff {
+    background: #ffccff;
+}
+
+.fast-swatch-color-sage, .isp-product-color-swatch-sage {
+    background: #9ba17b;
+}
+
+.fast-swatch-color-chipmunk, .isp-product-color-swatch-chipmunk {
+    background: #8e6338;
+}
+
+.fast-swatch-color-storm, .isp-product-color-swatch-storm {
+    background: #717486;
+}
+
+.fast-swatch-color-tobacco, .isp-product-color-swatch-tobacco {
+    background: #715d47;
+}
+
+.fast-swatch-color-pewter, .isp-product-color-swatch-pewter {
+    background: #91a092;
+}
+
+.fast-swatch-color-dune, .isp-product-color-swatch-dune {
+    background: #867665;
+}
+
+.fast-swatch-color-shore, .isp-product-color-swatch-shore {
+    background: #c1bfbd;
+}
+
+.fast-swatch-color-kiwi, .isp-product-color-swatch-kiwi {
+    background: #8ee53f;
+}
+
+.fast-swatch-color-sky, .isp-product-color-swatch-sky {
+    background: #87cefa;
+}
+
+.fast-swatch-color-royal, .isp-product-color-swatch-royal {
+    background: #4169e1;
+}
+
+.fast-swatch-color-moonrock, .isp-product-color-swatch-moonrock {
+    background: #f2e0ce;
+}
+
+.fast-swatch-color-citrus, .isp-product-color-swatch-citrus {
+    background: #fff759;
+}
+
+.fast-swatch-color-chrome, .isp-product-color-swatch-chrome {
+    background: #e3dedb;
+}
+
+.fast-swatch-color-walnut, .isp-product-color-swatch-walnut {
+    background: #442233;
+}
+
+.fast-swatch-color-oak, .isp-product-color-swatch-oak {
+    background: #806517;
+}
+
+.fast-swatch-color-alizarin, .isp-product-color-swatch-alizarin {
+    background: #e32636;
+}
+
+.fast-swatch-color-almond, .isp-product-color-swatch-almond {
+    background: #efdecd;
+}
+
+.fast-swatch-color-amaranth, .isp-product-color-swatch-amaranth {
+    background: #e52b50;
+}
+
+.fast-swatch-color-amber, .isp-product-color-swatch-amber {
+    background: #ffbf00;
+}
+
+.fast-swatch-color-amethyst, .isp-product-color-swatch-amethyst {
+    background: #9966cc;
+}
+
+.fast-swatch-color-apricot, .isp-product-color-swatch-apricot {
+    background: #fbceb1;
+}
+
+.fast-swatch-color-arsenic, .isp-product-color-swatch-arsenic {
+    background: #3b444b;
+}
+
+.fast-swatch-color-asparagus, .isp-product-color-swatch-asparagus {
+    background: #87a96b;
+}
+
+.fast-swatch-color-auburn, .isp-product-color-swatch-auburn {
+    background: #6d351a;
+}
+
+.fast-swatch-color-aureolin, .isp-product-color-swatch-aureolin {
+    background: #fdee00;
+}
+
+.fast-swatch-color-aurometalsaurus, .isp-product-color-swatch-aurometalsaurus {
+    background: #6e7f80;
+}
+
+.fast-swatch-color-awesome, .isp-product-color-swatch-awesome {
+    background: #ff2052;
+}
+
+.fast-swatch-color-bazaar, .isp-product-color-swatch-bazaar {
+    background: #98777b;
+}
+
+.fast-swatch-color-beaver, .isp-product-color-swatch-beaver {
+    background: #9f8170;
+}
+
+.fast-swatch-color-bistre, .isp-product-color-swatch-bistre {
+    background: #3d2b1f;
+}
+
+.fast-swatch-color-belle, .isp-product-color-swatch-belle {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-redbean, .isp-product-color-swatch-redbean {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-merlot, .isp-product-color-swatch-merlot {
+    background: #870f11;
+}
+
+.fast-swatch-color-bittersweet, .isp-product-color-swatch-bittersweet {
+    background: #fe6f5e;
+}
+
+.fast-swatch-color-blond, .isp-product-color-swatch-blond {
+    background: #faf0be;
+}
+
+.fast-swatch-color-blush, .isp-product-color-swatch-blush {
+    background: #de5d83;
+}
+
+.fast-swatch-color-bole, .isp-product-color-swatch-bole {
+    background: #79443b;
+}
+
+.fast-swatch-color-bone, .isp-product-color-swatch-bone {
+    background: #e3dac9;
+}
+
+.fast-swatch-color-boysenberry, .isp-product-color-swatch-boysenberry {
+    background: #873260;
+}
+
+.fast-swatch-color-brass, .isp-product-color-swatch-brass {
+    background: #b5a642;
+}
+
+.fast-swatch-color-bronze, .isp-product-color-swatch-bronze {
+    background: #cd7f32;
+}
+
+.fast-swatch-color-bubbles, .isp-product-color-swatch-bubbles {
+    background: #e7feff;
+}
+
+.fast-swatch-color-buff, .isp-product-color-swatch-buff {
+    background: #f0dc82;
+}
+
+.fast-swatch-color-burgundy, .isp-product-color-swatch-burgundy {
+    background: #800020;
+}
+
+.fast-swatch-color-byzantine, .isp-product-color-swatch-byzantine {
+    background: #bd33a4;
+}
+
+.fast-swatch-color-byzantium, .isp-product-color-swatch-byzantium {
+    background: #702963;
+}
+
+.fast-swatch-color-cadet, .isp-product-color-swatch-cadet {
+    background: #536872;
+}
+
+.fast-swatch-color-canary, .isp-product-color-swatch-canary {
+    background: #ffff99;
+}
+
+.fast-swatch-color-capri, .isp-product-color-swatch-capri {
+    background: #00bfff;
+}
+
+.fast-swatch-color-camel, .isp-product-color-swatch-camel {
+    background: #c19a6b;
+}
+
+.fast-swatch-color-cardinal, .isp-product-color-swatch-cardinal {
+    background: #c41e3a;
+}
+
+.fast-swatch-color-carmine, .isp-product-color-swatch-carmine {
+    background: #ff0040;
+}
+
+.fast-swatch-color-carnelian, .isp-product-color-swatch-carnelian {
+    background: #b31b1b;
+}
+
+.fast-swatch-color-ceil, .isp-product-color-swatch-ceil {
+    background: #92a1cf;
+}
+
+.fast-swatch-color-celadon, .isp-product-color-swatch-celadon {
+    background: #ace1af;
+}
+
+.fast-swatch-color-celeste, .isp-product-color-swatch-celeste {
+    background: #b2ffff;
+}
+
+.fast-swatch-color-cerise, .isp-product-color-swatch-cerise {
+    background: #de3163;
+}
+
+.fast-swatch-color-cerulean, .isp-product-color-swatch-cerulean {
+    background: #007ba7;
+}
+
+.fast-swatch-color-chamoisee, .isp-product-color-swatch-chamoisee {
+    background: #a0785a;
+}
+
+.fast-swatch-color-champagne, .isp-product-color-swatch-champagne {
+    background: #fad6a5;
+}
+
+.fast-swatch-color-charcoal, .isp-product-color-swatch-charcoal {
+    background: #36454f;
+}
+
+.fast-swatch-color-mocha, .isp-product-color-swatch-mocha {
+    background: #493d26;
+}
+
+.fast-swatch-color-fuschia, .isp-product-color-swatch-fuschia {
+    background: #ff00ff;
+}
+
+.fast-swatch-color-cherry, .isp-product-color-swatch-cherry {
+    background: #de3163;
+}
+
+.fast-swatch-color-chestnut, .isp-product-color-swatch-chestnut {
+    background: #cd5c5c;
+}
+
+.fast-swatch-color-cinereous, .isp-product-color-swatch-cinereous {
+    background: #98817b;
+}
+
+.fast-swatch-color-cinnabar, .isp-product-color-swatch-cinnabar {
+    background: #e34234;
+}
+
+.fast-swatch-color-cinnamon, .isp-product-color-swatch-cinnamon {
+    background: #d2691e;
+}
+
+.fast-swatch-color-citrine, .isp-product-color-swatch-citrine {
+    background: #e4d00a;
+}
+
+.fast-swatch-color-clover, .isp-product-color-swatch-clover {
+    background: #00ff6f;
+}
+
+.fast-swatch-color-cobalt, .isp-product-color-swatch-cobalt {
+    background: #0047ab;
+}
+
+.fast-swatch-color-copper, .isp-product-color-swatch-copper {
+    background: #b87333;
+}
+
+.fast-swatch-color-coffee, .isp-product-color-swatch-coffee {
+    background: #6f4e37;
+}
+
+.fast-swatch-color-daffodil, .isp-product-color-swatch-daffodil {
+    background: #ffff31;
+}
+
+.fast-swatch-color-dandelion, .isp-product-color-swatch-dandelion {
+    background: #f0e130;
+}
+
+.fast-swatch-color-coquelicot, .isp-product-color-swatch-coquelicot {
+    background: #ff3800;
+}
+
+.fast-swatch-color-cordovan, .isp-product-color-swatch-cordovan {
+    background: #893f45;
+}
+
+.fast-swatch-color-corn, .isp-product-color-swatch-corn {
+    background: #fbec5d;
+}
+
+.fast-swatch-color-cornflower, .isp-product-color-swatch-cornflower {
+    background: #9aceeb;
+}
+
+.fast-swatch-color-cream, .isp-product-color-swatch-cream {
+    background: #fffdd0;
+}
+
+.fast-swatch-color-denim, .isp-product-color-swatch-denim {
+    background: #1560bd;
+}
+
+.fast-swatch-color-desert, .isp-product-color-swatch-desert {
+    background: #c19a6b;
+}
+
+.fast-swatch-color-drab, .isp-product-color-swatch-drab {
+    background: #967117;
+}
+
+.fast-swatch-color-ecru, .isp-product-color-swatch-ecru {
+    background: #c2b280;
+}
+
+.fast-swatch-color-eggplant, .isp-product-color-swatch-eggplant {
+    background: #614051;
+}
+
+.fast-swatch-color-eggshell, .isp-product-color-swatch-eggshell {
+    background: #f0ead6;
+}
+
+.fast-swatch-color-emerald, .isp-product-color-swatch-emerald {
+    background: #50c878;
+}
+
+.fast-swatch-color-espresso, .isp-product-color-swatch-espresso {
+    background: #4e2a2a;
+}
+
+.fast-swatch-color-fallow, .isp-product-color-swatch-fallow {
+    background: #c19a6b;
+}
+
+.fast-swatch-color-famous, .isp-product-color-swatch-famous {
+    background: #ff00ff;
+}
+
+.fast-swatch-color-fandango, .isp-product-color-swatch-fandango {
+    background: #b53389;
+}
+
+.fast-swatch-color-fawn, .isp-product-color-swatch-fawn {
+    background: #e5aa70;
+}
+
+.fast-swatch-color-feldgrau, .isp-product-color-swatch-feldgrau {
+    background: #4d5d53;
+}
+
+.fast-swatch-color-fern, .isp-product-color-swatch-fern {
+    background: #71bc78;
+}
+
+.fast-swatch-color-flame, .isp-product-color-swatch-flame {
+    background: #e25822;
+}
+
+.fast-swatch-color-flavescent, .isp-product-color-swatch-flavescent {
+    background: #f7e98e;
+}
+
+.fast-swatch-color-flax, .isp-product-color-swatch-flax {
+    background: #eedc82;
+}
+
+.fast-swatch-color-folly, .isp-product-color-swatch-folly {
+    background: #ff004f;
+}
+
+.fast-swatch-color-fulvous, .isp-product-color-swatch-fulvous {
+    background: #e48400;
+}
+
+.fast-swatch-color-gamboge, .isp-product-color-swatch-gamboge {
+    background: #e49b0f;
+}
+
+.fast-swatch-color-ginger, .isp-product-color-swatch-ginger {
+    background: #b06500;
+}
+
+.fast-swatch-color-glaucous, .isp-product-color-swatch-glaucous {
+    background: #6082b6;
+}
+
+.fast-swatch-color-glitter, .isp-product-color-swatch-glitter {
+    background: #e6e8fa;
+}
+
+.fast-swatch-color-grullo, .isp-product-color-swatch-grullo {
+    background: #a99a86;
+}
+
+.fast-swatch-color-heliotrope, .isp-product-color-swatch-heliotrope {
+    background: #df73ff;
+}
+
+.fast-swatch-color-iceberg, .isp-product-color-swatch-iceberg {
+    background: #71a6d2;
+}
+
+.fast-swatch-color-icterine, .isp-product-color-swatch-icterine {
+    background: #fcf75e;
+}
+
+.fast-swatch-color-inchworm, .isp-product-color-swatch-inchworm {
+    background: #b2ec5d;
+}
+
+.fast-swatch-color-iris, .isp-product-color-swatch-iris {
+    background: #5a4fcf;
+}
+
+.fast-swatch-color-isabelline, .isp-product-color-swatch-isabelline {
+    background: #f4f0ec;
+}
+
+.fast-swatch-color-jade, .isp-product-color-swatch-jade {
+    background: #00a86b;
+}
+
+.fast-swatch-color-jasmine, .isp-product-color-swatch-jasmine {
+    background: #f8de7e;
+}
+
+.fast-swatch-color-jasper, .isp-product-color-swatch-jasper {
+    background: #d73b3e;
+}
+
+.fast-swatch-color-jonquil, .isp-product-color-swatch-jonquil {
+    background: #fada5e;
+}
+
+.fast-swatch-color-lava, .isp-product-color-swatch-lava {
+    background: #cf1020;
+}
+
+.fast-swatch-color-lemon, .isp-product-color-swatch-lemon {
+    background: #fff700;
+}
+
+.fast-swatch-color-lilac, .isp-product-color-swatch-lilac {
+    background: #c8a2c8;
+}
+
+.fast-swatch-color-lion, .isp-product-color-swatch-lion {
+    background: #c19a6b;
+}
+
+.fast-swatch-color-liver, .isp-product-color-swatch-liver {
+    background: #534b4f;
+}
+
+.fast-swatch-color-lust, .isp-product-color-swatch-lust {
+    background: #e62020;
+}
+
+.fast-swatch-color-magnolia, .isp-product-color-swatch-magnolia {
+    background: #f8f4ff;
+}
+
+.fast-swatch-color-mahogany, .isp-product-color-swatch-mahogany {
+    background: #c04000;
+}
+
+.fast-swatch-color-maize, .isp-product-color-swatch-maize {
+    background: #fbec5d;
+}
+
+.fast-swatch-color-malachite, .isp-product-color-swatch-malachite {
+    background: #0bda51;
+}
+
+.fast-swatch-color-manatee, .isp-product-color-swatch-manatee {
+    background: #979aaa;
+}
+
+.fast-swatch-color-mantis, .isp-product-color-swatch-mantis {
+    background: #74c365;
+}
+
+.fast-swatch-color-mauve, .isp-product-color-swatch-mauve {
+    background: #e0b0ff;
+}
+
+.fast-swatch-color-mauvelous, .isp-product-color-swatch-mauvelous {
+    background: #ef98aa;
+}
+
+.fast-swatch-color-melon, .isp-product-color-swatch-melon {
+    background: #fdbcb4;
+}
+
+.fast-swatch-color-mint, .isp-product-color-swatch-mint {
+    background: #3eb489;
+}
+
+.fast-swatch-color-mulberry, .isp-product-color-swatch-mulberry {
+    background: #c54b8c;
+}
+
+.fast-swatch-color-munsell, .isp-product-color-swatch-munsell {
+    background: #f2f3f4;
+}
+
+.fast-swatch-color-mustard, .isp-product-color-swatch-mustard {
+    background: #ffdb58;
+}
+
+.fast-swatch-color-myrtle, .isp-product-color-swatch-myrtle {
+    background: #21421e;
+}
+
+.fast-swatch-color-ochre, .isp-product-color-swatch-ochre {
+    background: #cc7722;
+}
+
+.fast-swatch-color-olivine, .isp-product-color-swatch-olivine {
+    background: #9ab973;
+}
+
+.fast-swatch-color-onyx, .isp-product-color-swatch-onyx {
+    background: #0f0f0f;
+}
+
+.fast-swatch-color-peach, .isp-product-color-swatch-peach {
+    background: #ffe5b4;
+}
+
+.fast-swatch-color-pear, .isp-product-color-swatch-pear {
+    background: #d1e231;
+}
+
+.fast-swatch-color-pearl, .isp-product-color-swatch-pearl {
+    background: #f0ead6;
+}
+
+.fast-swatch-color-peridot, .isp-product-color-swatch-peridot {
+    background: #e6e200;
+}
+
+.fast-swatch-color-periwinkle, .isp-product-color-swatch-periwinkle {
+    background: #ccf;
+}
+
+.fast-swatch-color-phlox, .isp-product-color-swatch-phlox {
+    background: #df00ff;
+}
+
+.fast-swatch-color-pistachio, .isp-product-color-swatch-pistachio {
+    background: #93c572;
+}
+
+.fast-swatch-color-platinum, .isp-product-color-swatch-platinum {
+    background: #e5e4e2;
+}
+
+.fast-swatch-color-prune, .isp-product-color-swatch-prune {
+    background: #701c1c;
+}
+
+.fast-swatch-color-puce, .isp-product-color-swatch-puce {
+    background: #c89;
+}
+
+.fast-swatch-color-pumpkin, .isp-product-color-swatch-pumpkin {
+    background: #ff7518;
+}
+
+.fast-swatch-color-rackley, .isp-product-color-swatch-rackley {
+    background: #5d8aa8;
+}
+
+.fast-swatch-color-raspberry, .isp-product-color-swatch-raspberry {
+    background: #e30b5d;
+}
+
+.fast-swatch-color-razzmatazz, .isp-product-color-swatch-razzmatazz {
+    background: #e3256b;
+}
+
+.fast-swatch-color-rose, .isp-product-color-swatch-rose {
+    background: #ff007f;
+}
+
+.fast-swatch-color-rosewood, .isp-product-color-swatch-rosewood {
+    background: #65000b;
+}
+
+.fast-swatch-color-ruby, .isp-product-color-swatch-ruby {
+    background: #e0115f;
+}
+
+.fast-swatch-color-ruddy, .isp-product-color-swatch-ruddy {
+    background: #ff0028;
+}
+
+.fast-swatch-color-rufous, .isp-product-color-swatch-rufous {
+    background: #a81c07;
+}
+
+.fast-swatch-color-russet, .isp-product-color-swatch-russet {
+    background: #80461b;
+}
+
+.fast-swatch-color-rust, .isp-product-color-swatch-rust {
+    background: #b7410e;
+}
+
+.fast-swatch-color-saffron, .isp-product-color-swatch-saffron {
+    background: #f4c430;
+}
+
+.fast-swatch-color-sand, .isp-product-color-swatch-sand {
+    background: #c2b280;
+}
+
+.fast-swatch-color-sandstorm, .isp-product-color-swatch-sandstorm {
+    background: #ecd540;
+}
+
+.fast-swatch-color-sapphire, .isp-product-color-swatch-sapphire {
+    background: #082567;
+}
+
+.fast-swatch-color-scarlet, .isp-product-color-swatch-scarlet {
+    background: #ff2400;
+}
+
+.fast-swatch-color-sepia, .isp-product-color-swatch-sepia {
+    background: #704214;
+}
+
+.fast-swatch-color-shadow, .isp-product-color-swatch-shadow {
+    background: #8a795d;
+}
+
+.fast-swatch-color-shamrock, .isp-product-color-swatch-shamrock {
+    background: #45cea2;
+}
+
+.fast-swatch-color-sinopia, .isp-product-color-swatch-sinopia {
+    background: #cb410b;
+}
+
+.fast-swatch-color-skobeloff, .isp-product-color-swatch-skobeloff {
+    background: #007474;
+}
+
+.fast-swatch-color-smalt, .isp-product-color-swatch-smalt {
+    background: #039;
+}
+
+.fast-swatch-color-stizza, .isp-product-color-swatch-stizza {
+    background: #900;
+}
+
+.fast-swatch-color-straw, .isp-product-color-swatch-straw {
+    background: #e4d96f;
+}
+
+.fast-swatch-color-sunglow, .isp-product-color-swatch-sunglow {
+    background: #fc3;
+}
+
+.fast-swatch-color-sunset, .isp-product-color-swatch-sunset {
+    background: #fad6a5;
+}
+
+.fast-swatch-color-tangelo, .isp-product-color-swatch-tangelo {
+    background: #f94d00;
+}
+
+.fast-swatch-color-tangerine, .isp-product-color-swatch-tangerine {
+    background: #f28500;
+}
+
+.fast-swatch-color-taupe, .isp-product-color-swatch-taupe {
+    background: #483c32;
+}
+
+.fast-swatch-color-tawny, .isp-product-color-swatch-tawny {
+    background: #cd5700;
+}
+
+.fast-swatch-color-timberwolf, .isp-product-color-swatch-timberwolf {
+    background: #dbd7d2;
+}
+
+.fast-swatch-color-toolbox, .isp-product-color-swatch-toolbox {
+    background: #746cc0;
+}
+
+.fast-swatch-color-topaz, .isp-product-color-swatch-topaz {
+    background: #ffc87c;
+}
+
+.fast-swatch-color-tumbleweed, .isp-product-color-swatch-tumbleweed {
+    background: #deaa88;
+}
+
+.fast-swatch-color-ultramarine, .isp-product-color-swatch-ultramarine {
+    background: #120a8f;
+}
+
+.fast-swatch-color-umber, .isp-product-color-swatch-umber {
+    background: #635147;
+}
+
+.fast-swatch-color-ube, .isp-product-color-swatch-ube {
+    background: #8878c3;
+}
+
+.fast-swatch-color-urobilin, .isp-product-color-swatch-urobilin {
+    background: #e1ad21;
+}
+
+.fast-swatch-color-verdigris, .isp-product-color-swatch-verdigris {
+    background: #43b3ae;
+}
+
+.fast-swatch-color-vanilla, .isp-product-color-swatch-vanilla {
+    background: #f3e5ab;
+}
+
+.fast-swatch-color-vermilion, .isp-product-color-swatch-vermilion {
+    background: #e34234;
+}
+
+.fast-swatch-color-veronica, .isp-product-color-swatch-veronica {
+    background: #a020f0;
+}
+
+.fast-swatch-color-viridian, .isp-product-color-swatch-viridian {
+    background: #40826d;
+}
+
+.fast-swatch-color-waterspout, .isp-product-color-swatch-waterspout {
+    background: #00ffff;
+}
+
+.fast-swatch-color-wenge, .isp-product-color-swatch-wenge {
+    background: #645452;
+}
+
+.fast-swatch-color-wine, .isp-product-color-swatch-wine {
+    background: #722f37;
+}
+
+.fast-swatch-color-wisteria, .isp-product-color-swatch-wisteria {
+    background: #c9a0dc;
+}
+
+.fast-swatch-color-xanadu, .isp-product-color-swatch-xanadu {
+    background: #738678;
+}
+
+.fast-swatch-color-zaffre, .isp-product-color-swatch-zaffre {
+    background: #0014a8;
+}
+
+.fast-swatch-color-alluring, .isp-product-color-swatch-alluring {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-blackcoral, .isp-product-color-swatch-blackcoral {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-oxblood, .isp-product-color-swatch-oxblood {
+    background: #870f11;
+}
+
+.fast-swatch-color-midnight, .isp-product-color-swatch-midnight {
+    background: #182373;
+}
+
+.fast-swatch-color-everglade, .isp-product-color-swatch-everglade {
+    background: #008587;
+}
+
+.fast-swatch-color-avocado, .isp-product-color-swatch-avocado {
+    background: #6f743c;
+}
+
+.fast-swatch-color-aruba, .isp-product-color-swatch-aruba {
+    background: #870f11;
+}
+
+.fast-swatch-color-hunter, .isp-product-color-swatch-hunter {
+    background: #28572b;
+}
+
+.fast-swatch-color-cappuccino, .isp-product-color-swatch-cappuccino {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-seafoam, .isp-product-color-swatch-seafoam {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-bluenavy, .isp-product-color-swatch-bluenavy {
+    background: #182373;
+}
+
+.fast-swatch-color-spice, .isp-product-color-swatch-spice {
+    background: #ce790f;
+}
+
+.fast-swatch-color-gray, .isp-product-color-swatch-gray {
+    background: #938f90;
+}
+
+.fast-swatch-color-dreamy, .isp-product-color-swatch-dreamy {
+    background: #e2918d;
+}
+
+.fast-swatch-color-grey, .isp-product-color-swatch-grey {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-navymulti, .isp-product-color-swatch-navymulti {
+    background: #0000cd;
+}
+
+.fast-swatch-color-redsmoke, .isp-product-color-swatch-redsmoke {
+    background: #ee1212;
+}
+
+.fast-swatch-color-elderberry, .isp-product-color-swatch-elderberry {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-colette, .isp-product-color-swatch-colette {
+    background: #491f61;
+}
+
+.fast-swatch-color-marigold, .isp-product-color-swatch-marigold {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-vil, .isp-product-color-swatch-vil {
+    background: #491f61;
+}
+
+.fast-swatch-color-latte, .isp-product-color-swatch-latte {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-gunmetal, .isp-product-color-swatch-gunmetal {
+    background: #4b4746;
+}
+
+.fast-swatch-color-tortoise, .isp-product-color-swatch-tortoise {
+    background: #8b4513;
+}
+
+.fast-swatch-color-aloe, .isp-product-color-swatch-aloe {
+    background: #880000;
+}
+
+.fast-swatch-color-bluecombo, .isp-product-color-swatch-bluecombo {
+    background: #0000cd;
+}
+
+.fast-swatch-color-cocoa, .isp-product-color-swatch-cocoa {
+    background: #c8867f;
+}
+
+.fast-swatch-color-zinfandel, .isp-product-color-swatch-zinfandel {
+    background: #870f11;
+}
+
+.fast-swatch-color-berry, .isp-product-color-swatch-berry {
+    background: #870f11;
+}
+
+.fast-swatch-color-oatmeal, .isp-product-color-swatch-oatmeal {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-blackorange, .isp-product-color-swatch-blackorange {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-raisin, .isp-product-color-swatch-raisin {
+    background: #870f11;
+}
+
+.fast-swatch-color-bugundy, .isp-product-color-swatch-bugundy {
+    background: #870f11;
+}
+
+.fast-swatch-color-blonde, .isp-product-color-swatch-blonde {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-marsala, .isp-product-color-swatch-marsala {
+    background: #b95863;
+}
+
+.fast-swatch-color-terracotta, .isp-product-color-swatch-terracotta {
+    background: #ce790f;
+}
+
+.fast-swatch-color-whitenude, .isp-product-color-swatch-whitenude {
+    background: #ffffff;
+}
+
+.fast-swatch-color-brick, .isp-product-color-swatch-brick {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-mermaid, .isp-product-color-swatch-mermaid {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-cheeky, .isp-product-color-swatch-cheeky {
+    background: #ff848c;
+}
+
+.fast-swatch-color-coco, .isp-product-color-swatch-coco {
+    background: #c8a899;
+}
+
+.fast-swatch-color-blushblack, .isp-product-color-swatch-blushblack {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-blackcombo, .isp-product-color-swatch-blackcombo {
+    background: #000000;
+}
+
+.fast-swatch-color-navysage, .isp-product-color-swatch-navysage {
+    background: #182373;
+}
+
+.fast-swatch-color-bluewhite, .isp-product-color-swatch-bluewhite {
+    background: #6577e7;
+}
+
+.fast-swatch-color-coralicious, .isp-product-color-swatch-coralicious {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-spicy, .isp-product-color-swatch-spicy {
+    background: #ce790f;
+}
+
+.fast-swatch-color-celine, .isp-product-color-swatch-celine {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-cannes, .isp-product-color-swatch-cannes {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-bali, .isp-product-color-swatch-bali {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-rainbow, .isp-product-color-swatch-rainbow {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-rubi, .isp-product-color-swatch-rubi {
+    background: #870f11;
+}
+
+.fast-swatch-color-cement, .isp-product-color-swatch-cement {
+    background: #938f90;
+}
+
+.fast-swatch-color-backstage, .isp-product-color-swatch-backstage {
+    background: #9e4b5b;
+}
+
+.fast-swatch-color-brickred, .isp-product-color-swatch-brickred {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-claudine, .isp-product-color-swatch-claudine {
+    background: #b68d61;
+}
+
+.fast-swatch-color-bordeaux, .isp-product-color-swatch-bordeaux {
+    background: #870f11;
+}
+
+.fast-swatch-color-blackburgundy, .isp-product-color-swatch-blackburgundy {
+    background: #870f11;
+}
+
+.fast-swatch-color-navygreen, .isp-product-color-swatch-navygreen {
+    background: #28572b;
+}
+
+.fast-swatch-color-seduction, .isp-product-color-swatch-seduction {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-goldbrown, .isp-product-color-swatch-goldbrown {
+    background: #8b4513;
+}
+
+.fast-swatch-color-greyblack, .isp-product-color-swatch-greyblack {
+    background: #938f90;
+}
+
+.fast-swatch-color-yellowwhite, .isp-product-color-swatch-yellowwhite {
+    background: #fffe4e;
+}
+
+.fast-swatch-color-olivemulti, .isp-product-color-swatch-olivemulti {
+    background: #6f743c;
+}
+
+.fast-swatch-color-nudesilver, .isp-product-color-swatch-nudesilver {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-mauvegrey, .isp-product-color-swatch-mauvegrey {
+    background: #938f90;
+}
+
+.fast-swatch-color-mauvewhite, .isp-product-color-swatch-mauvewhite {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-winemulti, .isp-product-color-swatch-winemulti {
+    background: #870f11;
+}
+
+.fast-swatch-color-brownivory, .isp-product-color-swatch-brownivory {
+    background: #8b4513;
+}
+
+.fast-swatch-color-charcoalblue, .isp-product-color-swatch-charcoalblue {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-blacksmoke, .isp-product-color-swatch-blacksmoke {
+    background: #000000;
+}
+
+.fast-swatch-color-taupemulti, .isp-product-color-swatch-taupemulti {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-greycombo, .isp-product-color-swatch-greycombo {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-ivorynude, .isp-product-color-swatch-ivorynude {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-stepmother, .isp-product-color-swatch-stepmother {
+    background: #9400d3;
+}
+
+.fast-swatch-color-blackmauve, .isp-product-color-swatch-blackmauve {
+    background: #000000;
+}
+
+.fast-swatch-color-clearpink, .isp-product-color-swatch-clearpink {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-fuchsiablack, .isp-product-color-swatch-fuchsiablack {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-bluenude, .isp-product-color-swatch-bluenude {
+    background: #0000cd;
+}
+
+.fast-swatch-color-blackblack, .isp-product-color-swatch-blackblack {
+    background: #000000;
+}
+
+.fast-swatch-color-olivewhite, .isp-product-color-swatch-olivewhite {
+    background: #6f743c;
+}
+
+.fast-swatch-color-whitewhite, .isp-product-color-swatch-whitewhite {
+    background: #ffffff;
+}
+
+.fast-swatch-color-olivemauve, .isp-product-color-swatch-olivemauve {
+    background: #6f743c;
+}
+
+.fast-swatch-color-pinkwhite, .isp-product-color-swatch-pinkwhite {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-taupecombo, .isp-product-color-swatch-taupecombo {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-rice, .isp-product-color-swatch-rice {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-blackmocha, .isp-product-color-swatch-blackmocha {
+    background: #b68d61;
+}
+
+.fast-swatch-color-oliveblack, .isp-product-color-swatch-oliveblack {
+    background: #768f7c;
+}
+
+.fast-swatch-color-redivory, .isp-product-color-swatch-redivory {
+    background: #ee1212;
+}
+
+.fast-swatch-color-blackgrey, .isp-product-color-swatch-blackgrey {
+    background: #4b4746;
+}
+
+.fast-swatch-color-isabella, .isp-product-color-swatch-isabella {
+    background: #870f11;
+}
+
+.fast-swatch-color-dusty, .isp-product-color-swatch-dusty {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-blacknude, .isp-product-color-swatch-blacknude {
+    background: #000000;
+}
+
+.fast-swatch-color-sagecombo, .isp-product-color-swatch-sagecombo {
+    background: #6f743c;
+}
+
+.fast-swatch-color-goldblue, .isp-product-color-swatch-goldblue {
+    background: #182373;
+}
+
+.fast-swatch-color-goldwine, .isp-product-color-swatch-goldwine {
+    background: #870f11;
+}
+
+.fast-swatch-color-ivoryblack, .isp-product-color-swatch-ivoryblack {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-burgundygrey, .isp-product-color-swatch-burgundygrey {
+    background: #870f11;
+}
+
+.fast-swatch-color-istanbul, .isp-product-color-swatch-istanbul {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-greymulti, .isp-product-color-swatch-greymulti {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-eggplantnude, .isp-product-color-swatch-eggplantnude {
+    background: #491f61;
+}
+
+.fast-swatch-color-blushpurple, .isp-product-color-swatch-blushpurple {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-nuderoyal, .isp-product-color-swatch-nuderoyal {
+    background: #0000cd;
+}
+
+.fast-swatch-color-burgundywhite, .isp-product-color-swatch-burgundywhite {
+    background: #870f11;
+}
+
+.fast-swatch-color-blackcream, .isp-product-color-swatch-blackcream {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-burgundycombo, .isp-product-color-swatch-burgundycombo {
+    background: #870f11;
+}
+
+.fast-swatch-color-obsessed, .isp-product-color-swatch-obsessed {
+    background: #491f61;
+}
+
+.fast-swatch-color-navygold, .isp-product-color-swatch-navygold {
+    background: #ffff00;
+}
+
+.fast-swatch-color-blackyellow, .isp-product-color-swatch-blackyellow {
+    background: #000000;
+}
+
+.fast-swatch-color-blackbeige, .isp-product-color-swatch-blackbeige {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-mauvecombo, .isp-product-color-swatch-mauvecombo {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-stockholm, .isp-product-color-swatch-stockholm {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-rendezvous, .isp-product-color-swatch-rendezvous {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-camoblue, .isp-product-color-swatch-camoblue {
+    background: #0000cd;
+}
+
+.fast-swatch-color-navyred, .isp-product-color-swatch-navyred {
+    background: #182373;
+}
+
+.fast-swatch-color-blackolive, .isp-product-color-swatch-blackolive {
+    background: #6f743c;
+}
+
+.fast-swatch-color-navyberry, .isp-product-color-swatch-navyberry {
+    background: #182373;
+}
+
+.fast-swatch-color-peasant-spice, .isp-product-color-swatch-peasant_spice {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-winegold, .isp-product-color-swatch-winegold {
+    background: #870f11;
+}
+
+.fast-swatch-color-heather, .isp-product-color-swatch-heather {
+    background: #938f90;
+}
+
+.fast-swatch-color-blackwine, .isp-product-color-swatch-blackwine {
+    background: #870f11;
+}
+
+.fast-swatch-color-ivorymulti, .isp-product-color-swatch-ivorymulti {
+    background: #ffffff;
+}
+
+.fast-swatch-color-udaipu, .isp-product-color-swatch-udaipu {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-charcoalburgundy, .isp-product-color-swatch-charcoalburgundy {
+    background: #870f11;
+}
+
+.fast-swatch-color-burgundymulti, .isp-product-color-swatch-burgundymulti {
+    background: #870f11;
+}
+
+.fast-swatch-color-blackivory, .isp-product-color-swatch-blackivory {
+    background: #000000;
+}
+
+.fast-swatch-color-mustardnavy, .isp-product-color-swatch-mustardnavy {
+    background: #ffff00;
+}
+
+.fast-swatch-color-martinique, .isp-product-color-swatch-martinique {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-camelblack, .isp-product-color-swatch-camelblack {
+    background: #b68d61;
+}
+
+.fast-swatch-color-whitegrey, .isp-product-color-swatch-whitegrey {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-blackwhite, .isp-product-color-swatch-blackwhite {
+    background: #000000;
+}
+
+.fast-swatch-color-slay, .isp-product-color-swatch-slay {
+    background: #870f11;
+}
+
+.fast-swatch-color-dvil, .isp-product-color-swatch-dvil {
+    background: #491f61;
+}
+
+.fast-swatch-color-lavendar, .isp-product-color-swatch-lavendar {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-rouge, .isp-product-color-swatch-rouge {
+    background: #ee1212;
+}
+
+.fast-swatch-color-tortoisebrown, .isp-product-color-swatch-tortoisebrown {
+    background: #8b4513;
+}
+
+.fast-swatch-color-prague, .isp-product-color-swatch-prague {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-burgundynude, .isp-product-color-swatch-burgundynude {
+    background: #ee1212;
+}
+
+.fast-swatch-color-blackmulti, .isp-product-color-swatch-blackmulti {
+    background: #000000;
+}
+
+.fast-swatch-color-ursula, .isp-product-color-swatch-ursula {
+    background: #ee1212;
+}
+
+.fast-swatch-color-goldpurple, .isp-product-color-swatch-goldpurple {
+    background: #9400d3;
+}
+
+.fast-swatch-color-whitenavy, .isp-product-color-swatch-whitenavy {
+    background: #ffffff;
+}
+
+.fast-swatch-color-nudeburgundy, .isp-product-color-swatch-nudeburgundy {
+    background: #870f11;
+}
+
+.fast-swatch-color-navymulti, .isp-product-color-swatch-navymulti {
+    background: #182373;
+}
+
+.fast-swatch-color-blacktaupe, .isp-product-color-swatch-blacktaupe {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-bluemulti, .isp-product-color-swatch-bluemulti {
+    background: #182373;
+}
+
+.fast-swatch-color-blackfuchsia, .isp-product-color-swatch-blackfuchsia {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-greenred, .isp-product-color-swatch-greenred {
+    background: #6f743c;
+}
+
+.fast-swatch-color-hazelnut, .isp-product-color-swatch-hazelnut {
+    background: #b68d61;
+}
+
+.fast-swatch-color-yellownavy, .isp-product-color-swatch-yellownavy {
+    background: #ffff00;
+}
+
+.fast-swatch-color-purpleblue, .isp-product-color-swatch-purpleblue {
+    background: #9400d3;
+}
+
+.fast-swatch-color-navyivory, .isp-product-color-swatch-navyivory {
+    background: #182373;
+}
+
+.fast-swatch-color-whitered, .isp-product-color-swatch-whitered {
+    background: #ffffff;
+}
+
+.fast-swatch-color-charcoalpink, .isp-product-color-swatch-charcoalpink {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-blackpink, .isp-product-color-swatch-blackpink {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-greyblue, .isp-product-color-swatch-greyblue {
+    background: #6577e7;
+}
+
+.fast-swatch-color-london, .isp-product-color-swatch-london {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-offwhite, .isp-product-color-swatch-offwhite {
+    background: #ffffff;
+}
+
+.fast-swatch-color-blackbrown, .isp-product-color-swatch-blackbrown {
+    background: #8b4513;
+}
+
+.fast-swatch-color-whitepink, .isp-product-color-swatch-whitepink {
+    background: #ffffff;
+}
+
+.fast-swatch-color-evergreen, .isp-product-color-swatch-evergreen {
+    background: #28572b;
+}
+
+.fast-swatch-color-blackgold, .isp-product-color-swatch-blackgold {
+    background: #000000;
+}
+
+.fast-swatch-color-mochataupe, .isp-product-color-swatch-mochataupe {
+    background: #b68d61;
+}
+
+.fast-swatch-color-blushnavy, .isp-product-color-swatch-blushnavy {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-nudeblack, .isp-product-color-swatch-nudeblack {
+    background: #000000;
+}
+
+.fast-swatch-color-olivemustard, .isp-product-color-swatch-olivemustard {
+    background: #6f743c;
+}
+
+.fast-swatch-color-goldgold, .isp-product-color-swatch-goldgold {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-redblack, .isp-product-color-swatch-redblack {
+    background: #ee1212;
+}
+
+.fast-swatch-color-blackgreywhite, .isp-product-color-swatch-blackgreywhite {
+    background: #000000;
+}
+
+.fast-swatch-color-goldblack, .isp-product-color-swatch-goldblack {
+    background: #000000;
+}
+
+.fast-swatch-color-blackrose, .isp-product-color-swatch-blackrose {
+    background: #000000;
+}
+
+.fast-swatch-color-mustardmulti, .isp-product-color-swatch-mustardmulti {
+    background: #dac90a;
+}
+
+.fast-swatch-color-eggplantwhite, .isp-product-color-swatch-eggplantwhite {
+    background: #491f61;
+}
+
+.fast-swatch-color-blackred, .isp-product-color-swatch-blackred {
+    background: #000000;
+}
+
+.fast-swatch-color-whiteblack, .isp-product-color-swatch-whiteblack {
+    background: #ffffff;
+}
+
+.fast-swatch-color-mustardmustard, .isp-product-color-swatch-mustardmustard {
+    background: #fffe4e;
+}
+
+.fast-swatch-color-royalwhite, .isp-product-color-swatch-royalwhite {
+    background: #0000cd;
+}
+
+.fast-swatch-color-burgundynavy, .isp-product-color-swatch-burgundynavy {
+    background: #870f11;
+}
+
+.fast-swatch-color-mustardwhite, .isp-product-color-swatch-mustardwhite {
+    background: #ce790f;
+}
+
+.fast-swatch-color-blueblack, .isp-product-color-swatch-blueblack {
+    background: #0000cd;
+}
+
+.fast-swatch-color-yellowblack, .isp-product-color-swatch-yellowblack {
+    background: #fffe4e;
+}
+
+.fast-swatch-color-ivory-combo, .isp-product-color-swatch-ivory_combo {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-mediumwashpink, .isp-product-color-swatch-mediumwashpink {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-goldpink, .isp-product-color-swatch-goldpink {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-mustardred, .isp-product-color-swatch-mustardred {
+    background: #dac90a;
+}
+
+.fast-swatch-color-mediumwashblue, .isp-product-color-swatch-mediumwashblue {
+    background: #0000cd;
+}
+
+.fast-swatch-color-mushroom, .isp-product-color-swatch-mushroom {
+    background: #b68d61;
+}
+
+.fast-swatch-color-pomegranate, .isp-product-color-swatch-pomegranate {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-goldyellow, .isp-product-color-swatch-goldyellow {
+    background: #ffff00;
+}
+
+.fast-swatch-color-navywhite, .isp-product-color-swatch-navywhite {
+    background: #0000cd;
+}
+
+.fast-swatch-color-cobalt-blue, .isp-product-color-swatch-cobalt_blue {
+    background: #0047bb;
+}
+
+.fast-swatch-color-cocoa-brown, .isp-product-color-swatch-cocoa_brown {
+    background: #d2691e;
+}
+
+.fast-swatch-color-columbia-blue, .isp-product-color-swatch-columbia_blue {
+    background: #9bddff;
+}
+
+.fast-swatch-color-cool-black, .isp-product-color-swatch-cool_black {
+    background: #002e63;
+}
+
+.fast-swatch-color-cool-grey, .isp-product-color-swatch-cool_grey {
+    background: #8c92ac;
+}
+
+.fast-swatch-color-green-ombre, .isp-product-color-swatch-green_ombre {
+    background: #768f7c;
+}
+
+.fast-swatch-color-bijou, .isp-product-color-swatch-bijou {
+    background: #870f11;
+}
+
+.fast-swatch-color-dusty-mauve, .isp-product-color-swatch-dusty_mauve {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-brick-rose, .isp-product-color-swatch-brick_rose {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-blush-gold, .isp-product-color-swatch-blush_gold {
+    background: #ffcab9;
+}
+
+.fast-swatch-color-dark-coco, .isp-product-color-swatch-dark_coco {
+    background: #b68d61;
+}
+
+.fast-swatch-color-peacock-blue, .isp-product-color-swatch-peacock_blue {
+    background: #6577e7;
+}
+
+.fast-swatch-color-ash-mauve, .isp-product-color-swatch-ash_mauve {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-blush-pink, .isp-product-color-swatch-blush_pink {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-brown-multi, .isp-product-color-swatch-brown_multi {
+    background: #412322;
+}
+
+.fast-swatch-color-dusty-mustard, .isp-product-color-swatch-dusty_mustard {
+    background: #dac90a;
+}
+
+.fast-swatch-color-blackoff-white, .isp-product-color-swatch-blackoff_white {
+    background: #000000;
+}
+
+.fast-swatch-color-evil-queen, .isp-product-color-swatch-evil_queen {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-glam-rock, .isp-product-color-swatch-glam_rock {
+    background: #ce790f;
+}
+
+.fast-swatch-color-dark-rose, .isp-product-color-swatch-dark_rose {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-dusty-rose, .isp-product-color-swatch-dusty_rose {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-deep-purple, .isp-product-color-swatch-deep_purple {
+    background: #491f61;
+}
+
+.fast-swatch-color-rose-rust, .isp-product-color-swatch-rose_rust {
+    background: #ce790f;
+}
+
+.fast-swatch-color-ballet-pink, .isp-product-color-swatch-ballet_pink {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-dark-mocha, .isp-product-color-swatch-dark_mocha {
+    background: #8b4513;
+}
+
+.fast-swatch-color-glow-me-hard, .isp-product-color-swatch-glow_me_hard {
+    background: #f9be9c;
+}
+
+.fast-swatch-color-neon-pink, .isp-product-color-swatch-neon_pink {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-rose-smoke, .isp-product-color-swatch-rose_smoke {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-dark-plum, .isp-product-color-swatch-dark_plum {
+    background: #491f61;
+}
+
+.fast-swatch-color-violet-blue, .isp-product-color-swatch-violet_blue {
+    background: #324ab2;
+}
+
+.fast-swatch-color-violet-red, .isp-product-color-swatch-violet_red {
+    background: #f75394;
+}
+
+.fast-swatch-color-faded-black, .isp-product-color-swatch-faded_black {
+    background: #000000;
+}
+
+.fast-swatch-color-dark-grey, .isp-product-color-swatch-dark_grey {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-dark-heather-grey, .isp-product-color-swatch-dark_heather_grey {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-ice-denim, .isp-product-color-swatch-ice_denim {
+    background: #6577e7;
+}
+
+.fast-swatch-color-dark-lilac, .isp-product-color-swatch-dark_lilac {
+    background: #ba91b9;
+}
+
+.fast-swatch-color-mauve-lavendar, .isp-product-color-swatch-mauve_lavendar {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-dark-mustard, .isp-product-color-swatch-dark_mustard {
+    background: #ce790f;
+}
+
+.fast-swatch-color-neon-royal, .isp-product-color-swatch-neon_royal {
+    background: #0000cd;
+}
+
+.fast-swatch-color-heathered-grey, .isp-product-color-swatch-heathered_grey {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-rose-brown, .isp-product-color-swatch-rose_brown {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-pillow-talk, .isp-product-color-swatch-pillow_talk {
+    background: #b68d61;
+}
+
+.fast-swatch-color-light-grey, .isp-product-color-swatch-light_grey {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-dusty-mauvewhite, .isp-product-color-swatch-dusty_mauvewhite {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-black-green, .isp-product-color-swatch-black_green {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-tres-jolie, .isp-product-color-swatch-tres_jolie {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-red-stripe, .isp-product-color-swatch-red_stripe {
+    background: #ee1212;
+}
+
+.fast-swatch-color-iced-coffee, .isp-product-color-swatch-iced_coffee {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-sunkissed-crush, .isp-product-color-swatch-sunkissed_crush {
+    background: #ce790f;
+}
+
+.fast-swatch-color-blackrose-gold, .isp-product-color-swatch-blackrose_gold {
+    background: #000000;
+}
+
+.fast-swatch-color-ash-brown, .isp-product-color-swatch-ash_brown {
+    background: #b68d61;
+}
+
+.fast-swatch-color-def-concealer, .isp-product-color-swatch-def_concealer {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-light-mauve, .isp-product-color-swatch-light_mauve {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-purple-ombre, .isp-product-color-swatch-purple_ombre {
+    background: #9400d3;
+}
+
+.fast-swatch-color-blue-multi, .isp-product-color-swatch-blue_multi {
+    background: #6577e7;
+}
+
+.fast-swatch-color-sparkle-black, .isp-product-color-swatch-sparkle_black {
+    background: #000000;
+}
+
+.fast-swatch-color-soft-white, .isp-product-color-swatch-soft_white {
+    background: #ffffff;
+}
+
+.fast-swatch-color-medium-mauve, .isp-product-color-swatch-medium_mauve {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-ivory-tropical, .isp-product-color-swatch-ivory_tropical {
+    background: #ffffff;
+}
+
+.fast-swatch-color-dark-mauve, .isp-product-color-swatch-dark_mauve {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-blue-glitter, .isp-product-color-swatch-blue_glitter {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-cheek-on-cheek, .isp-product-color-swatch-cheek_on_cheek {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-dark-yellow, .isp-product-color-swatch-dark_yellow {
+    background: #ce790f;
+}
+
+.fast-swatch-color-neon-coral, .isp-product-color-swatch-neon_coral {
+    background: #ff5f6b;
+}
+
+.fast-swatch-color-dusty-violet, .isp-product-color-swatch-dusty_violet {
+    background: #ba91b9;
+}
+
+.fast-swatch-color-copper-rose, .isp-product-color-swatch-copper_rose {
+    background: #966;
+}
+
+.fast-swatch-color-cedar-wood, .isp-product-color-swatch-cedar_wood {
+    background: #8b4513;
+}
+
+.fast-swatch-color-gun-metal, .isp-product-color-swatch-gun_metal {
+    background: #4b4746;
+}
+
+.fast-swatch-color-deep-burgundy, .isp-product-color-swatch-deep_burgundy {
+    background: #870f11;
+}
+
+.fast-swatch-color-blackhot-pink, .isp-product-color-swatch-blackhot_pink {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-light-olive, .isp-product-color-swatch-light_olive {
+    background: #6f743c;
+}
+
+.fast-swatch-color-red-garnet, .isp-product-color-swatch-red_garnet {
+    background: #870f11;
+}
+
+.fast-swatch-color-blue-mint, .isp-product-color-swatch-blue_mint {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-dark-wine, .isp-product-color-swatch-dark_wine {
+    background: #870f11;
+}
+
+.fast-swatch-color-bora-bora, .isp-product-color-swatch-bora_bora {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-marled-black, .isp-product-color-swatch-marled_black {
+    background: #4b4746;
+}
+
+.fast-swatch-color-marsala-rust, .isp-product-color-swatch-marsala_rust {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-brown-snake, .isp-product-color-swatch-brown_snake {
+    background: #b68d61;
+}
+
+.fast-swatch-color-rust-mustard, .isp-product-color-swatch-rust_mustard {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-dark-beige, .isp-product-color-swatch-dark_beige {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-ginger-and-pepper, .isp-product-color-swatch-ginger_and_pepper {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-blue-mist, .isp-product-color-swatch-blue_mist {
+    background: #c4d1d6;
+}
+
+.fast-swatch-color-dark-teal, .isp-product-color-swatch-dark_teal {
+    background: #768f7c;
+}
+
+.fast-swatch-color-vintage-violet, .isp-product-color-swatch-vintage_violet {
+    background: #9d6673;
+}
+
+.fast-swatch-color-dark-olive, .isp-product-color-swatch-dark_olive {
+    background: #6f743c;
+}
+
+.fast-swatch-color-lilac-glitter, .isp-product-color-swatch-lilac_glitter {
+    background: #6577e7;
+}
+
+.fast-swatch-color-burgundy-combo, .isp-product-color-swatch-burgundy_combo {
+    background: #870f11;
+}
+
+.fast-swatch-color-beyond-nude, .isp-product-color-swatch-beyond_nude {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-deep-mauve, .isp-product-color-swatch-deep_mauve {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-vintage-blue, .isp-product-color-swatch-vintage_blue {
+    background: #c7c7db;
+}
+
+.fast-swatch-color-washed-denim, .isp-product-color-swatch-washed_denim {
+    background: #768f7c;
+}
+
+.fast-swatch-color-dark-camel, .isp-product-color-swatch-dark_camel {
+    background: #ce790f;
+}
+
+.fast-swatch-color-abu-dhabi, .isp-product-color-swatch-abu_dhabi {
+    background: #b68d61;
+}
+
+.fast-swatch-color-dusty-wineberry, .isp-product-color-swatch-dusty_wineberry {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-blue-metal, .isp-product-color-swatch-blue_metal {
+    background: #0000cd;
+}
+
+.fast-swatch-color-dark-burgundy, .isp-product-color-swatch-dark_burgundy {
+    background: #870f11;
+}
+
+.fast-swatch-color-begonia-pink, .isp-product-color-swatch-begonia_pink {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-deep-red, .isp-product-color-swatch-deep_red {
+    background: #ee1212;
+}
+
+.fast-swatch-color-cashmere-silk, .isp-product-color-swatch-cashmere_silk {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-dusty-cedar, .isp-product-color-swatch-dusty_cedar {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-black-silver, .isp-product-color-swatch-black_silver {
+    background: #000000;
+}
+
+.fast-swatch-color-red-wood, .isp-product-color-swatch-red_wood {
+    background: #ce790f;
+}
+
+.fast-swatch-color-off-white, .isp-product-color-swatch-off_white {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-black-denim, .isp-product-color-swatch-black_denim {
+    background: #000000;
+}
+
+.fast-swatch-color-vintage-black, .isp-product-color-swatch-vintage_black {
+    background: #000000;
+}
+
+.fast-swatch-color-burnt-brick, .isp-product-color-swatch-burnt_brick {
+    background: #ee1212;
+}
+
+.fast-swatch-color-creamy-pink, .isp-product-color-swatch-creamy_pink {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-black-multi, .isp-product-color-swatch-black_multi {
+    background: #ee1212;
+}
+
+.fast-swatch-color-glow-me-soft, .isp-product-color-swatch-glow_me_soft {
+    background: #fcd2da;
+}
+
+.fast-swatch-color-deep-teal, .isp-product-color-swatch-deep_teal {
+    background: #0000cd;
+}
+
+.fast-swatch-color-dusty-pink, .isp-product-color-swatch-dusty_pink {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-wild-ginger, .isp-product-color-swatch-wild_ginger {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-dusty-purple, .isp-product-color-swatch-dusty_purple {
+    background: #ba91b9;
+}
+
+.fast-swatch-color-classic-rose, .isp-product-color-swatch-classic_rose {
+    background: #fbcce7;
+}
+
+.fast-swatch-color-chrome-yellow, .isp-product-color-swatch-chrome_yellow {
+    background: #ffa700;
+}
+
+.fast-swatch-color-cherry-blossom-pink, .isp-product-color-swatch-cherry_blossom_pink {
+    background: #ffb7c5;
+}
+
+.fast-swatch-color-cerulean-blue, .isp-product-color-swatch-cerulean_blue {
+    background: #2a52be;
+}
+
+.fast-swatch-color-cg-blue, .isp-product-color-swatch-cg_blue {
+    background: #007aa5;
+}
+
+.fast-swatch-color-cg-red, .isp-product-color-swatch-cg_red {
+    background: #e03c31;
+}
+
+.fast-swatch-color-carmine-pink, .isp-product-color-swatch-carmine_pink {
+    background: #eb4c42;
+}
+
+.fast-swatch-color-carmine-red, .isp-product-color-swatch-carmine_red {
+    background: #ff0038;
+}
+
+.fast-swatch-color-cadet-blue, .isp-product-color-swatch-cadet_blue {
+    background: #5f9ea0;
+}
+
+.fast-swatch-color-cadet-grey, .isp-product-color-swatch-cadet_grey {
+    background: #91a3b0;
+}
+
+.fast-swatch-color-cadmium-green, .isp-product-color-swatch-cadmium_green {
+    background: #006b3c;
+}
+
+.fast-swatch-color-cadmium-orange, .isp-product-color-swatch-cadmium_orange {
+    background: #ed872d;
+}
+
+.fast-swatch-color-cadmium-red, .isp-product-color-swatch-cadmium_red {
+    background: #e30022;
+}
+
+.fast-swatch-color-cadmium-yellow, .isp-product-color-swatch-cadmium_yellow {
+    background: #fff600;
+}
+
+.fast-swatch-color-cafe-au-lait, .isp-product-color-swatch-cafe_au_lait {
+    background: #a67b5b;
+}
+
+.fast-swatch-color-brick-red, .isp-product-color-swatch-brick_red {
+    background: #cb4154;
+}
+
+.fast-swatch-color-bright-cerulean, .isp-product-color-swatch-bright_cerulean {
+    background: #1dacd6;
+}
+
+.fast-swatch-color-bright-green, .isp-product-color-swatch-bright_green {
+    background: #66ff00;
+}
+
+.fast-swatch-color-bright-lavender, .isp-product-color-swatch-bright_lavender {
+    background: #bf94e4;
+}
+
+.fast-swatch-color-bright-maroon, .isp-product-color-swatch-bright_maroon {
+    background: #c32148;
+}
+
+.fast-swatch-color-bright-pink, .isp-product-color-swatch-bright_pink {
+    background: #ff007f;
+}
+
+.fast-swatch-color-bright-turquoise, .isp-product-color-swatch-bright_turquoise {
+    background: #08e8de;
+}
+
+.fast-swatch-color-bright-ube, .isp-product-color-swatch-bright_ube {
+    background: #d19fe8;
+}
+
+.fast-swatch-color-boston-university-red, .isp-product-color-swatch-boston_university_red {
+    background: #cc0000;
+}
+
+.fast-swatch-color-blue-bell, .isp-product-color-swatch-blue_bell {
+    background: #a2a2d0;
+}
+
+.fast-swatch-color-black-bronze, .isp-product-color-swatch-black_bronze {
+    background: linear-gradient(#000, #cd7f32);
+}
+
+.fast-swatch-color-black-hot-pink, .isp-product-color-swatch-black_hot_pink {
+    background: linear-gradient(#000, #e75480);
+}
+
+.fast-swatch-color-baby-blue, .isp-product-color-swatch-baby_blue {
+    background: #89cff0;
+}
+
+.fast-swatch-color-baby-blue-eyes, .isp-product-color-swatch-baby_blue_eyes {
+    background: #a1caf1;
+}
+
+.fast-swatch-color-baby-pink, .isp-product-color-swatch-baby_pink {
+    background: #f4c2c2;
+}
+
+.fast-swatch-color-ball-blue, .isp-product-color-swatch-ball_blue {
+    background: #21abcd;
+}
+
+.fast-swatch-color-beau-blue, .isp-product-color-swatch-beau_blue {
+    background: #bcd4e6;
+}
+
+.fast-swatch-color-banana-mania, .isp-product-color-swatch-banana_mania {
+    background: #fae7b5;
+}
+
+.fast-swatch-color-banana-yellow, .isp-product-color-swatch-banana_yellow {
+    background: #ffd12a;
+}
+
+.fast-swatch-color-battleship-grey, .isp-product-color-swatch-battleship_grey {
+    background: #848482;
+}
+
+.fast-swatch-color-black-metallic-dark-red, .isp-product-color-swatch-black_metallic_dark_red {
+    background: linear-gradient(#000, red);
+}
+
+.fast-swatch-color-blanched-almond, .isp-product-color-swatch-blanched_almond {
+    background: #ffebcd;
+}
+
+.fast-swatch-color-bleu-de-france, .isp-product-color-swatch-bleu_de_france {
+    background: #318ce7;
+}
+
+.fast-swatch-color-blizzard-blue, .isp-product-color-swatch-blizzard_blue {
+    background: #ace5ee;
+}
+
+.fast-swatch-color-blue-gray, .isp-product-color-swatch-blue_gray {
+    background: #6699cc;
+}
+
+.fast-swatch-color-blue-green, .isp-product-color-swatch-blue_green {
+    background: #0d98ba;
+}
+
+.fast-swatch-color-blue-purple, .isp-product-color-swatch-blue_purple {
+    background: #8a2be2;
+}
+
+.fast-swatch-color-bondi-blue, .isp-product-color-swatch-bondi_blue {
+    background: #0095b6;
+}
+
+.fast-swatch-color-bottle-green, .isp-product-color-swatch-bottle_green {
+    background: #006a4e;
+}
+
+.fast-swatch-color-brandeis-blue, .isp-product-color-swatch-brandeis_blue {
+    background: #0070ff;
+}
+
+.fast-swatch-color-brilliant-lavender, .isp-product-color-swatch-brilliant_lavender {
+    background: #f4bbff;
+}
+
+.fast-swatch-color-brilliant-rose, .isp-product-color-swatch-brilliant_rose {
+    background: #ff55a3;
+}
+
+.fast-swatch-color-arylide-yellow, .isp-product-color-swatch-arylide_yellow {
+    background: #e9d66b;
+}
+
+.fast-swatch-color-ash-grey, .isp-product-color-swatch-ash_grey {
+    background: #b2beb5;
+}
+
+.fast-swatch-color-android-green, .isp-product-color-swatch-android_green {
+    background: #a4c639;
+}
+
+.fast-swatch-color-anti-flash-white, .isp-product-color-swatch-anti-flash_white {
+    background: #f2f3f4;
+}
+
+.fast-swatch-color-antique-brass, .isp-product-color-swatch-antique_brass {
+    background: #cd9575;
+}
+
+.fast-swatch-color-cornflower-blue, .isp-product-color-swatch-cornflower_blue {
+    background: #6495ed;
+}
+
+.fast-swatch-color-crimson-glory, .isp-product-color-swatch-crimson_glory {
+    background: #be0032;
+}
+
+.fast-swatch-color-crimson-red, .isp-product-color-swatch-crimson_red {
+    background: #990000;
+}
+
+.fast-swatch-color-dark-blue, .isp-product-color-swatch-dark_blue {
+    background: #00008b;
+}
+
+.fast-swatch-color-dark-brown, .isp-product-color-swatch-dark_brown {
+    background: #654321;
+}
+
+.fast-swatch-color-dark-byzantium, .isp-product-color-swatch-dark_byzantium {
+    background: #5d3954;
+}
+
+.fast-swatch-color-dark-candy-apple-red, .isp-product-color-swatch-dark_candy_apple_red {
+    background: #a40000;
+}
+
+.fast-swatch-color-dark-cerulean, .isp-product-color-swatch-dark_cerulean {
+    background: #08457e;
+}
+
+.fast-swatch-color-dark-chestnut, .isp-product-color-swatch-dark_chestnut {
+    background: #986960;
+}
+
+.fast-swatch-color-dark-coral, .isp-product-color-swatch-dark_coral {
+    background: #cd5b45;
+}
+
+.fast-swatch-color-dark-cyan, .isp-product-color-swatch-dark_cyan {
+    background: #008b8b;
+}
+
+.fast-swatch-color-dark-electric-blue, .isp-product-color-swatch-dark_electric_blue {
+    background: #536878;
+}
+
+.fast-swatch-color-dark-goldenrod, .isp-product-color-swatch-dark_goldenrod {
+    background: #b8860b;
+}
+
+.fast-swatch-color-dark-gray, .isp-product-color-swatch-dark_gray {
+    background: #a9a9a9;
+}
+
+.fast-swatch-color-dark-green, .isp-product-color-swatch-dark_green {
+    background: #013220;
+}
+
+.fast-swatch-color-dark-jungle-green, .isp-product-color-swatch-dark_jungle_green {
+    background: #1a2421;
+}
+
+.fast-swatch-color-dark-khaki, .isp-product-color-swatch-dark_khaki {
+    background: #bdb76b;
+}
+
+.fast-swatch-color-dark-lava, .isp-product-color-swatch-dark_lava {
+    background: #483c32;
+}
+
+.fast-swatch-color-dark-lavender, .isp-product-color-swatch-dark_lavender {
+    background: #734f96;
+}
+
+.fast-swatch-color-dark-magenta, .isp-product-color-swatch-dark_magenta {
+    background: #8b008b;
+}
+
+.fast-swatch-color-dark-midnight-blue, .isp-product-color-swatch-dark_midnight_blue {
+    background: #003366;
+}
+
+.fast-swatch-color-dark-olive-green, .isp-product-color-swatch-dark_olive_green {
+    background: #556b2f;
+}
+
+.fast-swatch-color-dark-orange, .isp-product-color-swatch-dark_orange {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-dark-orchid, .isp-product-color-swatch-dark_orchid {
+    background: #9932cc;
+}
+
+.fast-swatch-color-dark-pastel-blue, .isp-product-color-swatch-dark_pastel_blue {
+    background: #779ecb;
+}
+
+.fast-swatch-color-dark-pastel-green, .isp-product-color-swatch-dark_pastel_green {
+    background: #03c03c;
+}
+
+.fast-swatch-color-dark-pastel-purple, .isp-product-color-swatch-dark_pastel_purple {
+    background: #966fd6;
+}
+
+.fast-swatch-color-dark-pastel-red, .isp-product-color-swatch-dark_pastel_red {
+    background: #c23b22;
+}
+
+.fast-swatch-color-dark-pink, .isp-product-color-swatch-dark_pink {
+    background: #e75480;
+}
+
+.fast-swatch-color-dark-powder-blue, .isp-product-color-swatch-dark_powder_blue {
+    background: #003399;
+}
+
+.fast-swatch-color-dark-raspberry, .isp-product-color-swatch-dark_raspberry {
+    background: #872657;
+}
+
+.fast-swatch-color-dark-red, .isp-product-color-swatch-dark_red {
+    background: #8b0000;
+}
+
+.fast-swatch-color-dark-salmon, .isp-product-color-swatch-dark_salmon {
+    background: #e9967a;
+}
+
+.fast-swatch-color-dark-scarlet, .isp-product-color-swatch-dark_scarlet {
+    background: #560319;
+}
+
+.fast-swatch-color-dark-sea-green, .isp-product-color-swatch-dark_sea_green {
+    background: #8fbc8f;
+}
+
+.fast-swatch-color-dark-sienna, .isp-product-color-swatch-dark_sienna {
+    background: #3c1414;
+}
+
+.fast-swatch-color-dark-slate-blue, .isp-product-color-swatch-dark_slate_blue {
+    background: #483d8b;
+}
+
+.fast-swatch-color-dark-slate-gray, .isp-product-color-swatch-dark_slate_gray {
+    background: #2f4f4f;
+}
+
+.fast-swatch-color-dark-spring-green, .isp-product-color-swatch-dark_spring_green {
+    background: #177245;
+}
+
+.fast-swatch-color-dark-tan, .isp-product-color-swatch-dark_tan {
+    background: #918151;
+}
+
+.fast-swatch-color-dark-tangerine, .isp-product-color-swatch-dark_tangerine {
+    background: #ffa812;
+}
+
+.fast-swatch-color-dark-taupe, .isp-product-color-swatch-dark_taupe {
+    background: #483c32;
+}
+
+.fast-swatch-color-dark-terra-cotta, .isp-product-color-swatch-dark_terra_cotta {
+    background: #cc4e5c;
+}
+
+.fast-swatch-color-dark-turquoise, .isp-product-color-swatch-dark_turquoise {
+    background: #00ced1;
+}
+
+.fast-swatch-color-dark-violet, .isp-product-color-swatch-dark_violet {
+    background: #9400d3;
+}
+
+.fast-swatch-color-dartmouth-green, .isp-product-color-swatch-dartmouth_green {
+    background: #00693e;
+}
+
+.fast-swatch-color-davy-grey, .isp-product-color-swatch-davy_grey {
+    background: #555555;
+}
+
+.fast-swatch-color-heather-grey, .isp-product-color-swatch-heather_grey {
+    background: #bebbbb;
+}
+
+.fast-swatch-color-debian-red, .isp-product-color-swatch-debian_red {
+    background: #d70a53;
+}
+
+.fast-swatch-color-deep-carmine, .isp-product-color-swatch-deep_carmine {
+    background: #a9203e;
+}
+
+.fast-swatch-color-deep-carmine-pink, .isp-product-color-swatch-deep_carmine_pink {
+    background: #ef3038;
+}
+
+.fast-swatch-color-deep-carrot-orange, .isp-product-color-swatch-deep_carrot_orange {
+    background: #e9692c;
+}
+
+.fast-swatch-color-deep-cerise, .isp-product-color-swatch-deep_cerise {
+    background: #da3287;
+}
+
+.fast-swatch-color-deep-champagne, .isp-product-color-swatch-deep_champagne {
+    background: #fad6a5;
+}
+
+.fast-swatch-color-deep-chestnut, .isp-product-color-swatch-deep_chestnut {
+    background: #b94e48;
+}
+
+.fast-swatch-color-deep-coffee, .isp-product-color-swatch-deep_coffee {
+    background: #704241;
+}
+
+.fast-swatch-color-deep-fuchsia, .isp-product-color-swatch-deep_fuchsia {
+    background: #c154c1;
+}
+
+.fast-swatch-color-deep-jungle-green, .isp-product-color-swatch-deep_jungle_green {
+    background: #004b49;
+}
+
+.fast-swatch-color-deep-lilac, .isp-product-color-swatch-deep_lilac {
+    background: #9955bb;
+}
+
+.fast-swatch-color-deep-magenta, .isp-product-color-swatch-deep_magenta {
+    background: #cc00cc;
+}
+
+.fast-swatch-color-deep-peach, .isp-product-color-swatch-deep_peach {
+    background: #ffcba4;
+}
+
+.fast-swatch-color-deep-pink, .isp-product-color-swatch-deep_pink {
+    background: #ff1493;
+}
+
+.fast-swatch-color-desert-sand, .isp-product-color-swatch-desert_sand {
+    background: #edc9af;
+}
+
+.fast-swatch-color-egyptian-blue, .isp-product-color-swatch-egyptian_blue {
+    background: #1034a6;
+}
+
+.fast-swatch-color-electric-blue, .isp-product-color-swatch-electric_blue {
+    background: #7df9ff;
+}
+
+.fast-swatch-color-electric-crimson, .isp-product-color-swatch-electric_crimson {
+    background: #ff003f;
+}
+
+.fast-swatch-color-electric-cyan, .isp-product-color-swatch-electric_cyan {
+    background: #00ffff;
+}
+
+.fast-swatch-color-electric-green, .isp-product-color-swatch-electric_green {
+    background: #00ff00;
+}
+
+.fast-swatch-color-electric-indigo, .isp-product-color-swatch-electric_indigo {
+    background: #6f00ff;
+}
+
+.fast-swatch-color-electric-lavender, .isp-product-color-swatch-electric_lavender {
+    background: #f4bbff;
+}
+
+.fast-swatch-color-electric-lime, .isp-product-color-swatch-electric_lime {
+    background: #ccff00;
+}
+
+.fast-swatch-color-eton-blue, .isp-product-color-swatch-eton_blue {
+    background: #96c8a2;
+}
+
+.fast-swatch-color-fashion-fuchsia, .isp-product-color-swatch-fashion_fuchsia {
+    background: #f400a1;
+}
+
+.fast-swatch-color-fern-green, .isp-product-color-swatch-fern_green {
+    background: #4f7942;
+}
+
+.fast-swatch-color-ferrari-red, .isp-product-color-swatch-ferrari_red {
+    background: #ff1c00;
+}
+
+.fast-swatch-color-field-drab, .isp-product-color-swatch-field_drab {
+    background: #6c541e;
+}
+
+.fast-swatch-color-floral-white, .isp-product-color-swatch-floral_white {
+    background: #fffaf0;
+}
+
+.fast-swatch-color-fluorescent-orange, .isp-product-color-swatch-fluorescent_orange {
+    background: #ffbf00;
+}
+
+.fast-swatch-color-forest-green, .isp-product-color-swatch-forest_green {
+    background: #014421;
+}
+
+.fast-swatch-color-french-beige, .isp-product-color-swatch-french_beige {
+    background: #a67b5b;
+}
+
+.fast-swatch-color-french-blue, .isp-product-color-swatch-french_blue {
+    background: #0072bb;
+}
+
+.fast-swatch-color-ghost-white, .isp-product-color-swatch-ghost_white {
+    background: #f8f8ff;
+}
+
+.fast-swatch-color-guppie-green, .isp-product-color-swatch-guppie_green {
+    background: #00ff7f;
+}
+
+.fast-swatch-color-han-blue, .isp-product-color-swatch-han_blue {
+    background: #446ccf;
+}
+
+.fast-swatch-color-han-purple, .isp-product-color-swatch-han_purple {
+    background: #5218fa;
+}
+
+.fast-swatch-color-hansa-yellow, .isp-product-color-swatch-hansa_yellow {
+    background: #e9d66b;
+}
+
+.fast-swatch-color-harlequin, .isp-product-color-swatch-harlequin {
+    background: #3fff00;
+}
+
+.fast-swatch-color-hooker-green, .isp-product-color-swatch-hooker_green {
+    background: #49796b;
+}
+
+.fast-swatch-color-india-green, .isp-product-color-swatch-india_green {
+    background: #138808;
+}
+
+.fast-swatch-color-islamic-green, .isp-product-color-swatch-islamic_green {
+    background: #009000;
+}
+
+.fast-swatch-color-jazzberry-jam, .isp-product-color-swatch-jazzberry_jam {
+    background: #a50b5e;
+}
+
+.fast-swatch-color-ku-crimson, .isp-product-color-swatch-ku_crimson {
+    background: #e8000d;
+}
+
+.fast-swatch-color-la-salle-green, .isp-product-color-swatch-la_salle_green {
+    background: #087830;
+}
+
+.fast-swatch-color-languid-lavender, .isp-product-color-swatch-languid_lavender {
+    background: #d6cadd;
+}
+
+.fast-swatch-color-lapis-lazuli, .isp-product-color-swatch-lapis_lazuli {
+    background: #26619c;
+}
+
+.fast-swatch-color-laser-lemon, .isp-product-color-swatch-laser_lemon {
+    background: #fefe22;
+}
+
+.fast-swatch-color-lavender-blue, .isp-product-color-swatch-lavender_blue {
+    background: #ccccff;
+}
+
+.fast-swatch-color-lavender-blush, .isp-product-color-swatch-lavender_blush {
+    background: #fff0f5;
+}
+
+.fast-swatch-color-lavender-gray, .isp-product-color-swatch-lavender_gray {
+    background: #c4c3d0;
+}
+
+.fast-swatch-color-lavender-indigo, .isp-product-color-swatch-lavender_indigo {
+    background: #9457eb;
+}
+
+.fast-swatch-color-lavender-mist, .isp-product-color-swatch-lavender_mist {
+    background: #e6e6fa;
+}
+
+.fast-swatch-color-lemon-chiffon, .isp-product-color-swatch-lemon_chiffon {
+    background: #fffacd;
+}
+
+.fast-swatch-color-lemon-lime, .isp-product-color-swatch-lemon_lime {
+    background: #bfff00;
+}
+
+.fast-swatch-color-lemon-yellow, .isp-product-color-swatch-lemon_yellow {
+    background: #fff44f;
+}
+
+.fast-swatch-color-light-apricot, .isp-product-color-swatch-light_apricot {
+    background: #fdd5b1;
+}
+
+.fast-swatch-color-light-blue, .isp-product-color-swatch-light_blue {
+    background: #add8e6;
+}
+
+.fast-swatch-color-light-brown, .isp-product-color-swatch-light_brown {
+    background: #b5651d;
+}
+
+.fast-swatch-color-light-carmine-pink, .isp-product-color-swatch-light_carmine_pink {
+    background: #e66771;
+}
+
+.fast-swatch-color-light-coral, .isp-product-color-swatch-light_coral {
+    background: #f08080;
+}
+
+.fast-swatch-color-light-cornflower-blue, .isp-product-color-swatch-light_cornflower_blue {
+    background: #93ccea;
+}
+
+.fast-swatch-color-light-crimson, .isp-product-color-swatch-light_crimson {
+    background: #f56991;
+}
+
+.fast-swatch-color-light-cyan, .isp-product-color-swatch-light_cyan {
+    background: #e0ffff;
+}
+
+.fast-swatch-color-light-fuchsia-pink, .isp-product-color-swatch-light_fuchsia_pink {
+    background: #f984ef;
+}
+
+.fast-swatch-color-light-goldenrod-yellow, .isp-product-color-swatch-light_goldenrod_yellow {
+    background: #fafad2;
+}
+
+.fast-swatch-color-light-gray, .isp-product-color-swatch-light_gray {
+    background: #d3d3d3;
+}
+
+.fast-swatch-color-light-green, .isp-product-color-swatch-light_green {
+    background: #90ee90;
+}
+
+.fast-swatch-color-light-pastel-purple, .isp-product-color-swatch-light_pastel_purple {
+    background: #b19cd9;
+}
+
+.fast-swatch-color-light-pink, .isp-product-color-swatch-light_pink {
+    background: #ffb6c1;
+}
+
+.fast-swatch-color-light-salmon, .isp-product-color-swatch-light_salmon {
+    background: #ffa07a;
+}
+
+.fast-swatch-color-light-salmon-pink, .isp-product-color-swatch-light_salmon_pink {
+    background: #ff9999;
+}
+
+.fast-swatch-color-light-sea-green, .isp-product-color-swatch-light_sea_green {
+    background: #20b2aa;
+}
+
+.fast-swatch-color-light-sky-blue, .isp-product-color-swatch-light_sky_blue {
+    background: #87cefa;
+}
+
+.fast-swatch-color-light-slate-gray, .isp-product-color-swatch-light_slate_gray {
+    background: #778899;
+}
+
+.fast-swatch-color-light-taupe, .isp-product-color-swatch-light_taupe {
+    background: #b38b6d;
+}
+
+.fast-swatch-color-light-thulian-pink, .isp-product-color-swatch-light_thulian_pink {
+    background: #e68fac;
+}
+
+.fast-swatch-color-light-yellow, .isp-product-color-swatch-light_yellow {
+    background: #ffffed;
+}
+
+.fast-swatch-color-lime-green, .isp-product-color-swatch-lime_green {
+    background: #32cd32;
+}
+
+.fast-swatch-color-maya-blue, .isp-product-color-swatch-maya_blue {
+    background: #73c2fb;
+}
+
+.fast-swatch-color-meat-brown, .isp-product-color-swatch-meat_brown {
+    background: #e5b73b;
+}
+
+.fast-swatch-color-medium-carmine, .isp-product-color-swatch-medium_carmine {
+    background: #af4035;
+}
+
+.fast-swatch-color-medium-champagne, .isp-product-color-swatch-medium_champagne {
+    background: #f3e5ab;
+}
+
+.fast-swatch-color-medium-electric-blue, .isp-product-color-swatch-medium_electric_blue {
+    background: #035096;
+}
+
+.fast-swatch-color-medium-jungle-green, .isp-product-color-swatch-medium_jungle_green {
+    background: #1c352d;
+}
+
+.fast-swatch-color-medium-orchid, .isp-product-color-swatch-medium_orchid {
+    background: #ba55d3;
+}
+
+.fast-swatch-color-medium-persian-blue, .isp-product-color-swatch-medium_persian_blue {
+    background: #0067a5;
+}
+
+.fast-swatch-color-medium-purple, .isp-product-color-swatch-medium_purple {
+    background: #9370db;
+}
+
+.fast-swatch-color-medium-red-violet, .isp-product-color-swatch-medium_red_violet {
+    background: #bb3385;
+}
+
+.fast-swatch-color-medium-sea-green, .isp-product-color-swatch-medium_sea_green {
+    background: #3cb371;
+}
+
+.fast-swatch-color-medium-slate-blue, .isp-product-color-swatch-medium_slate_blue {
+    background: #7b68ee;
+}
+
+.fast-swatch-color-medium-spring-bud, .isp-product-color-swatch-medium_spring_bud {
+    background: #c9dc87;
+}
+
+.fast-swatch-color-medium-spring-green, .isp-product-color-swatch-medium_spring_green {
+    background: #00fa9a;
+}
+
+.fast-swatch-color-medium-taupe, .isp-product-color-swatch-medium_taupe {
+    background: #674c47;
+}
+
+.fast-swatch-color-medium-teal-blue, .isp-product-color-swatch-medium_teal_blue {
+    background: #0054b4;
+}
+
+.fast-swatch-color-midnight-blue, .isp-product-color-swatch-midnight_blue {
+    background: #191970;
+}
+
+.fast-swatch-color-mode-beige, .isp-product-color-swatch-mode_beige {
+    background: #967117;
+}
+
+.fast-swatch-color-moonstone-blue, .isp-product-color-swatch-moonstone_blue {
+    background: #73a9c2;
+}
+
+.fast-swatch-color-mordant-red-19, .isp-product-color-swatch-mordant_red_19 {
+    background: #ae0c00;
+}
+
+.fast-swatch-color-nadeshiko-pink, .isp-product-color-swatch-nadeshiko_pink {
+    background: #f6adc6;
+}
+
+.fast-swatch-color-napier-green, .isp-product-color-swatch-napier_green {
+    background: #2a8000;
+}
+
+.fast-swatch-color-naples-yellow, .isp-product-color-swatch-naples_yellow {
+    background: #fada5e;
+}
+
+.fast-swatch-color-navajo-white, .isp-product-color-swatch-navajo_white {
+    background: #ffdead;
+}
+
+.fast-swatch-color-neon-carrot, .isp-product-color-swatch-neon_carrot {
+    background: #ffa343;
+}
+
+.fast-swatch-color-neon-fuchsia, .isp-product-color-swatch-neon_fuchsia {
+    background: #fe59c2;
+}
+
+.fast-swatch-color-neon-green, .isp-product-color-swatch-neon_green {
+    background: #39ff14;
+}
+
+.fast-swatch-color-non-photo-blue, .isp-product-color-swatch-non-photo_blue {
+    background: #a4dded;
+}
+
+.fast-swatch-color-old-gold, .isp-product-color-swatch-old_gold {
+    background: #cfb53b;
+}
+
+.fast-swatch-color-orange-red, .isp-product-color-swatch-orange_red {
+    background: #ff4500;
+}
+
+.fast-swatch-color-orange-yellow, .isp-product-color-swatch-orange_yellow {
+    background: #f8d568;
+}
+
+.fast-swatch-color-old-lace, .isp-product-color-swatch-old_lace {
+    background: #fdf5e6;
+}
+
+.fast-swatch-color-otter-brown, .isp-product-color-swatch-otter_brown {
+    background: #654321;
+}
+
+.fast-swatch-color-outer-space, .isp-product-color-swatch-outer_space {
+    background: #414a4c;
+}
+
+.fast-swatch-color-outrageous-orange, .isp-product-color-swatch-outrageous_orange {
+    background: #ff6e4a;
+}
+
+.fast-swatch-color-oxford-blue, .isp-product-color-swatch-oxford_blue {
+    background: #002147;
+}
+
+.fast-swatch-color-pacific-blue, .isp-product-color-swatch-pacific_blue {
+    background: #1ca9c9;
+}
+
+.fast-swatch-color-pakistan-green, .isp-product-color-swatch-pakistan_green {
+    background: #060;
+}
+
+.fast-swatch-color-palatinate-blue, .isp-product-color-swatch-palatinate_blue {
+    background: #273be2;
+}
+
+.fast-swatch-color-palatinate-purple, .isp-product-color-swatch-palatinate_purple {
+    background: #682860;
+}
+
+.fast-swatch-color-pale-aqua, .isp-product-color-swatch-pale_aqua {
+    background: #bcd4e6;
+}
+
+.fast-swatch-color-pale-blue, .isp-product-color-swatch-pale_blue {
+    background: #afeeee;
+}
+
+.fast-swatch-color-pale-brown, .isp-product-color-swatch-pale_brown {
+    background: #987654;
+}
+
+.fast-swatch-color-pale-carmine, .isp-product-color-swatch-pale_carmine {
+    background: #af4035;
+}
+
+.fast-swatch-color-pale-cerulean, .isp-product-color-swatch-pale_cerulean {
+    background: #9bc4e2;
+}
+
+.fast-swatch-color-pale-chestnut, .isp-product-color-swatch-pale_chestnut {
+    background: #ddadaf;
+}
+
+.fast-swatch-color-pale-copper, .isp-product-color-swatch-pale_copper {
+    background: #da8a67;
+}
+
+.fast-swatch-color-pale-cornflower-blue, .isp-product-color-swatch-pale_cornflower_blue {
+    background: #abcdef;
+}
+
+.fast-swatch-color-pale-gold, .isp-product-color-swatch-pale_gold {
+    background: #e6be8a;
+}
+
+.fast-swatch-color-pale-goldenrod, .isp-product-color-swatch-pale_goldenrod {
+    background: #eee8aa;
+}
+
+.fast-swatch-color-pale-green, .isp-product-color-swatch-pale_green {
+    background: #98fb98;
+}
+
+.fast-swatch-color-pale-lavender, .isp-product-color-swatch-pale_lavender {
+    background: #dcd0ff;
+}
+
+.fast-swatch-color-pale-magenta, .isp-product-color-swatch-pale_magenta {
+    background: #f984e5;
+}
+
+.fast-swatch-color-pale-pink, .isp-product-color-swatch-pale_pink {
+    background: #fadadd;
+}
+
+.fast-swatch-color-pale-red-violet, .isp-product-color-swatch-pale_red_violet {
+    background: #db7093;
+}
+
+.fast-swatch-color-pale-robin-egg-blue, .isp-product-color-swatch-pale_robin_egg_blue {
+    background: #96ded1;
+}
+
+.fast-swatch-color-pale-silver, .isp-product-color-swatch-pale_silver {
+    background: #c9c0bb;
+}
+
+.fast-swatch-color-pale-spring-bud, .isp-product-color-swatch-pale_spring_bud {
+    background: #ecebbd;
+}
+
+.fast-swatch-color-pale-taupe, .isp-product-color-swatch-pale_taupe {
+    background: #bc987e;
+}
+
+.fast-swatch-color-pale-violet-red, .isp-product-color-swatch-pale_violet_red {
+    background: #db7093;
+}
+
+.fast-swatch-color-pansy-purple, .isp-product-color-swatch-pansy_purple {
+    background: #78184a;
+}
+
+.fast-swatch-color-papaya-whip, .isp-product-color-swatch-papaya_whip {
+    background: #ffefd5;
+}
+
+.fast-swatch-color-paris-green, .isp-product-color-swatch-paris_green {
+    background: #50c878;
+}
+
+.fast-swatch-color-pastel-blue, .isp-product-color-swatch-pastel_blue {
+    background: #aec6cf;
+}
+
+.fast-swatch-color-pastel-brown, .isp-product-color-swatch-pastel_brown {
+    background: #836953;
+}
+
+.fast-swatch-color-pastel-gray, .isp-product-color-swatch-pastel_gray {
+    background: #cfcfc4;
+}
+
+.fast-swatch-color-pastel-green, .isp-product-color-swatch-pastel_green {
+    background: #7d7;
+}
+
+.fast-swatch-color-pastel-magenta, .isp-product-color-swatch-pastel_magenta {
+    background: #f49ac2;
+}
+
+.fast-swatch-color-pastel-orange, .isp-product-color-swatch-pastel_orange {
+    background: #ffb347;
+}
+
+.fast-swatch-color-pastel-pink, .isp-product-color-swatch-pastel_pink {
+    background: #ffd1dc;
+}
+
+.fast-swatch-color-pearl-aqua, .isp-product-color-swatch-pearl_aqua {
+    background: #88d8c0;
+}
+
+.fast-swatch-color-persian-blue, .isp-product-color-swatch-persian_blue {
+    background: #1c39bb;
+}
+
+.fast-swatch-color-persian-indigo, .isp-product-color-swatch-persian_indigo {
+    background: #32127a;
+}
+
+.fast-swatch-color-persian-orange, .isp-product-color-swatch-persian_orange {
+    background: #d99058;
+}
+
+.fast-swatch-color-persian-pink, .isp-product-color-swatch-persian_pink {
+    background: #f77fbe;
+}
+
+.fast-swatch-color-persian-plum, .isp-product-color-swatch-persian_plum {
+    background: #701c1c;
+}
+
+.fast-swatch-color-phthalo-blue, .isp-product-color-swatch-phthalo_blue {
+    background: #000f89;
+}
+
+.fast-swatch-color-prussian-blue, .isp-product-color-swatch-prussian_blue {
+    background: #003153;
+}
+
+.fast-swatch-color-psychedelic-purple, .isp-product-color-swatch-psychedelic_purple {
+    background: #df00ff;
+}
+
+.fast-swatch-color-purple-heart, .isp-product-color-swatch-purple_heart {
+    background: #69359c;
+}
+
+.fast-swatch-color-raspberry-glace, .isp-product-color-swatch-raspberry_glace {
+    background: #915f6d;
+}
+
+.fast-swatch-color-raspberry-pink, .isp-product-color-swatch-raspberry_pink {
+    background: #e25098;
+}
+
+.fast-swatch-color-raspberry-rose, .isp-product-color-swatch-raspberry_rose {
+    background: #b3446c;
+}
+
+.fast-swatch-color-radical-red, .isp-product-color-swatch-radical_red {
+    background: #ff355e;
+}
+
+.fast-swatch-color-red-orange, .isp-product-color-swatch-red_orange {
+    background: #ff5349;
+}
+
+.fast-swatch-color-red-violet, .isp-product-color-swatch-red_violet {
+    background: #c71585;
+}
+
+.fast-swatch-color-rich-black, .isp-product-color-swatch-rich_black {
+    background: #004040;
+}
+
+.fast-swatch-color-rich-carmine, .isp-product-color-swatch-rich_carmine {
+    background: #d70040;
+}
+
+.fast-swatch-color-rich-electric-blue, .isp-product-color-swatch-rich_electric_blue {
+    background: #0892d0;
+}
+
+.fast-swatch-color-rich-lilac, .isp-product-color-swatch-rich_lilac {
+    background: #b666d2;
+}
+
+.fast-swatch-color-rich-maroon, .isp-product-color-swatch-rich_maroon {
+    background: #b03060;
+}
+
+.fast-swatch-color-rose-bonbon, .isp-product-color-swatch-rose_bonbon {
+    background: #f9429e;
+}
+
+.fast-swatch-color-rose-ebony, .isp-product-color-swatch-rose_ebony {
+    background: #674846;
+}
+
+.fast-swatch-color-rose-gold, .isp-product-color-swatch-rose_gold {
+    background: #b76e79;
+}
+
+.fast-swatch-color-rose-madder, .isp-product-color-swatch-rose_madder {
+    background: #e32636;
+}
+
+.fast-swatch-color-rose-pink, .isp-product-color-swatch-rose_pink {
+    background: #f6c;
+}
+
+.fast-swatch-color-rosso-corsa, .isp-product-color-swatch-rosso_corsa {
+    background: #d40000;
+}
+
+.fast-swatch-color-rosy-brown, .isp-product-color-swatch-rosy_brown {
+    background: #bc8f8f;
+}
+
+.fast-swatch-color-royal-azure, .isp-product-color-swatch-royal_azure {
+    background: #0038a8;
+}
+
+.fast-swatch-color-royal-blue, .isp-product-color-swatch-royal_blue {
+    background: #002366;
+}
+
+.fast-swatch-color-satin-sheen-gold, .isp-product-color-swatch-satin_sheen_gold {
+    background: #cba135;
+}
+
+.fast-swatch-color-school-bus-yellow, .isp-product-color-swatch-school_bus_yellow {
+    background: #ffd800;
+}
+
+.fast-swatch-color-screamin-green, .isp-product-color-swatch-screamin_green {
+    background: #76ff7a;
+}
+
+.fast-swatch-color-sea-blue, .isp-product-color-swatch-sea_blue {
+    background: #006994;
+}
+
+.fast-swatch-color-sky-blue, .isp-product-color-swatch-sky_blue {
+    background: #87ceeb;
+}
+
+.fast-swatch-color-smokey-topaz, .isp-product-color-swatch-smokey_topaz {
+    background: #933d41;
+}
+
+.fast-swatch-color-spiro-disco-ball, .isp-product-color-swatch-spiro_disco_ball {
+    background: #0fc0fc;
+}
+
+.fast-swatch-color-spring-bud, .isp-product-color-swatch-spring_bud {
+    background: #a7fc00;
+}
+
+.fast-swatch-color-spring-green, .isp-product-color-swatch-spring_green {
+    background: #00ff7f;
+}
+
+.fast-swatch-color-united-nations-blue, .isp-product-color-swatch-united_nations_blue {
+    background: #5b92e5;
+}
+
+.fast-swatch-color-university-of-california-gold, .isp-product-color-swatch-university_of_california_gold {
+    background: #b78727;
+}
+
+.fast-swatch-color-upsdell-red, .isp-product-color-swatch-upsdell_red {
+    background: #ae2029;
+}
+
+.fast-swatch-color-usc-cardinal, .isp-product-color-swatch-usc_cardinal {
+    background: #990000;
+}
+
+.fast-swatch-color-usc-gold, .isp-product-color-swatch-usc_gold {
+    background: #ffcc00;
+}
+
+.fast-swatch-color-utah-crimson, .isp-product-color-swatch-utah_crimson {
+    background: #d3003f;
+}
+
+.fast-swatch-color-venetian-red, .isp-product-color-swatch-venetian_red {
+    background: #c80815;
+}
+
+.fast-swatch-color-vegas-gold, .isp-product-color-swatch-vegas_gold {
+    background: #c5b358;
+}
+
+.fast-swatch-color-unmellow-yellow, .isp-product-color-swatch-unmellow_yellow {
+    background: #ffff66;
+}
+
+.fast-swatch-color-up-forest-green, .isp-product-color-swatch-up_forest_green {
+    background: #014421;
+}
+
+.fast-swatch-color-steel-blue, .isp-product-color-swatch-steel_blue {
+    background: #4682b4;
+}
+
+.fast-swatch-color-stil-de-grain-yellow, .isp-product-color-swatch-stil_de_grain_yellow {
+    background: #fada5e;
+}
+
+.fast-swatch-color-smoky-black, .isp-product-color-swatch-smoky_black {
+    background: #100c08;
+}
+
+.fast-swatch-color-sky-magenta, .isp-product-color-swatch-sky_magenta {
+    background: #cf71af;
+}
+
+.fast-swatch-color-slate-blue, .isp-product-color-swatch-slate_blue {
+    background: #6a5acd;
+}
+
+.fast-swatch-color-slate-gray, .isp-product-color-swatch-slate_gray {
+    background: #708090;
+}
+
+.fast-swatch-color-shamrock-green, .isp-product-color-swatch-shamrock_green {
+    background: #009e60;
+}
+
+.fast-swatch-color-shocking-pink, .isp-product-color-swatch-shocking_pink {
+    background: #fc0fc0;
+}
+
+.fast-swatch-color-selective-yellow, .isp-product-color-swatch-selective_yellow {
+    background: #ffba00;
+}
+
+.fast-swatch-color-sea-green, .isp-product-color-swatch-sea_green {
+    background: #2e8b57;
+}
+
+.fast-swatch-color-seal-brown, .isp-product-color-swatch-seal_brown {
+    background: #321414;
+}
+
+.fast-swatch-color-salmon-pink, .isp-product-color-swatch-salmon_pink {
+    background: #ff91a4;
+}
+
+.fast-swatch-color-sandy-brown, .isp-product-color-swatch-sandy_brown {
+    background: #f4a460;
+}
+
+.fast-swatch-color-sandy-taupe, .isp-product-color-swatch-sandy_taupe {
+    background: #967117;
+}
+
+.fast-swatch-color-sap-green, .isp-product-color-swatch-sap_green {
+    background: #507d2a;
+}
+
+.fast-swatch-color-sand-dune, .isp-product-color-swatch-sand_dune {
+    background: #967117;
+}
+
+.fast-swatch-color-sacramento-state-green, .isp-product-color-swatch-sacramento_state_green {
+    background: #00563f;
+}
+
+.fast-swatch-color-saint-patrick-blue, .isp-product-color-swatch-saint_patrick_blue {
+    background: #23297a;
+}
+
+.fast-swatch-color-saddle-brown, .isp-product-color-swatch-saddle_brown {
+    background: #8b4513;
+}
+
+.fast-swatch-color-safety-orange, .isp-product-color-swatch-safety_orange {
+    background: #ff6700;
+}
+
+.fast-swatch-color-ruddy-brown, .isp-product-color-swatch-ruddy_brown {
+    background: #bb6528;
+}
+
+.fast-swatch-color-ruddy-pink, .isp-product-color-swatch-ruddy_pink {
+    background: #e18e96;
+}
+
+.fast-swatch-color-royal-fuchsia, .isp-product-color-swatch-royal_fuchsia {
+    background: #ca2c92;
+}
+
+.fast-swatch-color-royal-purple, .isp-product-color-swatch-royal_purple {
+    background: #7851a9;
+}
+
+.fast-swatch-color-rose-quartz, .isp-product-color-swatch-rose_quartz {
+    background: #aa98a9;
+}
+
+.fast-swatch-color-rose-taupe, .isp-product-color-swatch-rose_taupe {
+    background: #905d5d;
+}
+
+.fast-swatch-color-rose-vale, .isp-product-color-swatch-rose_vale {
+    background: #ab4e52;
+}
+
+.fast-swatch-color-rifle-green, .isp-product-color-swatch-rifle_green {
+    background: #414833;
+}
+
+.fast-swatch-color-robins-egg-blue, .isp-product-color-swatch-robins_egg_blue {
+    background: #1fcecb;
+}
+
+.fast-swatch-color-raw-sienna, .isp-product-color-swatch-raw_sienna {
+    background: #d68a59;
+}
+
+.fast-swatch-color-raw-umber, .isp-product-color-swatch-raw_umber {
+    background: #826644;
+}
+
+.fast-swatch-color-razzle-dazzle-rose, .isp-product-color-swatch-razzle_dazzle_rose {
+    background: #f3c;
+}
+
+.fast-swatch-color-purple-mountain-majesty, .isp-product-color-swatch-purple_mountain_majesty {
+    background: #9678b6;
+}
+
+.fast-swatch-color-purple-pizzazz, .isp-product-color-swatch-purple_pizzazz {
+    background: #fe4eda;
+}
+
+.fast-swatch-color-purple-taupe, .isp-product-color-swatch-purple_taupe {
+    background: #50404d;
+}
+
+.fast-swatch-color-pink-flamingo, .isp-product-color-swatch-pink_flamingo {
+    background: #fc74fd;
+}
+
+.fast-swatch-color-portland-orange, .isp-product-color-swatch-portland_orange {
+    background: #ff5a36;
+}
+
+.fast-swatch-color-powder-blue, .isp-product-color-swatch-powder_blue {
+    background: #b0e0e6;
+}
+
+.fast-swatch-color-princeton-orange, .isp-product-color-swatch-princeton_orange {
+    background: #ff8f00;
+}
+
+.fast-swatch-color-pink-pearl, .isp-product-color-swatch-pink_pearl {
+    background: #e7accf;
+}
+
+.fast-swatch-color-pink-sherbet, .isp-product-color-swatch-pink_sherbet {
+    background: #f78fa7;
+}
+
+.fast-swatch-color-phthalo-green, .isp-product-color-swatch-phthalo_green {
+    background: #123524;
+}
+
+.fast-swatch-color-piggy-pink, .isp-product-color-swatch-piggy_pink {
+    background: #fddde6;
+}
+
+.fast-swatch-color-pine-green, .isp-product-color-swatch-pine_green {
+    background: #01796f;
+}
+
+.fast-swatch-color-persian-red, .isp-product-color-swatch-persian_red {
+    background: #c33;
+}
+
+.fast-swatch-color-persian-rose, .isp-product-color-swatch-persian_rose {
+    background: #fe28a2;
+}
+
+.fast-swatch-color-pastel-purple, .isp-product-color-swatch-pastel_purple {
+    background: #b39eb5;
+}
+
+.fast-swatch-color-payne-grey, .isp-product-color-swatch-payne_grey {
+    background: #536878;
+}
+
+.fast-swatch-color-peach-puff, .isp-product-color-swatch-peach_puff {
+    background: #ffdab9;
+}
+
+.fast-swatch-color-peach-yellow, .isp-product-color-swatch-peach_yellow {
+    background: #fadfad;
+}
+
+.fast-swatch-color-pastel-red, .isp-product-color-swatch-pastel_red {
+    background: #ff6961;
+}
+
+.fast-swatch-color-pastel-violet, .isp-product-color-swatch-pastel_violet {
+    background: #cb99c9;
+}
+
+.fast-swatch-color-pastel-yellow, .isp-product-color-swatch-pastel_yellow {
+    background: #fdfd96;
+}
+
+.fast-swatch-color-olive-drab, .isp-product-color-swatch-olive_drab {
+    background: #6b8e23;
+}
+
+.fast-swatch-color-orange-peel, .isp-product-color-swatch-orange_peel {
+    background: #ff9f00;
+}
+
+.fast-swatch-color-opera-mauve, .isp-product-color-swatch-opera_mauve {
+    background: #b784a7;
+}
+
+.fast-swatch-color-olive-green, .isp-product-color-swatch-olive_green {
+    background: #bab86c;
+}
+
+.fast-swatch-color-old-lavender, .isp-product-color-swatch-old_lavender {
+    background: #796878;
+}
+
+.fast-swatch-color-old-mauve, .isp-product-color-swatch-old_mauve {
+    background: #673147;
+}
+
+.fast-swatch-color-old-rose, .isp-product-color-swatch-old_rose {
+    background: #c08081;
+}
+
+.fast-swatch-color-north-texas-green, .isp-product-color-swatch-north_texas_green {
+    background: #059033;
+}
+
+.fast-swatch-color-ocean-boat-blue, .isp-product-color-swatch-ocean_boat_blue {
+    background: #0077be;
+}
+
+.fast-swatch-color-moss-green, .isp-product-color-swatch-moss_green {
+    background: #addfad;
+}
+
+.fast-swatch-color-mountain-meadow, .isp-product-color-swatch-mountain_meadow {
+    background: #30ba8f;
+}
+
+.fast-swatch-color-mountbatten-pink, .isp-product-color-swatch-mountbatten_pink {
+    background: #997a8d;
+}
+
+.fast-swatch-color-msu-green, .isp-product-color-swatch-msu_green {
+    background: #18453b;
+}
+
+.fast-swatch-color-mint-cream, .isp-product-color-swatch-mint_cream {
+    background: #f5fffa;
+}
+
+.fast-swatch-color-mint-green, .isp-product-color-swatch-mint_green {
+    background: #98ff98;
+}
+
+.fast-swatch-color-misty-rose, .isp-product-color-swatch-misty_rose {
+    background: #ffe4e1;
+}
+
+.fast-swatch-color-midnight-green, .isp-product-color-swatch-midnight_green {
+    background: #004953;
+}
+
+.fast-swatch-color-mikado-yellow, .isp-product-color-swatch-mikado_yellow {
+    background: #ffc40c;
+}
+
+.fast-swatch-color-medium-turquoise, .isp-product-color-swatch-medium_turquoise {
+    background: #48d1cc;
+}
+
+.fast-swatch-color-medium-violet-red, .isp-product-color-swatch-medium_violet_red {
+    background: #c71585;
+}
+
+.fast-swatch-color-medium-aquamarine, .isp-product-color-swatch-medium_aquamarine {
+    background: #66ddaa;
+}
+
+.fast-swatch-color-medium-blue, .isp-product-color-swatch-medium_blue {
+    background: #0000cd;
+}
+
+.fast-swatch-color-medium-candy-apple-red, .isp-product-color-swatch-medium_candy_apple_red {
+    background: #e2062c;
+}
+
+.fast-swatch-color-mauve-taupe, .isp-product-color-swatch-mauve_taupe {
+    background: #915f6d;
+}
+
+.fast-swatch-color-majorelle-blue, .isp-product-color-swatch-majorelle_blue {
+    background: #6050dc;
+}
+
+.fast-swatch-color-mango-tango, .isp-product-color-swatch-mango_tango {
+    background: #ff8243;
+}
+
+.fast-swatch-color-magic-mint, .isp-product-color-swatch-magic_mint {
+    background: #aaf0d1;
+}
+
+.fast-swatch-color-lincoln-green, .isp-product-color-swatch-lincoln_green {
+    background: #195905;
+}
+
+.fast-swatch-color-lavender-pink, .isp-product-color-swatch-lavender_pink {
+    background: #fbaed2;
+}
+
+.fast-swatch-color-lavender-purple, .isp-product-color-swatch-lavender_purple {
+    background: #967bb6;
+}
+
+.fast-swatch-color-lavender-rose, .isp-product-color-swatch-lavender_rose {
+    background: #fba0e3;
+}
+
+.fast-swatch-color-lawn-green, .isp-product-color-swatch-lawn_green {
+    background: #7cfc00;
+}
+
+.fast-swatch-color-laurel-green, .isp-product-color-swatch-laurel_green {
+    background: #a9ba9d;
+}
+
+.fast-swatch-color-june-bud, .isp-product-color-swatch-june_bud {
+    background: #bdda57;
+}
+
+.fast-swatch-color-jungle-green, .isp-product-color-swatch-jungle_green {
+    background: #29ab87;
+}
+
+.fast-swatch-color-kelly-green, .isp-product-color-swatch-kelly_green {
+    background: #4cbb17;
+}
+
+.fast-swatch-color-indian-red, .isp-product-color-swatch-indian_red {
+    background: #cd5c5c;
+}
+
+.fast-swatch-color-international-klein-blue, .isp-product-color-swatch-international_klein_blue {
+    background: #002fa7;
+}
+
+.fast-swatch-color-international-orange, .isp-product-color-swatch-international_orange {
+    background: #ff4f00;
+}
+
+.fast-swatch-color-indian-yellow, .isp-product-color-swatch-indian_yellow {
+    background: #e3a857;
+}
+
+.fast-swatch-color-hot-magenta, .isp-product-color-swatch-hot_magenta {
+    background: #ff1dce;
+}
+
+.fast-swatch-color-hot-pink, .isp-product-color-swatch-hot_pink {
+    background: #ff69b4;
+}
+
+.fast-swatch-color-hunter-green, .isp-product-color-swatch-hunter_green {
+    background: #355e3b;
+}
+
+.fast-swatch-color-hollywood-cerise, .isp-product-color-swatch-hollywood_cerise {
+    background: #f400a1;
+}
+
+.fast-swatch-color-harvard-crimson, .isp-product-color-swatch-harvard_crimson {
+    background: #c90016;
+}
+
+.fast-swatch-color-harvest-gold, .isp-product-color-swatch-harvest_gold {
+    background: #da9100;
+}
+
+.fast-swatch-color-golden-brown, .isp-product-color-swatch-golden_brown {
+    background: #996515;
+}
+
+.fast-swatch-color-granny-smith-apple, .isp-product-color-swatch-granny_smith_apple {
+    background: #a8e4a0;
+}
+
+.fast-swatch-color-green-blue, .isp-product-color-swatch-green_blue {
+    background: #1164b4;
+}
+
+.fast-swatch-color-green-yellow, .isp-product-color-swatch-green_yellow {
+    background: #adff2f;
+}
+
+.fast-swatch-color-gray-asparagus, .isp-product-color-swatch-gray_asparagus {
+    background: #465945;
+}
+
+.fast-swatch-color-golden-poppy, .isp-product-color-swatch-golden_poppy {
+    background: #fcc200;
+}
+
+.fast-swatch-color-golden-yellow, .isp-product-color-swatch-golden_yellow {
+    background: #ffdf00;
+}
+
+.fast-swatch-color-fuzzy-wuzzy, .isp-product-color-swatch-fuzzy_wuzzy {
+    background: #cc6666;
+}
+
+.fast-swatch-color-fuchsia-pink, .isp-product-color-swatch-fuchsia_pink {
+    background: #ff77ff;
+}
+
+.fast-swatch-color-french-lilac, .isp-product-color-swatch-french_lilac {
+    background: #86608e;
+}
+
+.fast-swatch-color-french-rose, .isp-product-color-swatch-french_rose {
+    background: #f64a8a;
+}
+
+.fast-swatch-color-fluorescent-pink, .isp-product-color-swatch-fluorescent_pink {
+    background: #ff1493;
+}
+
+.fast-swatch-color-fluorescent-yellow, .isp-product-color-swatch-fluorescent_yellow {
+    background: #ccff00;
+}
+
+.fast-swatch-color-fire-engine-red, .isp-product-color-swatch-fire_engine_red {
+    background: #ce1620;
+}
+
+.fast-swatch-color-falu-red, .isp-product-color-swatch-falu_red {
+    background: #801818;
+}
+
+.fast-swatch-color-electric-purple, .isp-product-color-swatch-electric_purple {
+    background: #bf00ff;
+}
+
+.fast-swatch-color-electric-ultramarine, .isp-product-color-swatch-electric_ultramarine {
+    background: #3f00ff;
+}
+
+.fast-swatch-color-electric-violet, .isp-product-color-swatch-electric_violet {
+    background: #8f00ff;
+}
+
+.fast-swatch-color-electric-yellow, .isp-product-color-swatch-electric_yellow {
+    background: #ffff00;
+}
+
+.fast-swatch-color-dim-gray, .isp-product-color-swatch-dim_gray {
+    background: #696969;
+}
+
+.fast-swatch-color-duke-blue, .isp-product-color-swatch-duke_blue {
+    background: #00009c;
+}
+
+.fast-swatch-color-earth-yellow, .isp-product-color-swatch-earth_yellow {
+    background: #e1a95f;
+}
+
+.fast-swatch-color-dodger-blue, .isp-product-color-swatch-dodger_blue {
+    background: #1e90ff;
+}
+
+.fast-swatch-color-dogwood-rose, .isp-product-color-swatch-dogwood_rose {
+    background: #d71868;
+}
+
+.fast-swatch-color-dollar-bill, .isp-product-color-swatch-dollar_bill {
+    background: #85bb65;
+}
+
+.fast-swatch-color-deep-saffron, .isp-product-color-swatch-deep_saffron {
+    background: #ff9933;
+}
+
+.fast-swatch-color-deep-sky-blue, .isp-product-color-swatch-deep_sky_blue {
+    background: #00bfff;
+}
+
+.fast-swatch-color-cosmic-latte, .isp-product-color-swatch-cosmic_latte {
+    background: #fff8e7;
+}
+
+.fast-swatch-color-cotton-candy, .isp-product-color-swatch-cotton_candy {
+    background: #ffbcd9;
+}
+
+.fast-swatch-color-coral-pink, .isp-product-color-swatch-coral_pink {
+    background: #f88379;
+}
+
+.fast-swatch-color-coral-red, .isp-product-color-swatch-coral_red {
+    background: #ff4040;
+}
+
+.fast-swatch-color-burnt-orange, .isp-product-color-swatch-burnt_orange {
+    background: #cc5500;
+}
+
+.fast-swatch-color-burnt-sienna, .isp-product-color-swatch-burnt_sienna {
+    background: #e97451;
+}
+
+.fast-swatch-color-burnt-umber, .isp-product-color-swatch-burnt_umber {
+    background: #8a3324;
+}
+
+.fast-swatch-color-bulgarian-rose, .isp-product-color-swatch-bulgarian_rose {
+    background: #480607;
+}
+
+.fast-swatch-color-bubble-gum, .isp-product-color-swatch-bubble_gum {
+    background: #ffc1cc;
+}
+
+.fast-swatch-color-stainless-steel, .isp-product-color-swatch-stainless_steel {
+    background: #c6c3bf;
+}
+
+.fast-swatch-color-river-rock, .isp-product-color-swatch-river_rock {
+    background: #474334;
+}
+
+.fast-swatch-color-american-rose, .isp-product-color-swatch-american_rose {
+    background: #ff033e;
+}
+
+.fast-swatch-color-air-force-blue, .isp-product-color-swatch-air_force_blue {
+    background: #5d8aa8;
+}
+
+.fast-swatch-color-alice-blue, .isp-product-color-swatch-alice_blue {
+    background: #f0f8ff;
+}
+
+.fast-swatch-color-antique-fuchsia, .isp-product-color-swatch-antique_fuchsia {
+    background: #915c83;
+}
+
+.fast-swatch-color-antique-white, .isp-product-color-swatch-antique_white {
+    background: #faebd7;
+}
+
+.fast-swatch-color-apple-green, .isp-product-color-swatch-apple_green {
+    background: #8db600;
+}
+
+.fast-swatch-color-army-green, .isp-product-color-swatch-army_green {
+    background: #4b5320;
+}
+
+.fast-swatch-color-atomic-tangerine, .isp-product-color-swatch-atomic_tangerine {
+    background: #ff9966;
+}
+
+.fast-swatch-color-brink-pink, .isp-product-color-swatch-brink_pink {
+    background: #fb607f;
+}
+
+.fast-swatch-color-british-racing-green, .isp-product-color-swatch-british_racing_green {
+    background: #004225;
+}
+
+.fast-swatch-color-cafe-noir, .isp-product-color-swatch-cafe_noir {
+    background: #4b3621;
+}
+
+.fast-swatch-color-cal-poly-pomona-green, .isp-product-color-swatch-cal_poly_pomona_green {
+    background: #1e4d2b;
+}
+
+.fast-swatch-color-cambridge-blue, .isp-product-color-swatch-cambridge_blue {
+    background: #a3c1ad;
+}
+
+.fast-swatch-color-camouflage-green, .isp-product-color-swatch-camouflage_green {
+    background: #78866b;
+}
+
+.fast-swatch-color-canary-yellow, .isp-product-color-swatch-canary_yellow {
+    background: #ffef00;
+}
+
+.fast-swatch-color-candy-apple-red, .isp-product-color-swatch-candy_apple_red {
+    background: #ff0800;
+}
+
+.fast-swatch-color-candy-pink, .isp-product-color-swatch-candy_pink {
+    background: #e4717a;
+}
+
+.fast-swatch-color-carnation-pink, .isp-product-color-swatch-carnation_pink {
+    background: #ffa6c9;
+}
+
+.fast-swatch-color-caput-mortuum, .isp-product-color-swatch-caput_mortuum {
+    background: #592720;
+}
+
+.fast-swatch-color-caribbean-green, .isp-product-color-swatch-caribbean_green {
+    background: #00cc99;
+}
+
+.fast-swatch-color-carolina-blue, .isp-product-color-swatch-carolina_blue {
+    background: #99badd;
+}
+
+.fast-swatch-color-carrot-orange, .isp-product-color-swatch-carrot_orange {
+    background: #ed9121;
+}
+
+.fast-swatch-color-cerise-pink, .isp-product-color-swatch-cerise_pink {
+    background: #ec3b83;
+}
+
+.fast-swatch-color-celestial-blue, .isp-product-color-swatch-celestial_blue {
+    background: #4997d0;
+}
+
+.fast-swatch-color-vivid-auburn, .isp-product-color-swatch-vivid_auburn {
+    background: #922724;
+}
+
+.fast-swatch-color-vivid-burgundy, .isp-product-color-swatch-vivid_burgundy {
+    background: #9f1d35;
+}
+
+.fast-swatch-color-vivid-cerise, .isp-product-color-swatch-vivid_cerise {
+    background: #da1d81;
+}
+
+.fast-swatch-color-vivid-tangerine, .isp-product-color-swatch-vivid_tangerine {
+    background: #ffa089;
+}
+
+.fast-swatch-color-vivid-violet, .isp-product-color-swatch-vivid_violet {
+    background: #9f00ff;
+}
+
+.fast-swatch-color-warm-black, .isp-product-color-swatch-warm_black {
+    background: #004242;
+}
+
+.fast-swatch-color-white-smoke, .isp-product-color-swatch-white_smoke {
+    background: #f5f5f5;
+}
+
+.fast-swatch-color-wild-blue-yonder, .isp-product-color-swatch-wild_blue_yonder {
+    background: #a2add0;
+}
+
+.fast-swatch-color-wild-strawberry, .isp-product-color-swatch-wild_strawberry {
+    background: #ff43a4;
+}
+
+.fast-swatch-color-wild-watermelon, .isp-product-color-swatch-wild_watermelon {
+    background: #fc6c85;
+}
+
+.fast-swatch-color-yellow-green, .isp-product-color-swatch-yellow_green {
+    background: #9acd32;
+}
+
+.fast-swatch-color-yellow-orange, .isp-product-color-swatch-yellow_orange {
+    background: #ffae42;
+}
+
+.fast-swatch-color-yale-blue, .isp-product-color-swatch-yale_blue {
+    background: #0f4d92;
+}
+
+.fast-swatch-color-samba-kiss, .isp-product-color-swatch-samba_kiss {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-green-multi, .isp-product-color-swatch-green_multi {
+    background: #6f743c;
+}
+
+.fast-swatch-color-sugar-rush, .isp-product-color-swatch-sugar_rush {
+    background: #ba91b9;
+}
+
+.fast-swatch-color-cornell-red, .isp-product-color-swatch-cornell_red {
+    background: #b31b1b;
+}
+
+.fast-swatch-color-flamingo-pink, .isp-product-color-swatch-flamingo_pink {
+    background: #fc8eac;
+}
+
+.fast-swatch-color-up-maroon, .isp-product-color-swatch-up_maroon {
+    background: #7b1113;
+}
+
+.fast-swatch-color-astara-merlot, .isp-product-color-swatch-astara_merlot {
+    background: #ee1212;
+}
+
+.fast-swatch-color-rebellious-edge, .isp-product-color-swatch-rebellious_edge {
+    background: #9400d3;
+}
+
+.fast-swatch-color-heather-combo, .isp-product-color-swatch-heather_combo {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-astara-black, .isp-product-color-swatch-astara_black {
+    background: #000000;
+}
+
+.fast-swatch-color-navyrose-gold, .isp-product-color-swatch-navyrose_gold {
+    background: #182373;
+}
+
+.fast-swatch-color-heather-sage, .isp-product-color-swatch-heather_sage {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-queen-of-hearts, .isp-product-color-swatch-queen_of_hearts {
+    background: #870f11;
+}
+
+.fast-swatch-color-light-purple, .isp-product-color-swatch-light_purple {
+    background: #ba91b9;
+}
+
+.fast-swatch-color-light-bluewhite, .isp-product-color-swatch-light_bluewhite {
+    background: #6577e7;
+}
+
+.fast-swatch-color-knock-em-red, .isp-product-color-swatch-knock_em_red {
+    background: #ee1212;
+}
+
+.fast-swatch-color-powder-pink, .isp-product-color-swatch-powder_pink {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-heather-greyblack, .isp-product-color-swatch-heather_greyblack {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-strawberry-jam, .isp-product-color-swatch-strawberry_jam {
+    background: #ee1212;
+}
+
+.fast-swatch-color-navy-stripe, .isp-product-color-swatch-navy_stripe {
+    background: #182373;
+}
+
+.fast-swatch-color-grey-stripe, .isp-product-color-swatch-grey_stripe {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-moss, .isp-product-color-swatch-moss {
+    background: #dac90a;
+}
+
+.fast-swatch-color-grey-combo, .isp-product-color-swatch-grey_combo {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-mustard-multi, .isp-product-color-swatch-mustard_multi {
+    background: #fffe4e;
+}
+
+.fast-swatch-color-grey-taupe, .isp-product-color-swatch-grey_taupe {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-zinnwaldite-brown, .isp-product-color-swatch-zinnwaldite_brown {
+    background: #2c1608;
+}
+
+.fast-swatch-color-baby-doll, .isp-product-color-swatch-baby_doll {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-light-nude, .isp-product-color-swatch-light_nude {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-wood-rose, .isp-product-color-swatch-wood_rose {
+    background: #c98f9d;
+}
+
+.fast-swatch-color-tea-tree, .isp-product-color-swatch-tea_tree {
+    background: #768f7c;
+}
+
+.fast-swatch-color-black-soft-white, .isp-product-color-swatch-black_soft_white {
+    background: #000000;
+}
+
+.fast-swatch-color-sandy-glow, .isp-product-color-swatch-sandy_glow {
+    background: #b68d61;
+}
+
+.fast-swatch-color-pink-multi, .isp-product-color-swatch-pink_multi {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-melange-black, .isp-product-color-swatch-melange_black {
+    background: #4b4746;
+}
+
+.fast-swatch-color-new-amber, .isp-product-color-swatch-new_amber {
+    background: #ff8c00;
+}
+
+.fast-swatch-color-oatmeal-combo, .isp-product-color-swatch-oatmeal_combo {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-light-sage, .isp-product-color-swatch-light_sage {
+    background: #56dfc1;
+}
+
+.fast-swatch-color-need-me, .isp-product-color-swatch-need_me {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-light-bluesmoke, .isp-product-color-swatch-light_bluesmoke {
+    background: #6577e7;
+}
+
+.fast-swatch-color-marled-charcoal, .isp-product-color-swatch-marled_charcoal {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-light-pinkberry, .isp-product-color-swatch-light_pinkberry {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-raspberry-tart, .isp-product-color-swatch-raspberry_tart {
+    background: #491f61;
+}
+
+.fast-swatch-color-dark-navy, .isp-product-color-swatch-dark_navy {
+    background: #182373;
+}
+
+.fast-swatch-color-off-whiteblack, .isp-product-color-swatch-off_whiteblack {
+    background: #ffffff;
+}
+
+.fast-swatch-color-hunter-multi, .isp-product-color-swatch-hunter_multi {
+    background: #28572b;
+}
+
+.fast-swatch-color-new-olive--soft-white, .isp-product-color-swatch-new_olive__soft_white {
+    background: #6f743c;
+}
+
+.fast-swatch-color-sunset-orange, .isp-product-color-swatch-sunset_orange {
+    background: #fd5e53;
+}
+
+.fast-swatch-color-tangerine-yellow, .isp-product-color-swatch-tangerine_yellow {
+    background: #fc0;
+}
+
+.fast-swatch-color-taupe-gray, .isp-product-color-swatch-taupe_gray {
+    background: #8b8589;
+}
+
+.fast-swatch-color-tea-green, .isp-product-color-swatch-tea_green {
+    background: #d0f0c0;
+}
+
+.fast-swatch-color-tea-rose, .isp-product-color-swatch-tea_rose {
+    background: #f4c2c2;
+}
+
+.fast-swatch-color-thulian-pink, .isp-product-color-swatch-thulian_pink {
+    background: #de6fa1;
+}
+
+.fast-swatch-color-teal-blue, .isp-product-color-swatch-teal_blue {
+    background: #367588;
+}
+
+.fast-swatch-color-teal-green, .isp-product-color-swatch-teal_green {
+    background: #006d5b;
+}
+
+.fast-swatch-color-terra-cotta, .isp-product-color-swatch-terra_cotta {
+    background: #e2725b;
+}
+
+.fast-swatch-color-tickle-me-pink, .isp-product-color-swatch-tickle_me_pink {
+    background: #fc89ac;
+}
+
+.fast-swatch-color-tiffany-blue, .isp-product-color-swatch-tiffany_blue {
+    background: #0abab5;
+}
+
+.fast-swatch-color-tiger-eye, .isp-product-color-swatch-tiger_eye {
+    background: #e08d3c;
+}
+
+.fast-swatch-color-titanium-yellow, .isp-product-color-swatch-titanium_yellow {
+    background: #eee600;
+}
+
+.fast-swatch-color-tractor-red, .isp-product-color-swatch-tractor_red {
+    background: #fd0e35;
+}
+
+.fast-swatch-color-tropical-rain-forest, .isp-product-color-swatch-tropical_rain_forest {
+    background: #00755e;
+}
+
+.fast-swatch-color-true-blue, .isp-product-color-swatch-true_blue {
+    background: #0073cf;
+}
+
+.fast-swatch-color-tufts-blue, .isp-product-color-swatch-tufts_blue {
+    background: #417dc1;
+}
+
+.fast-swatch-color-turkish-rose, .isp-product-color-swatch-turkish_rose {
+    background: #b57281;
+}
+
+.fast-swatch-color-turquoise-blue, .isp-product-color-swatch-turquoise_blue {
+    background: #00ffef;
+}
+
+.fast-swatch-color-turquoise-green, .isp-product-color-swatch-turquoise_green {
+    background: #a0d6b4;
+}
+
+.fast-swatch-color-tuscan-red, .isp-product-color-swatch-tuscan_red {
+    background: #66424d;
+}
+
+.fast-swatch-color-twilight-lavender, .isp-product-color-swatch-twilight_lavender {
+    background: #8a496b;
+}
+
+.fast-swatch-color-tyrian-purple, .isp-product-color-swatch-tyrian_purple {
+    background: #66023c;
+}
+
+.fast-swatch-color-ua-blue, .isp-product-color-swatch-ua_blue {
+    background: #0033aa;
+}
+
+.fast-swatch-color-ua-red, .isp-product-color-swatch-ua_red {
+    background: #d9004c;
+}
+
+.fast-swatch-color-ucla-blue, .isp-product-color-swatch-ucla_blue {
+    background: #536895;
+}
+
+.fast-swatch-color-ucla-gold, .isp-product-color-swatch-ucla_gold {
+    background: #ffb300;
+}
+
+.fast-swatch-color-ufo-green, .isp-product-color-swatch-ufo_green {
+    background: #3cd070;
+}
+
+.fast-swatch-color-ultra-pink, .isp-product-color-swatch-ultra_pink {
+    background: #ff6fff;
+}
+
+.fast-swatch-color-ultramarine-blue, .isp-product-color-swatch-ultramarine_blue {
+    background: #4166f5;
+}
+
+.fast-swatch-color-love-overdose, .isp-product-color-swatch-love_overdose {
+    background: #ee2c9f;
+}
+
+.fast-swatch-color-silk-indulgent, .isp-product-color-swatch-silk_indulgent {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-heather-greyivory, .isp-product-color-swatch-heather_greyivory {
+    background: #bebcbd;
+}
+
+.fast-swatch-color-light-rust, .isp-product-color-swatch-light_rust {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-rose-powder, .isp-product-color-swatch-rose_powder {
+    background: #f8d3e4;
+}
+
+.fast-swatch-color-poppy-red, .isp-product-color-swatch-poppy_red {
+    background: #ee1212;
+}
+
+.fast-swatch-color-white-multi, .isp-product-color-swatch-white_multi {
+    background: #ffffff;
+}
+
+.fast-swatch-color-heather-black, .isp-product-color-swatch-heather_black {
+    background: #4b4746;
+}
+
+.fast-swatch-color-med-wash, .isp-product-color-swatch-med_wash {
+    background: #0000cd;
+}
+
+.fast-swatch-color-marled-oatmeal, .isp-product-color-swatch-marled_oatmeal {
+    background: #f7eee5;
+}
+
+.fast-swatch-color-rose-goldnude, .isp-product-color-swatch-rose_goldnude {
+    background: #efd2b0;
+}
+
+.fast-swatch-color-rose-goldpink, .isp-product-color-swatch-rose_goldpink {
+    background: #eda3c4;
+}
+
+.fast-swatch-color-heather-orange, .isp-product-color-swatch-heather_orange {
+    background: #f4ac94;
+}
+
+.fast-swatch-color-grey-multi, .isp-product-color-swatch-grey_multi {
+    background: #938f90;
+}
+
+.fast-swatch-color-blue-stripe, .isp-product-color-swatch-blue_stripe {
+    background: #6577e7;
+}
+
+.fast-swatch-color-dark-wash, .isp-product-color-swatch-dark_wash {
+    background: #333;
+}
