@@ -12,7 +12,7 @@
       narrowBy: narrowBy,
       sortBy: sortBy,
       page: page,
-      productsPerPage: 16,
+      productsPerPage: 15,
       callback: (response) => {
         console.log(response);
         if (searchResultsContainer.classList.contains('fs_products_loaded')) {

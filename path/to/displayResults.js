@@ -1,17 +1,28 @@
 function displaySearchResults(results, container, searchQuery) {
+  console.log('results: ', results)
 
   // Clear previous search results
   container.innerHTML = '';
+
+  //find search results title
+  let searchTitle = document.querySelector('.fs_search_results_summary');
   let products = results.products;
   const searchResultsTitle = document.createElement('div');
   searchResultsTitle.classList.add('fs_search_results_title');
   if (searchQuery) {
     searchResultsTitle.innerText = `${searchQuery}, ${results.totalResults} results`;
   }
-  container.appendChild(searchResultsTitle);
+  if (searchTitle) {
+    // Clear previous search results title
+    searchTitle.innerHTML = '';
+    searchTitle.appendChild(searchResultsTitle)
+  }
+  // container.appendChild(searchResultsTitle);
 
   const searchResultsWrapper = document.createElement('div');
   searchResultsWrapper.classList.add('fs_search_results_wrapper');
+
+  console.log('products: ', products)
   // Iterate over the products and create the necessary HTML elements
   products.forEach((product) => {
     // Create a container for each product
@@ -105,6 +116,22 @@ function displaySearchResults(results, container, searchQuery) {
     });
     paginationBtnsWrap.appendChild(previousButton);
   }
+  //pagination numbers
+  paginationBtnsWrap.classList.add('fs_pagination_numbers');
+  for (let i = 1; i <= results.pageCount; i++) {
+    const pageNumber = document.createElement("button");
+    pageNumber.className = "pagination-number";
+    pageNumber.innerHTML = i;
+    pageNumber.setAttribute("page-index", i);
+    pageNumber.setAttribute("aria-label", "Page " + i);
+    pageNumber.addEventListener('click', function() {
+      setUrlParam('page', i);
+      window. scrollTo(0, 0);
+      pageNumber.classList.add("active");
+    });
+    paginationBtnsWrap.appendChild(pageNumber);
+  };
+
   //next btn
   if (results.pageCount && results.page && results.pageCount > 1 && results.pageCount > results.page) {
     console.log('pagination');

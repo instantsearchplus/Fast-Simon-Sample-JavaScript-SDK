@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>SDK Sample</title>
+    <title>SDK Demo Site</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="path/to/styles.css">
     <link rel="stylesheet" href="path/to/colors.css">
@@ -30,52 +30,61 @@
 
 <body>
     <div class="container">
-        <div  class="fs_logo_text">SDK sample demo site</div>
-        <div class="fs_search_bar">
-            <div class="fs_logo_wrap">
-                <img src="images/fast_simon_logo.svg" alt="Fast Simon SDK sample" class="fs_logo">
-                <!-- <span class="fs_logo_text">SDK Demo</span> -->
-            </div>
-            <div class="fs_header_container">
-                <div class="fs_header_wrapper">
-                    <div id="button-container" class="fs_collections_btn_wrapper">
-                    </div>
-                    <div class="fs_autocomplete_wrap">
-                        <form id="searchForm" class="fs_search_form">
-                            <input type="text" id="searchInput" placeholder="Find your product...">
-                            <button type="submit">&#x1F50E;&#xFE0E;</button>
-                        </form>
-                    </div>
+        <div class="main_header">
+            <div class="fs_header_wrapper">
+                <div class="fs_logo_wrap">
+                    <img src="images/fast_simon_logo.svg" alt="Fast Simon SDK sample" class="fs_logo">
                 </div>
-                <div id="productModal" class="modal">
-                    <div class="modal-content">
-                        <ul id="productList"></ul>
-                    </div>
+                <div class="fs_logo_text_wrapper">
+                    <div  class="fs_logo_text">SDK sample demo site</div>
+                </div>
+                <div class="fs_autocomplete_wrap">
+                    <form id="searchForm" class="fs_search_form">
+                        <input type="text" id="searchInput" placeholder="Find your product...">
+                        <button type="submit">&#x1F50E;&#xFE0E;</button>
+                    </form>
                 </div>
             </div>
-        </div>
-        <!-- Sort Options ID's -->
-        <!-- https://docs.fastsimon.com/sdk/docs/extra/const -->
-        <div class="fs_mobile_btns_wrap">
-            <div class="fs_filters_btn">Filters</div>
-            <div class="fs_sort_by_wrap">
-                <label for="sortBy" class="fs_sort_by_label">Sort by:</label>
-                <select id="sortBy" class="fs_sort_by_select">
-                    <option value="price_min_to_max" class="fs_sort_by_option">Price: Low to High</option>
-                    <option value="price_max_to_min" class="fs_sort_by_option">Price: High to Low</option>
-                    <option value="creation_date" class="fs_sort_by_option">Creation Date: Newest First</option>
-                    <option value="creation_date_oldest" class="fs_sort_by_option">Creation Date: Oldest First</option>
-                    <option value="popularity" class="fs_sort_by_option">Popularity</option>
-                    <option value="a_to_z" class="fs_sort_by_option">Name: A to Z</option>
-                    <option value="z_to_a" class="fs_sort_by_option">Name: Z to A</option>
-                    <option value="relevancy" class="fs_sort_by_option">Relevance</option>
-                </select>
+            <div class="fs_header_nav_wrapper">
+                <div id="button-container" class="fs_collections_btn_wrapper"/>
             </div>
         </div>
-        <div class="fs_filters_products_wrapper">
+    </div>
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <ul id="productList"></ul>
+        </div>
+    </div>
+    <!-- Sort Options ID's -->
+    <!-- https://docs.fastsimon.com/sdk/docs/extra/const -->
+
+    <div class="fs_grid_wrapper">
+        <div class="fs_filters_wrapper">
             <div id="filters" class="fs_filters_container"></div>
+        </div>
+        <div class="fs_search_results_center">
+            <div class="fs_search_results_header">
+                <div class="fs_search_results_summary"></div>
+                <div class="fs_mobile_btns_wrap">
+                    <div class="fs_filters_btn">Filters</div>
+                    <div class="fs_sort_by_wrap">
+                        <label for="sortBy" class="fs_sort_by_label">Sort by:</label>
+                        <select id="sortBy" class="fs_sort_by_select">
+                            <option value="price_min_to_max" class="fs_sort_by_option">Price: Low to High</option>
+                            <option value="price_max_to_min" class="fs_sort_by_option">Price: High to Low</option>
+                            <option value="creation_date" class="fs_sort_by_option">Creation Date: Newest First</option>
+                            <option value="creation_date_oldest" class="fs_sort_by_option">Creation Date: Oldest First</option>
+                            <option value="popularity" class="fs_sort_by_option">Popularity</option>
+                            <option value="a_to_z" class="fs_sort_by_option">Name: A to Z</option>
+                            <option value="z_to_a" class="fs_sort_by_option">Name: Z to A</option>
+                            <option value="relevancy" class="fs_sort_by_option">Relevance</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
             <div id="searchResults" class="fs_search_results_container"></div>
         </div>
+    </div>
 
         <!-- Fast Simon Product Recommendation Widget START -->
         <script

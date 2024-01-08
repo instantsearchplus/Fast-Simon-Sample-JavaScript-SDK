@@ -164,6 +164,8 @@ function displayAutocomplete(response, searchTerm) {
     // Show the modal
     if (response.products.length > 0 || response.turbolinks.length > 0) {
         productModal.style.display = 'block';
+        productModal.style.position = 'absolute';
+        productModal.style.zIndex = 100;
     } else {
         productModal.style.display = 'none';
     }

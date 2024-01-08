@@ -3,13 +3,19 @@
     color: #212529;
 }
 
+.fs_header_nav_wrapper {
+    display: flex;
+    justify-content: center;
+}
+
 .fs_header_wrapper {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .fs_header_container {
-    width: 100%;
+    /*max-height: 50px;*/
+    /*width: 100%;*/
 }
 
 .fs_search_results_wrapper {
@@ -56,7 +62,7 @@
 
 .fs_search_form {
     margin: 25px;
-    width: 100%;
+    /*width: 100%;*/
     margin-bottom: 0;
 }
 
@@ -78,23 +84,35 @@
     padding: 5px;
 }
 
-.fs_filters_products_wrapper {
+.fs_grid_wrapper {
+    width: 100%;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: 20% 75%;
+    grid-column-gap: 2%;
+    margin-top: 15px;
+}
+
+.fs_search_results_header {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    min-height: 39px;
 }
 
 .fs_filters_container {
-    min-width: 211px;
+    min-width: 20%;
     height: fit-content;
     border-right: 1px solid lightgray;
     padding: 5px;
-    margin: 25px;
+    margin: 25px auto;
     display: none;
 }
 
 .fs_label_element {
     margin-bottom: 15px;
-    font-size: 22px;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc
 }
 
 .fs_search_results_container {
@@ -128,25 +146,28 @@
 }
 
 .fs_logo_wrap {
+    width: 15%;
     margin: 25px 0;
+    padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-.fs_logo_text {
-    font-family: sans-serif !important;
-    text-align: center;
-    /* width: 100%; */
-    font-size: 16px;
-    font-weight: bold;
-    display: block;
-    margin-top: 5px;
-    border-bottom: 4px solid red;
-    padding-bottom: 2px;
+.fs_logo_text_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.fs_sort_by_wrap {
-    margin: 25px;
+.fs_logo_text {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    /*display: block;*/
+    /*margin-top: 5px;*/
+    /*border-bottom: 4px solid red;*/
+    /*padding-bottom: 2px;*/
+    /*padding-top: 4px;*/
 }
 
 .fs_filters_btn {
@@ -154,6 +175,7 @@
 }
 .fs_autocomplete_wrap {
     /* width: 100%; */
+    padding-right: 10px;
 }
 
 #productList {
@@ -196,7 +218,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    /*width: 100%;*/
 }
 
 .fs_search_form input[type="text"] {
@@ -247,7 +269,8 @@
     align-items: center;
     justify-content: flex-end;
     float: right;
-    margin-right: 5px;
+    /*margin-right: 5px;*/
+    margin: 25px;
 }
 
 .fs_collections_btn_wrapper,
@@ -311,7 +334,7 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    font-size: 24px;
+    font-size: 20px;
     color: #635a5a;
 }
 
@@ -350,7 +373,7 @@ input[type="number"] {
     color: #8a8383;
     width: 50px;
     height: 30px;
-    font-size: 20px;
+    font-size: 16px;
     border: none;
 }
 
@@ -425,6 +448,7 @@ input[type="range"] {
     box-shadow: 0 0 6px #6b6b6b;
     border: 1px solid #6b6b6b;
     width: 95%;
+    background-color: white;
 }
 
 .fs_autocomplete_links_title {
@@ -487,6 +511,7 @@ input[type="range"] {
 .fs_pagination_btns_wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .fs_load_more_btn {
@@ -501,6 +526,27 @@ input[type="range"] {
     text-decoration: underline;
 }
 
+.pagination-number,
+.pagination-button{
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .2rem;
+}
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+    text-decoration: underline;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: #0085b6;
+}
+
 @media (max-width: 768px) {
     .container {
         display: flex;
@@ -512,9 +558,6 @@ input[type="range"] {
         width: 100%;
     }
 
-    .fs_search_form {
-        width: auto;
-    }
     .fs_search_bar {
         display: flex;
         margin: 25px;
@@ -526,7 +569,7 @@ input[type="range"] {
 
     .fs_header_wrapper {
         display: flex;
-        justify-content: space-around;
+        /*justify-content: space-between;*/
         flex-direction: column;
         align-items: center;
     }
