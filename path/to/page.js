@@ -56,6 +56,8 @@ function initPage() {
     } else {
         smartCollectionsInit();
     }
+    //init recommendation
+    recommendationsInit();
     prevUrl.push(convertUrl());
 }
 

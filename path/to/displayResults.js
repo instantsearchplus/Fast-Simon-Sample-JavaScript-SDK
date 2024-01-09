@@ -1,6 +1,4 @@
 function displaySearchResults(results, container, searchQuery) {
-  console.log('results: ', results)
-
   // Clear previous search results
   container.innerHTML = '';
 
@@ -22,7 +20,6 @@ function displaySearchResults(results, container, searchQuery) {
   const searchResultsWrapper = document.createElement('div');
   searchResultsWrapper.classList.add('fs_search_results_wrapper');
 
-  console.log('products: ', products)
   // Iterate over the products and create the necessary HTML elements
   products.forEach((product) => {
     // Create a container for each product
@@ -105,7 +102,6 @@ function displaySearchResults(results, container, searchQuery) {
   let pageNumber = results.page;
   //previous btn
   if (results.pageCount && results.page && results.pageCount > 1 && results.page > 1) {
-    console.log('pagination');
     const previousButton = document.createElement('button');
     previousButton.classList.add('fs_load_more_btn');
     previousButton.textContent = '< Previous page';
@@ -118,7 +114,14 @@ function displaySearchResults(results, container, searchQuery) {
   }
   //pagination numbers
   paginationBtnsWrap.classList.add('fs_pagination_numbers');
-  for (let i = 1; i <= results.pageCount; i++) {
+  let startPage = 1;
+  let endPage = results.pageCount;
+  if(pageNumber - 2 > 1)
+    startPage = pageNumber - 2;
+  if(pageNumber + 2 < results.pageCount)
+    endPage = startPage + 4;
+
+  for (let i = startPage; i <= endPage; i++) {
     const pageNumber = document.createElement("button");
     pageNumber.className = "pagination-number";
     pageNumber.innerHTML = i;
@@ -129,12 +132,18 @@ function displaySearchResults(results, container, searchQuery) {
       window. scrollTo(0, 0);
       pageNumber.classList.add("active");
     });
+    const currentPage = getUrlParam('page');
+    if (i == currentPage) {
+      pageNumber.classList.add("active");
+    }
+    else {
+      pageNumber.classList.remove("active");
+    }
     paginationBtnsWrap.appendChild(pageNumber);
   };
 
   //next btn
   if (results.pageCount && results.page && results.pageCount > 1 && results.pageCount > results.page) {
-    console.log('pagination');
     const nextButton = document.createElement('button');
     nextButton.classList.add('fs_load_more_btn');
     nextButton.textContent = 'Next page >';
