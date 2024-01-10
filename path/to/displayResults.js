@@ -97,63 +97,7 @@ function displaySearchResults(results, container, searchQuery) {
   });
 
   //pagination
-  const paginationBtnsWrap = document.createElement('div');
-  paginationBtnsWrap.classList.add('fs_pagination_btns_wrapper');
-  let pageNumber = results.page;
-  //previous btn
-  if (results.pageCount && results.page && results.pageCount > 1 && results.page > 1) {
-    const previousButton = document.createElement('button');
-    previousButton.classList.add('fs_load_more_btn');
-    previousButton.textContent = '< Previous page';
-    previousButton.addEventListener('click', function() {
-      pageNumber--;
-      setUrlParam('page', pageNumber);
-      window. scrollTo(0, 0);
-    });
-    paginationBtnsWrap.appendChild(previousButton);
-  }
-  //pagination numbers
-  paginationBtnsWrap.classList.add('fs_pagination_numbers');
-  let startPage = 1;
-  let endPage = results.pageCount;
-  if(pageNumber - 2 > 1)
-    startPage = pageNumber - 2;
-  if(pageNumber + 2 < results.pageCount)
-    endPage = startPage + 4;
+  displayPagination(results, container);
 
-  for (let i = startPage; i <= endPage; i++) {
-    const pageNumber = document.createElement("button");
-    pageNumber.className = "pagination-number";
-    pageNumber.innerHTML = i;
-    pageNumber.setAttribute("page-index", i);
-    pageNumber.setAttribute("aria-label", "Page " + i);
-    pageNumber.addEventListener('click', function() {
-      setUrlParam('page', i);
-      window. scrollTo(0, 0);
-      pageNumber.classList.add("active");
-    });
-    const currentPage = getUrlParam('page');
-    if (i == currentPage) {
-      pageNumber.classList.add("active");
-    }
-    else {
-      pageNumber.classList.remove("active");
-    }
-    paginationBtnsWrap.appendChild(pageNumber);
-  };
-
-  //next btn
-  if (results.pageCount && results.page && results.pageCount > 1 && results.pageCount > results.page) {
-    const nextButton = document.createElement('button');
-    nextButton.classList.add('fs_load_more_btn');
-    nextButton.textContent = 'Next page >';
-    nextButton.addEventListener('click', function() {
-      pageNumber++;
-      setUrlParam('page', pageNumber);
-      window. scrollTo(0, 0);
-    });
-    paginationBtnsWrap.appendChild(nextButton);
-  }
-  container.appendChild(paginationBtnsWrap);
   searchResultsContainer.classList.add('fs_products_loaded');
 }
