@@ -1,5 +1,5 @@
 /* Container for the recommendation widget */
-  .recommendation-widget {
+  .fs-recommendation-widget {
     background-color: transparent;
     text-align: center;
     min-height: 295px;
@@ -21,15 +21,16 @@
   /* Recommendation item */
   .recommendation-item {
     background-color: #fff;
-    padding: 3px;
+    /*padding: 3px;*/
     margin: 3px 0;
     border-radius: 8px;
-    width: 180px;
+    width: 130px;
   }
 
   .recommendation-item img {
-    height: 206.67px;
-    width: 140px;
+    /*height: 206.67px;*/
+    height: 250px;
+    width: 130px;
     border-radius: 4px;
   }
 
@@ -43,7 +44,7 @@
 
   /* Recommendation item price */
   .recommendation-item .recommendation-price {
-    width: 140px;
+    /*width: 140px;*/
     height:18px;
     font-size: 14px;
     margin: 5px 0;
@@ -54,33 +55,48 @@
     text-align: center;
   }
 
-  .carousel-container {
+  .fs-recommendation-widget-products-container {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
   }
-
   .recommendation-list {
     display: flex;
     transition: transform 0.5s ease;
     position: relative;
+    /*transform: translateX(600px);*/
+    cursor: grab;
+    transform: translate3d(0px, 0px, 0px);
+    transition-duration: 0ms;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    z-index: 100;
   }
 
   .recommendation-item {
     text-align: center;
     background: transparent;
-    margin: 0 5px;
+    margin: 0 20px;
+    z-index: 10;
   }
+
   .recommendation-title {
     text-align: left;
     color: #727272;
-    width: 140px;
+    /*width: 140px;*/
     height:31.33px;
     font-size: 14px;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-
   }
+
   .recommendation-price {
     text-align: left;
     color: #212121;
@@ -91,10 +107,19 @@
 
   .carousel-container {
     padding: 3px;
-    overflow-x: scroll;
+    /*overflow-x: scroll;*/
     min-height: 320px;
     /*   overflow: scroll; */
     /*   -webkit-overflow-scrolling: touch;  */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    align-items: center;
+    justify-content: center;
   }
 
   .carousel-container::-webkit-scrollbar {
@@ -110,5 +135,73 @@
   }
 
   .scroll-container {
-    width: 600px;
+    /*width: 600px;*/
   }
+
+  /* pagination */
+  .pagination-wrapper {
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: #222222;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pagination-container {
+    position: relative;
+    left: 40%;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .pagination-container span{
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.4s ease;
+  }
+  .pagination-container span.active{
+    background-color: black;
+  }
+  .pagination-container span:before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    right: 3px;
+    bottom: 3px;
+    background: lightgrey;
+    border-radius: 50%;
+  }
+
+.fs_recommendation_arrow{
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    font-weight: bolder;
+    /*z-index: 1000;*/
+
+
+    /*background: none;*/
+    /*border: none;*/
+    /*outline: none;*/
+    /*cursor: pointer;*/
+    /*font-size: 2em;*/
+    /*color: #000;*/
+    /*font-weight: 700;*/
+}

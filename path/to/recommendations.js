@@ -1,7 +1,7 @@
 // SDK Fast Simon recommendations usage
 function recommendationsInit() {
     console.log('recommendations')
-    const widgetContainer = document.querySelector('.recommendation-widget')
+    const widgetContainer = document.querySelector('.fs-recommendation-widget')
     widgetContainer.innerHTML = '';
     setTimeout(() => {
         window.FastSimonSDK.initialization({
@@ -36,7 +36,7 @@ function fetchProducts() {
         specs: [
             {
                 sources: ['related_recently_viewed', 'related_views', 'similar_products_by_attributes', 'related_cart', 'related_purchase', 'related_recent_products', 'related_top_products'],
-                maxSuggestions: 5,
+                maxSuggestions: 8,
                 widgetID: "my-widget"
             }
         ],
@@ -60,7 +60,6 @@ function fetchProducts() {
                                 href: productDetail.u
                             };
                         });
-
                         renderRecommendationWidget(recommendationItems);
                     }
                 }
@@ -70,7 +69,8 @@ function fetchProducts() {
 }
 
 function renderRecommendationWidget(recommendationItems) {
-    const widgetContainer = document.querySelector('.recommendation-widget');
+    console.log('render')
+    const mainWidgetContainer = document.querySelector('.fs-recommendation-widget');
     const carouselContainer = document.createElement('div');
     carouselContainer.className = 'carousel-container';
 
@@ -79,12 +79,73 @@ function renderRecommendationWidget(recommendationItems) {
     widgetHeading.className = 'fs-title';
     widgetHeading.textContent = "You may also like";
 
+    const productsContainer = document.createElement("div");
+    productsContainer.className = "fs-recommendation-widget-products-container";
+
     // Create a list to hold the recommendation items
     const recommendationList = document.createElement('div')
     recommendationList.className = 'recommendation-list'
+    let dotNumber = 1;
+    setUrlParam('widgetSlide', dotNumber, false);
+    console.log(url.searchParams.get('widgetSlide'))
 
-    // Iterate through the recommendation items and create list items
-    recommendationItems.forEach((item) => {
+    const imageNumPerSlide = 2;
+    const numberOfDots = Math.ceil(recommendationItems.length/imageNumPerSlide);
+
+    if (recommendationItems && recommendationItems.length > 0) {
+        //add prev and next buttons
+        const prevBtn = document.createElement('a');
+        prevBtn.classList.add('fs_recommendation_arrow');
+        prevBtn.textContent = '<';
+
+        const nextBtn = document.createElement('a');
+        nextBtn.classList.add('fs_recommendation_arrow');
+        nextBtn.textContent = '>';
+
+        prevBtn.addEventListener('click', function() {
+             let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
+             dotNumber--;
+             recommendationItemsElements.forEach((item, index) => {
+                 console.log(item, index)
+                 console.log(recommendationItems.length, dotNumber)
+                let numOfProductsToMove = imageNumPerSlide * (dotNumber - 1);
+                 console.log(numOfProductsToMove)
+                 let newTransform = "translate3d(-" + numOfProductsToMove*166 + "px, 0px, 0px)"
+                 item.style.transform = newTransform
+                 console.log(newTransform)
+                 nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+            })
+             prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber > 1 ? "visible" : "hidden";
+             setUrlParam('widgetSlide', dotNumber, false);
+             console.log(url.searchParams.get('widgetSlide'))
+             nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+        });
+        prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber > 1 ? "visible" : "hidden";
+
+
+        nextBtn.addEventListener('click', function () {
+            let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
+            setUrlParam('widgetSlide', dotNumber,false);
+            recommendationItemsElements.forEach((item, index) => {
+                console.log(item, index)
+                console.log(recommendationItems.length, dotNumber)
+                let numOfProductsToMove = imageNumPerSlide * dotNumber;
+                console.log(numOfProductsToMove)
+                let newTransform = "translate3d(-" + numOfProductsToMove*166 + "px, 0px, 0px)"
+                item.style.transform = newTransform
+                console.log(newTransform)
+                prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber + 1 > 0 ? "visible" : "hidden";
+            })
+            dotNumber++;
+            nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+            setUrlParam('widgetSlide', dotNumber,false);
+            console.log(url.searchParams.get('widgetSlide'))
+        });
+
+        nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+
+        // Iterate through the recommendation items and create list items
+        recommendationItems.forEach((item) => {
         const listItem = document.createElement('div')
         listItem.className = 'recommendation-item'
 
@@ -119,15 +180,62 @@ function renderRecommendationWidget(recommendationItems) {
         recommendationList.appendChild(listItem)
     })
 
-    if (recommendationItems && recommendationItems.length > 0) {
-        widgetContainer.style.display = 'flex'
+        mainWidgetContainer.style.display = 'flex'
+        carouselContainer.appendChild(prevBtn);
+        carouselContainer.appendChild(productsContainer);
         // Append recommendation list to the carousel container
-        carouselContainer.appendChild(recommendationList)
+        productsContainer.appendChild(recommendationList)
         // Append the heading and carousel container to the widget container
-        widgetContainer.appendChild(widgetHeading);
-        widgetContainer.appendChild(carouselContainer);
+        mainWidgetContainer.appendChild(widgetHeading);
+        mainWidgetContainer.appendChild(carouselContainer);
 
+        const paginationWrapper = document.createElement('div');
+        paginationWrapper.className = "pagination-wrapper";
+        const paginationContainer = document.createElement('div');
+        paginationContainer.className = "pagination-container";
+        paginationWrapper.appendChild(paginationContainer);
+
+        let recommendationListElem = document.querySelector(".recommendation-list");
+        recommendationListElem.style.width = imageNumPerSlide * 166 + "px";
+
+        for(let i=1; i <= numberOfDots; i++){
+            const dotElement = document.createElement('span')
+            dotElement.className = "pagination-dot-"+i;
+            // Add a click event listener to the dot element
+            dotElement.addEventListener('click', () => {
+                paginationWrapper.querySelectorAll("[class^='pagination-dot-']").forEach((d) => {
+                    d.classList.remove("active");
+                })
+                dotElement.classList.add("active");
+                //check if to transform to the new dot
+                let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
+                recommendationItemsElements.forEach((item, index) => {
+                    console.log(item, index)
+                    console.log(recommendationItems.length, dotNumber)
+                    let numOfProductsToMove = imageNumPerSlide * (i - 1);
+                    console.log(numOfProductsToMove)
+                    let newTransform = "translate3d(-" + numOfProductsToMove*166 + "px, 0px, 0px)"
+                    item.style.transform = newTransform
+                    console.log(newTransform)
+                })
+                console.log(recommendationListElem.style.transform)
+                dotNumber = i;
+                setUrlParam('widgetSlide', dotNumber, false);
+                console.log(url.searchParams.get('widgetSlide'))
+
+                nextBtn.style.visibility = i === numberOfDots ? "hidden" : "visible";
+                prevBtn.style.visibility = i === 1 ? "hidden" : "visible";
+            })
+            paginationContainer.appendChild(dotElement);
+        }
+
+
+
+        carouselContainer.appendChild(nextBtn);
+
+        mainWidgetContainer.appendChild(paginationWrapper);
         // Append the widget container to the document or a specific element
-        document.body.appendChild(widgetContainer);
+        document.body.appendChild(mainWidgetContainer);
     }
+
 }
