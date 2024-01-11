@@ -63,6 +63,9 @@ function displaySearchResults(results, container, searchQuery) {
       productContainer.appendChild(productName);
     }
 
+    const productPriceContainer = document.createElement('div');
+    productPriceContainer.classList.add('fs_product_price_container');
+
     //price
     if (product.p && product.c) {
       const productPrice = document.createElement('span');
@@ -71,7 +74,7 @@ function displaySearchResults(results, container, searchQuery) {
       if (product.c == 'USD') {
         productPrice.innerText = `$${productPrice.innerText}`;
       }
-      productContainer.appendChild(productPrice);
+      productPriceContainer.appendChild(productPrice)
     }
 
     //compare price
@@ -82,7 +85,11 @@ function displaySearchResults(results, container, searchQuery) {
       if (product.c == 'USD') {
         productComparePrice.innerText = `$${productComparePrice.innerText}`;
       }
-      productContainer.appendChild(productComparePrice);
+      productPriceContainer.appendChild(productComparePrice);
+    }
+
+    if (productPriceContainer.hasChildNodes()) {
+      productContainer.appendChild(productPriceContainer);
     }
 
     //colorswatches
