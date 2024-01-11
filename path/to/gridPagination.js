@@ -29,7 +29,7 @@ function createPageNumBtn(paginationBtnsWrap, pageNumber, active){
 function createArrowsBtns(paginationBtnsWrap, prev, pageNumber){
   const arrowBtn = document.createElement('a');
   arrowBtn.classList.add('fs_load_more_btn');
-  arrowBtn.textContent = prev ? '<' : '>';
+  arrowBtn.innerHTML = prev ? '&#129136;' : '&#129138;';
   arrowBtn.addEventListener('click', function() {
     prev ? pageNumber-- : pageNumber++;
     setUrlParam('page', pageNumber);
