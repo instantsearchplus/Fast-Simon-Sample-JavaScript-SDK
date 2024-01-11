@@ -89,8 +89,18 @@
     text-align: left;
     color: #727272;
     /*width: 140px;*/
-    height:31.33px;
+    /*height:31.33px;*/
+    font-size: 38px;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .product-title {
+    text-align: left;
     font-size: 14px;
+    color: #727272;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
@@ -159,14 +169,16 @@
   .pagination-container span{
     display: inline-block;
     position: relative;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.4s ease;
+    background-color: black;
+    opacity: 0.2;
   }
   .pagination-container span.active{
-    background-color: black;
+    opacity: 0.5;
   }
   .pagination-container span:before {
     content: "";
@@ -175,7 +187,6 @@
     left: 3px;
     right: 3px;
     bottom: 3px;
-    background: lightgrey;
     border-radius: 50%;
   }
 
