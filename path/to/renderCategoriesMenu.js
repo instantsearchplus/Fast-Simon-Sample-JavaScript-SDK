@@ -6,7 +6,7 @@ function renderCategoriesMenu() {
         const container = document.getElementById('button-container');
 
         // Iterate over the response array and create buttons
-        response.forEach(item => {
+        response.filter(item => item.t != null).forEach(item => {
             const collectionButton = document.createElement('button');
             collectionButton.classList.add('fs_collections_btn');
             if(item.l == 'all-products') {

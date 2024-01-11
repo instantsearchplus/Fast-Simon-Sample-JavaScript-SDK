@@ -24,13 +24,13 @@
     /*padding: 3px;*/
     margin: 3px 0;
     border-radius: 8px;
-    width: 130px;
+    width: 200px;
   }
 
   .recommendation-item img {
     /*height: 206.67px;*/
-    height: 250px;
-    width: 130px;
+    height: 320px;
+    width: 200px;
     border-radius: 4px;
   }
 
@@ -156,6 +156,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
   }
   .pagination-container {
     position: relative;
@@ -205,14 +206,4 @@
     text-decoration: none;
     color: #000;
     font-weight: bolder;
-    /*z-index: 1000;*/
-
-
-    /*background: none;*/
-    /*border: none;*/
-    /*outline: none;*/
-    /*cursor: pointer;*/
-    /*font-size: 2em;*/
-    /*color: #000;*/
-    /*font-weight: 700;*/
 }

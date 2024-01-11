@@ -34,7 +34,7 @@ function fetchProducts() {
         specs: [
             {
                 sources: ['related_recently_viewed', 'related_views', 'similar_products_by_attributes', 'related_cart', 'related_purchase', 'related_recent_products', 'related_top_products'],
-                maxSuggestions: 15,
+                maxSuggestions: 12,
                 widgetID: "my-widget"
             }
         ],
@@ -76,6 +76,43 @@ function activeCarouselDot(paginationContainer, currentDot) {
       })
 }
 
+function onPaginationButtonClick(paginationContainer, buttonElement, position, imageNumPerSlide, numberOfDots, clickedDot){
+    buttonElement.addEventListener('click', function () {
+        let dotNumber = clickedDot ? clickedDot : getUrlParam('widgetSlide')
+        let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
+        recommendationItemsElements.forEach((item) => {
+            let numOfProductsToMove =
+                position == "right" ? imageNumPerSlide * dotNumber :
+                    (position == "dot" ? imageNumPerSlide * (dotNumber - 1) : imageNumPerSlide * (dotNumber-2));
+            let newTransform = "translate3d(-" + numOfProductsToMove * 240 + "px, 0px, 0px)";
+            item.style.transform = newTransform;
+        })
+        if(position == "right"){
+            let prevBtn = document.querySelector('.fa-arrow-left');
+            prevBtn.style.visibility = recommendationItemsElements.length > 1 && dotNumber + 1 > 0 ? "visible" : "hidden";
+            dotNumber++;
+            buttonElement.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+        }
+        else{
+            if(position == "left") {
+                dotNumber--;
+                let nextBtn = document.querySelector('.fa-arrow-right');
+                nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+                buttonElement.style.visibility = recommendationItemsElements.length > 1 && dotNumber > 1 ? "visible" : "hidden";
+            }
+            else{
+                //dot clicked
+                let nextBtn = document.querySelector('.fa-arrow-right');
+                let prevBtn = document.querySelector('.fa-arrow-left');
+                nextBtn.style.visibility = dotNumber === numberOfDots ? "hidden" : "visible";
+                prevBtn.style.visibility = dotNumber == 1 ? "hidden" : "visible";
+            }
+        }
+        setUrlParam('widgetSlide', dotNumber,false);
+        activeCarouselDot(paginationContainer, dotNumber);
+    });
+}
+
 function renderRecommendationWidget(recommendationItems) {
     const mainWidgetContainer = document.querySelector('.fs-recommendation-widget');
     const carouselContainer = document.createElement('div');
@@ -89,12 +126,13 @@ function renderRecommendationWidget(recommendationItems) {
     const productsContainer = document.createElement("div");
     productsContainer.className = "fs-recommendation-widget-products-container";
 
+    const imageNumPerSlide = 4;
+    const numberOfDots = Math.ceil(recommendationItems.length/imageNumPerSlide);
+
     // Create a list to hold the recommendation items
     const recommendationList = document.createElement('div')
     recommendationList.className = 'recommendation-list'
-
-    const imageNumPerSlide = 4;
-    const numberOfDots = Math.ceil(recommendationItems.length/imageNumPerSlide);
+    recommendationList.style.width = imageNumPerSlide * 240 + "px";
 
     if (recommendationItems && recommendationItems.length > 0) {
         let dotNumber = 1;
@@ -106,50 +144,6 @@ function renderRecommendationWidget(recommendationItems) {
         const paginationContainer = document.createElement('div');
         paginationContainer.className = "pagination-container";
         paginationWrapper.appendChild(paginationContainer);
-
-        //create prev and next buttons
-        const prevBtn = document.createElement('a');
-        prevBtn.classList.add('fa-arrow-left')
-        prevBtn.classList.add('fs_recommendation_arrow');
-        prevBtn.innerHTML = '&#129136;';
-
-        const nextBtn = document.createElement('a');
-        nextBtn.classList.add('fs_recommendation_arrow');
-        prevBtn.classList.add('fa-arrow-right')
-        nextBtn.innerHTML = '&#129138;';
-
-        prevBtn.addEventListener('click', function() {
-             let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
-             dotNumber--;
-             recommendationItemsElements.forEach((item, index) => {
-                let numOfProductsToMove = imageNumPerSlide * (dotNumber - 1);
-                 let newTransform = "translate3d(-" + numOfProductsToMove*166 + "px, 0px, 0px)"
-                 item.style.transform = newTransform
-                 nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
-            })
-             prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber > 1 ? "visible" : "hidden";
-             setUrlParam('widgetSlide', dotNumber, false);
-             nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
-             activeCarouselDot(paginationContainer, dotNumber);
-        });
-        prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber > 1 ? "visible" : "hidden";
-
-
-        nextBtn.addEventListener('click', function () {
-            let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
-            setUrlParam('widgetSlide', dotNumber,false);
-            recommendationItemsElements.forEach((item, index) => {
-                let numOfProductsToMove = imageNumPerSlide * dotNumber;
-                let newTransform = "translate3d(-" + numOfProductsToMove*166 + "px, 0px, 0px)"
-                item.style.transform = newTransform
-                prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber + 1 > 0 ? "visible" : "hidden";
-            })
-            dotNumber++;
-            nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
-            setUrlParam('widgetSlide', dotNumber,false);
-            activeCarouselDot(paginationContainer, dotNumber);
-        });
-        nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
 
         // Iterate through the recommendation items and create list items
         recommendationItems.forEach((item) => {
@@ -187,50 +181,44 @@ function renderRecommendationWidget(recommendationItems) {
             recommendationList.appendChild(listItem)
         })
 
+        // Append recommendation list to the carousel container
+        productsContainer.appendChild(recommendationList)
+
+        //create prev and next buttons
+        const prevBtn = document.createElement('a');
+        prevBtn.classList.add('fa-arrow-left')
+        prevBtn.classList.add('fs_recommendation_arrow');
+        prevBtn.innerHTML = '&#129136;';
+
+        const nextBtn = document.createElement('a');
+        nextBtn.classList.add('fs_recommendation_arrow');
+        nextBtn.classList.add('fa-arrow-right')
+        nextBtn.innerHTML = '&#129138;';
+
+        onPaginationButtonClick(paginationContainer, prevBtn, "left", imageNumPerSlide, numberOfDots)
+        prevBtn.style.visibility = recommendationItems.length > 1 && dotNumber > 1 ? "visible" : "hidden";
+
+        onPaginationButtonClick(paginationContainer, nextBtn, "right", imageNumPerSlide, numberOfDots)
+        nextBtn.style.visibility = dotNumber < numberOfDots ? "visible" : "hidden";
+
         mainWidgetContainer.style.display = 'flex'
         carouselContainer.appendChild(prevBtn);
         carouselContainer.appendChild(productsContainer);
-        // Append recommendation list to the carousel container
-        productsContainer.appendChild(recommendationList)
         // Append the heading and carousel container to the widget container
         mainWidgetContainer.appendChild(widgetHeading);
         mainWidgetContainer.appendChild(carouselContainer);
-
-
-
-        let recommendationListElem = document.querySelector(".recommendation-list");
-        recommendationListElem.style.width = imageNumPerSlide * 174 + "px";
 
         for(let i=1; i <= numberOfDots; i++){
             const dotElement = document.createElement('span')
             dotElement.className = "pagination-dot-"+i;
             // Add a click event listener to the dot element
-            dotElement.addEventListener('click', () => {
-                paginationWrapper.querySelectorAll("[class^='pagination-dot-']").forEach((d) => {
-                    d.classList.remove("active");
-                })
-                dotElement.classList.add("active");
-                //check if to transform to the new dot
-                let recommendationItemsElements = document.querySelectorAll('.recommendation-item');
-                recommendationItemsElements.forEach((item, index) => {
-                    let numOfProductsToMove = imageNumPerSlide * (i - 1);
-                    let newTransform = "translate3d(-" + numOfProductsToMove*166 + "px, 0px, 0px)"
-                    item.style.transform = newTransform
-                })
-                dotNumber = i;
-                setUrlParam('widgetSlide', dotNumber, false);
-
-                nextBtn.style.visibility = i === numberOfDots ? "hidden" : "visible";
-                prevBtn.style.visibility = i === 1 ? "hidden" : "visible";
-            })
+            onPaginationButtonClick(paginationContainer, dotElement, "dot", imageNumPerSlide, numberOfDots, i)
             paginationContainer.appendChild(dotElement);
         }
-
         carouselContainer.appendChild(nextBtn);
         mainWidgetContainer.appendChild(paginationWrapper);
 
         activeCarouselDot(paginationContainer, dotNumber);
-
         // Append the widget container to the document or a specific element
         document.body.appendChild(mainWidgetContainer);
     }
