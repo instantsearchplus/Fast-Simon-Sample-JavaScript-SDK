@@ -54,7 +54,8 @@ function fetchProducts() {
                                 regularPrice: "$" + productDetail.p_c,
                                 imageUrl: productDetail.t,
                                 imageUrl2: productDetail.t2,
-                                href: productDetail.u
+                                href: productDetail.u,
+                                vra: productDetail.vra
                             };
                         });
                         renderRecommendationWidget(recommendationItems);
@@ -152,6 +153,7 @@ function renderRecommendationWidget(recommendationItems) {
 
             // Create an image element for the product image
             const image = document.createElement('img')
+            image.className = 'fs_product_image';
             image.src = getOptimizedImageURL(item.imageUrl)
             // image.src = item.imageUrl;
             image.alt = item.title
@@ -176,7 +178,10 @@ function renderRecommendationWidget(recommendationItems) {
             listItem.appendChild(image)
             listItem.appendChild(priceParagraph)
             listItem.appendChild(productLink)
-
+            //colorswatches
+            if (item && item.vra && item.vra.length > 1) {
+              showColorswatches(item, listItem);
+            }
             // Append the list item to the recommendation list
             recommendationList.appendChild(listItem)
         })
