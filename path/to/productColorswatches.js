@@ -12,7 +12,7 @@ function showColorswatches(product, productContainer) {
             swatchElement.classList.add(`${swatchClass}`);
             swatchElement.style.backgroundColor = colorName;
             // Add event listener to the color swatch
-            swatchElement.addEventListener('mouseover', () => {
+            swatchElement.addEventListener('click', () => {
                 // Perform actions when color swatch is clicked
                 console.log(`Selected color: ${colorName}`);
                 // Add your logic here for handling the selected color

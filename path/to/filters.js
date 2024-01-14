@@ -117,7 +117,7 @@ function createPriceSlider() {
   // Create the parent container element
   priceSlider = document.createElement('div');
 
-  const elementString = '<div class="range_container"><div class="sliders_control"><input id="fromSlider" type="range" value="10" min="0" max="100"/><input id="toSlider" type="range" value="40" min="0" max="100"/></div ><div class="form_control"><div class="form_control_container"><div class="form_control_container__time">Min</div><input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100" /></div><div class="form_control_container"><div class="form_control_container__time">Max</div><input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100" /></div></div></div >';
+  const elementString = '<div class="range_container"><div class="sliders_control"><input id="fromSlider" type="range" value="10" min="0" max="100"/><input id="toSlider" type="range" value="40" min="0" max="100"/></div ><div class="form_control"><div class="form_control_container"><div class="form_control_container__time">Min</div><span>$</span><input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100" /></div><div class="form_control_container"><span>$</span><div class="form_control_container__time">Max</div><input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100" /></div></div></div >';
 
   // Create a temporary container element
   const container = document.createElement('div');
@@ -286,6 +286,61 @@ function priceSliderHandle() {
   }
 }
 
+function displaySizeFilter(facet, filterContainer) {
+  const sizeData = facet;
+  // Get the container element to hold the sizes
+  const sizesContainer = document.createElement('div');
+  sizesContainer.classList.add('fs_sizes_wrap');
+
+  // Get the array of color swatches from the data
+  const sizes = sizeData[1];
+  let selectedSizeOptions = getSelectedFilterByName('size');
+
+  // Iterate over the color swatches array and create the HTML elements
+  sizes.forEach(size => {
+    const [sizeName, count] = size;
+
+    // Create the color swatch element
+    const sizeElement = document.createElement('div');
+    sizeElement.classList.add('fs_size');
+    sizeElement.innerHTML = sizeName;
+
+    if (selectedSizeOptions.has(sizeName)) {
+      sizeElement.classList.add('fs_size_selected');
+    }
+
+    // Add event listener to the size element
+    sizeElement.addEventListener('click', () => {
+      // Perform actions when color swatch is clicked
+      const selectedSize = `${sizeName}`;
+
+      // Get the existing color query parameter values
+      let existingSizes = getSelectedFilterByName('size');
+
+      if (sizeElement.classList.contains('fs_size_selected')) {
+        sizeElement.classList.remove('fs_size_selected');
+        existingSizes.delete(selectedSize);
+      } else {
+        sizeElement.classList.add('fs_size_selected');
+        existingSizes.add(selectedSize);
+      }
+
+      // Update the URL query parameters with the updated colors list
+      if (existingSizes.size) {
+        // url.searchParams.set('color', Array.from(existingColors));
+        setUrlParam('size', Array.from(existingSizes));
+      } else {
+        // url.searchParams.delete('color');
+        removeUrlParam('size');
+      }
+    });
+
+    // Add the sizes to the container
+    sizesContainer.appendChild(sizeElement);
+  });
+  filterContainer.appendChild(sizesContainer);
+}
+
 //Show filters
 function displayFilters(facets) {
   console.log('facets', facets);
@@ -308,6 +363,8 @@ function displayFilters(facets) {
     filterContainer.classList.add('fs_filter_container');
 
     // Create a label element for the filter
+    const labelContainer = document.createElement("div");
+    labelContainer.classList.add('fs_label_container');
     const labelElement = document.createElement("label");
     labelElement.classList.add('fs_label_element');
     labelElement.setAttribute("name", `${facet[0]}`);
@@ -315,9 +372,33 @@ function displayFilters(facets) {
     if (facet[0] == "Price_max") {
       labelElement.textContent = 'Price';
     }
-    // Assuming the first element of the facet array represents the filter label
-    filterContainer.appendChild(labelElement);
+    const labelCollapsed = document.createElement("a");
+    labelCollapsed.classList.add('fs_collapsed');
+    labelCollapsed.innerHTML = '&#11167;';
+    labelContainer.appendChild(labelElement);
+    labelContainer.appendChild(labelCollapsed)
 
+    // Assuming the first element of the facet array represents the filter label
+    filterContainer.appendChild(labelContainer);
+
+    labelContainer.addEventListener("click",  ()=> {
+      labelContainer.classList.toggle("fs_collapsed_active");
+      var labelArrow = labelContainer.querySelector('.fs_collapsed');
+
+      var content = labelContainer.nextElementSibling;
+      if (content.style.display !== "none") {
+        content.style.display = "none";
+        labelArrow.innerHTML = '&#11165;';
+      } else {
+        if(facet[0] == "Isp-color-family" || facet[0] == "Size"){
+          content.style.display = "flex";
+        }
+        else {
+          content.style.display = "block";
+        }
+        labelArrow.innerHTML = '&#11167;';
+      }
+    })
     //price slider
     if (facet[0] == "Price_min") {
       minPrice = facet[1][0];
@@ -395,47 +476,53 @@ function displayFilters(facets) {
       });
       filterContainer.appendChild(colorSwatchesContainer);
     } else {
-
-      // Create checkboxes for each filter option
-      for (let j = 0; j < facet[1].length; j++) {
-        if (facet[0] == "Price_max") {
-          continue;
-        }
-        const option = facet[1][j][0]; // Assuming the filter options are strings
-        const count = facet[1][j][1];
-
-        const checkboxWrap = document.createElement("div");
-        checkboxWrap.classList.add('fs_filter_checkbox_wrap');
-        const checkboxCount = document.createElement("span");
-        checkboxCount.classList.add('fs_filter_checkbox_count');
-        checkboxCount.innerText = `(${count})`;
-        const checkboxElement = document.createElement("input");
-        checkboxElement.type = "checkbox";
-        checkboxElement.classList.add('fs_filter_checkbox');
-        checkboxElement.value = option;
-        checkboxElement.setAttribute("key", `${facet[0]}`);
-        checkboxElement.setAttribute("name", `${facet[2]}`);
-        // Add event listener to handle checkbox selection
-        checkboxElement.addEventListener("change", () => handleCheckboxSelection(checkboxElement));
-
-        const optionLabel = document.createElement("label");
-        optionLabel.classList.add('fs_filter_checkbox_label');
-        if (checkboxElement.getAttribute("key") == 'Categories') {
-          if (facet[1][j][2] == 'all-products') {
-            optionLabel.textContent = 'All products';
-          } else if (facet[1][j][2] == 'vertical-layout') {
-            optionLabel.textContent = 'Vertical layout';
-          } else {
-            optionLabel.textContent = facet[1][j][2];
+      //size
+      if (facet[0] == "Size") {
+        displaySizeFilter(facet, filterContainer);
+      } else {
+         const checkboxesMainWrapper = document.createElement("div");
+         checkboxesMainWrapper.classList.add('fs_filter_checkboxes_main_wrap');
+        // Create checkboxes for each filter option
+        for (let j = 0; j < facet[1].length; j++) {
+          if (facet[0] == "Price_max") {
+            continue;
           }
-        } else {
-          optionLabel.textContent = option;
-        }
+          const option = facet[1][j][0]; // Assuming the filter options are strings
+          const count = facet[1][j][1];
 
-        checkboxWrap.appendChild(checkboxElement);
-        checkboxWrap.appendChild(optionLabel);
-        checkboxWrap.appendChild(checkboxCount);
-        filterContainer.appendChild(checkboxWrap);
+          const checkboxWrap = document.createElement("div");
+          checkboxWrap.classList.add('fs_filter_checkbox_wrap');
+          const checkboxCount = document.createElement("span");
+          checkboxCount.classList.add('fs_filter_checkbox_count');
+          checkboxCount.innerText = `(${count})`;
+          const checkboxElement = document.createElement("input");
+          checkboxElement.type = "checkbox";
+          checkboxElement.classList.add('fs_filter_checkbox');
+          checkboxElement.value = option;
+          checkboxElement.setAttribute("key", `${facet[0]}`);
+          checkboxElement.setAttribute("name", `${facet[2]}`);
+          // Add event listener to handle checkbox selection
+          checkboxElement.addEventListener("change", () => handleCheckboxSelection(checkboxElement));
+
+          const optionLabel = document.createElement("label");
+          optionLabel.classList.add('fs_filter_checkbox_label');
+          if (checkboxElement.getAttribute("key") == 'Categories') {
+            if (facet[1][j][2] == 'all-products') {
+              optionLabel.textContent = 'All products';
+            } else if (facet[1][j][2] == 'vertical-layout') {
+              optionLabel.textContent = 'Vertical layout';
+            } else {
+              optionLabel.textContent = facet[1][j][2];
+            }
+          } else {
+            optionLabel.textContent = option;
+          }
+          checkboxesMainWrapper.appendChild(checkboxWrap);
+          checkboxWrap.appendChild(checkboxElement);
+          checkboxWrap.appendChild(optionLabel);
+          checkboxWrap.appendChild(checkboxCount);
+          filterContainer.appendChild(checkboxesMainWrapper);
+        }
       }
     }
     // Append the filter container to the filters container
@@ -489,6 +576,17 @@ function getSelectedColors() {
   let existingColors = new Set(existingColorsStr.split(','));
   existingColors.delete('');
   return existingColors;
+}
+
+function getSelectedFilterByName(filterName) {
+  let existingFilterStr = url.searchParams.get(filterName);
+  if (!existingFilterStr) {
+    existingFilterStr = '';
+  }
+  // console.log('existingColorsStr33', existingColorsStr);
+  let existingFilterOptions = new Set(existingFilterStr.split(','));
+  existingFilterOptions.delete('');
+  return existingFilterOptions;
 }
 
 // Define the valid sorting options

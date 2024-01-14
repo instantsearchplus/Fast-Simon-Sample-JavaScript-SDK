@@ -163,6 +163,11 @@ function displayAutocomplete(response, searchTerm) {
     }
     // Show the modal
     if (response.products.length > 0 || response.turbolinks.length > 0) {
+        console.log('open AC');
+        var searchForm = document.querySelector('.fs_autocomplete_wrap');
+        var triangleModal = document.querySelector('.triangle');
+        triangleModal.style.top = '' + (parseInt(searchForm.offsetTop) + parseInt(searchForm.offsetHeight - 20)) +'px';
+        productModal.style.top = '' + (parseInt(searchForm.offsetTop) + parseInt(searchForm.offsetHeight) - 10) + 'px';
         productModal.style.display = 'block';
         productModal.style.position = 'absolute';
         productModal.style.zIndex = 100;
