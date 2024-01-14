@@ -472,7 +472,7 @@ input[type="range"] {
 }
 
 .fs_size {
-    width: 45px;
+    width: 40px;
     height: 35px;
     border: 1px solid black;
     padding: 5px;
@@ -481,7 +481,7 @@ input[type="range"] {
     justify-content: center;
     align-items: center;
     border-radius: 0.25rem;
-    font-size: 100% !important;
+    text-align: center;
 }
 
 .fs_size:hover {
