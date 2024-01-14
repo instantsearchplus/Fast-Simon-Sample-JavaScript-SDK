@@ -353,6 +353,7 @@
 .fs_color_swatches_wrap {
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
     /*display: grid;*/
     /*grid-template-columns: repeat(4, 1fr);*/
 }
@@ -412,8 +413,6 @@ input[type=range]::-webkit-slider-thumb:active {
 }
 
 input[type="number"] {
-    /*color: #8a8383;*/
-    /*width: 50px;*/
     height: 30px;
     font-size: 16px;
     border: none;
@@ -468,7 +467,7 @@ input[type="range"] {
 }
 
 .fs_colorswatch_selected {
-    border: 1px solid rgb(83, 83, 83);
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #000;
 }
 
 .fs_size {
@@ -554,12 +553,17 @@ input[type="range"] {
     margin-top: 10px;
 }
 
-.form_control_container__time {
-    display: none;
+.form_control_container {
+    border: 1px solid lightgrey;
+    padding: 5px;
+    gap: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
-#toInput {
-    text-align: end;
+.form_control_container__time {
+    display: none;
 }
 
 .fs_sort_by_select option:hover {

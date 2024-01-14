@@ -117,7 +117,15 @@ function createPriceSlider() {
   // Create the parent container element
   priceSlider = document.createElement('div');
 
-  const elementString = '<div class="range_container"><div class="sliders_control"><input id="fromSlider" type="range" value="10" min="0" max="100"/><input id="toSlider" type="range" value="40" min="0" max="100"/></div ><div class="form_control"><div class="form_control_container"><div class="form_control_container__time">Min</div><span>$</span><input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100" /></div><div class="form_control_container"><span>$</span><div class="form_control_container__time">Max</div><input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100" /></div></div></div >';
+  const elementString =
+      '<div class="range_container">' +
+      '<div class="sliders_control">' +
+      '<input id="fromSlider" type="range" value="10" min="0" max="100"/>' +
+      '<input id="toSlider" type="range" value="40" min="0" max="100"/>' +
+      '</div>' +
+      '<div class="form_control">' +
+      '<div class="form_control_container">' +
+      '<div class="form_control_container__time">Min</div><span>$</span><input class="form_control_container__time__input" type="number" id="fromInput" value="10" min="0" max="100" /></div><div class="form_control_container"><span>$</span><div class="form_control_container__time">Max</div><input class="form_control_container__time__input" type="number" id="toInput" value="40" min="0" max="100" /></div></div></div >';
 
   // Create a temporary container element
   const container = document.createElement('div');
