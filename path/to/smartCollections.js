@@ -23,6 +23,7 @@
         collectionResults = response.payload;
         collectionFilters = response.payload.facets;
         console.log(collectionFilters);
+        setUrlParam('collectionID', collectionID, false);
         if (response.action == fastSimonResponseAction) {
           console.log(fastSimonResponseAction);
           displayFilters(collectionFilters);

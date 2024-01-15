@@ -351,7 +351,6 @@ function displaySizeFilter(facet, filterContainer) {
 
 //Show filters
 function displayFilters(facets) {
-  console.log('facets', facets);
   const filtersContainer = document.getElementById("filters");
   if (facets.length > 0) {
     filtersContainer.style.display = 'block';
@@ -410,13 +409,11 @@ function displayFilters(facets) {
     //price slider
     if (facet[0] == "Price_min") {
       minPrice = facet[1][0];
-      console.log(facet[0], facet[1][0]);
       continue;
     }
     if (facet[0] == "Price_max") {
       maxPrice = facet[1][0];
       if (minPrice && maxPrice) {
-        console.log('prices', minPrice, maxPrice);
         createPriceSlider();
         filterContainer.appendChild(priceSlider);
       }
@@ -425,7 +422,6 @@ function displayFilters(facets) {
 
     //colorswatches
     if (facet[0] == "Isp-color-family") {
-      console.log('colors', facet);
       const colorData = facet;
       // Get the container element to hold the color swatches
       const colorSwatchesContainer = document.createElement('div');
@@ -451,12 +447,10 @@ function displayFilters(facets) {
         // Add event listener to the color swatch
         swatchElement.addEventListener('click', () => {
           // Perform actions when color swatch is clicked
-          console.log(`Selected color: ${colorName}`);
           const selectedColor = `${colorName}`;
 
           // Get the existing color query parameter values
           let existingColors = getSelectedColors();
-          // console.log('existingColors', existingColors);
 
           if (swatchElement.classList.contains('fs_colorswatch_selected')) {
             swatchElement.classList.remove('fs_colorswatch_selected');
