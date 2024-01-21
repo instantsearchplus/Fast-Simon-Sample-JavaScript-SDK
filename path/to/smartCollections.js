@@ -72,6 +72,7 @@ function getNarrowBy() {
           narrowBy.push(selectedFilters);
         });
     }
+    console.log('narrowBy', narrowBy)
     return narrowBy;
 }
 

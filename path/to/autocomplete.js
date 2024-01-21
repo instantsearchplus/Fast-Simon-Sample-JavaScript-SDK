@@ -98,7 +98,7 @@ function displayAutocomplete(response, searchTerm) {
                         if (searchResultsContainer.classList.contains('fs_search')) {
                             searchResultsContainer.classList.remove('fs_search');
                         }
-                        clearFilters();
+                        clearUrlSearchParams();
                         setUrlParam('collectionID', collectionID);
                     });
                     collectionLinks.appendChild(collectionLink);

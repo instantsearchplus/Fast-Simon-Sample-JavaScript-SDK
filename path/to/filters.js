@@ -108,6 +108,17 @@ function loadCheckboxState() {
       });
       // checkbox.checked = checkboxState[checkbox.value] || false;
       checkbox.checked = checked;
+      if(checked){
+        let removableTagsMainContainer = document.querySelector('.removable_tags_container');
+        if(!checkIfRemovableTagExistCheckBox(removableTagsMainContainer, checkbox.getAttribute("key"), checkbox.getAttribute("value"))) {
+          createRemovableTag(
+              checkbox,
+              checkbox.getAttribute("key"),
+              checkbox.closest('.fs_filter_checkbox_wrap').querySelector('.fs_filter_checkbox_label').textContent,
+              checkbox.getAttribute("value")
+          )
+        }
+      }
     });
   }
 }
@@ -161,14 +172,16 @@ function createPriceSlider() {
   // Function to update the URL query parameters
   function updatePriceRangeParams() {
     clearTimeout(priceSetTimeout);
+    let prevMinPriceValue = minPriceValue
+    let prevMaxPriceValue = maxPriceValue
+
     priceSetTimeout = setTimeout(() => {
+      deleteRemovableTag('price', 'price: $' + prevMinPriceValue +' to $' + prevMaxPriceValue)
       const minPriceValue = fromInput.value;
       const maxPriceValue = toInput.value;
-      // url.searchParams.set('min_price', minPriceValue);
-      // url.searchParams.set('max_price', maxPriceValue);
-      // window.history.replaceState(null, null, url.toString());
       setUrlParam('min_price', minPriceValue, false);
       setUrlParam('max_price', maxPriceValue);
+      createRemovableTag(null, 'price', 'price: $' + minPriceValue +' to $' + maxPriceValue)
     }, 500);
 
   }
@@ -187,6 +200,10 @@ function createPriceSlider() {
   toSlider.setAttribute('value', maxPriceValue);
   fromInput.setAttribute('value', minPriceValue);
   toInput.setAttribute('value', maxPriceValue);
+  let removableTagsMainContainer = document.querySelector('.removable_tags_container');
+  if(!checkIfRemovableTagExist(removableTagsMainContainer, 'price', 'price: $' + minPriceValue +' to $' + maxPriceValue) && (minPrice !== minPriceValue || maxPrice !== maxPriceValue)) {
+    createRemovableTag(null, 'price', 'price: $' + minPriceValue + ' to $' + maxPriceValue)
+  }
 }
 
 //all functions for slider
@@ -300,7 +317,7 @@ function displaySizeFilter(facet, filterContainer) {
   const sizesContainer = document.createElement('div');
   sizesContainer.classList.add('fs_sizes_wrap');
 
-  // Get the array of color swatches from the data
+  // Get the array of sizes from the data
   const sizes = sizeData[1];
   let selectedSizeOptions = getSelectedFilterByName('size');
 
@@ -308,13 +325,17 @@ function displaySizeFilter(facet, filterContainer) {
   sizes.forEach(size => {
     const [sizeName, count] = size;
 
-    // Create the color swatch element
+    // Create size element
     const sizeElement = document.createElement('div');
     sizeElement.classList.add('fs_size');
     sizeElement.innerHTML = sizeName;
 
     if (selectedSizeOptions.has(sizeName)) {
       sizeElement.classList.add('fs_size_selected');
+      let removableTagsMainContainer = document.querySelector('.removable_tags_container')
+      if(!checkIfRemovableTagExist(removableTagsMainContainer,'size', sizeName)){
+        createRemovableTag(sizeElement, "size", sizeName);
+      }
     }
 
     // Add event listener to the size element
@@ -335,11 +356,17 @@ function displaySizeFilter(facet, filterContainer) {
 
       // Update the URL query parameters with the updated colors list
       if (existingSizes.size) {
-        // url.searchParams.set('color', Array.from(existingColors));
         setUrlParam('size', Array.from(existingSizes));
       } else {
-        // url.searchParams.delete('color');
         removeUrlParam('size');
+      }
+
+      let removableTagsMainContainer = document.querySelector('.removable_tags_container');
+      if(!checkIfRemovableTagExist(removableTagsMainContainer,'size', selectedSize)){
+        createRemovableTag(sizeElement, "size", selectedSize);
+      }
+      else{
+        deleteRemovableTag('size', selectedSize);
       }
     });
 
@@ -354,6 +381,7 @@ function displayFilters(facets) {
   const filtersContainer = document.getElementById("filters");
   if (facets.length > 0) {
     filtersContainer.style.display = 'block';
+    displayRemovableTags();
   } else {
     filtersContainer.style.display = 'none';
   }
@@ -442,6 +470,10 @@ function displayFilters(facets) {
         swatchElement.style.backgroundColor = colorCode;
         if (selectedColors.has(colorName)) {
           swatchElement.classList.add('fs_colorswatch_selected');
+          let removableTagsMainContainer = document.querySelector('.removable_tags_container')
+          if(!checkIfRemovableTagExist(removableTagsMainContainer,'color', colorName)){
+            createRemovableTag(swatchElement, "color", colorName);
+          }
         }
 
         // Add event listener to the color swatch
@@ -465,8 +497,16 @@ function displayFilters(facets) {
             // url.searchParams.set('color', Array.from(existingColors));
             setUrlParam('color', Array.from(existingColors));
           } else {
-            // url.searchParams.delete('color');
             removeUrlParam('color');
+          }
+
+          let removableTagsMainContainer = document.querySelector('.removable_tags_container')
+          if(!checkIfRemovableTagExist(removableTagsMainContainer,'color', selectedColor)){
+            createRemovableTag(swatchElement, "color", selectedColor);
+          }
+          else{
+            //delete removableTag
+            deleteRemovableTag('color', selectedColor);
           }
 
           // Update the URL in the browser's address bar
@@ -530,8 +570,10 @@ function displayFilters(facets) {
     // Append the filter container to the filters container
     filtersContainer.appendChild(filterContainer);
   }
+
   priceSliderHandle();
   // Event listener for checkbox selection
+  // displayRemovableTags(filtersContainer.closest(".fs_filters_wrapper"));
 
   function handleCheckboxSelection(checkboxElement) {
     const isChecked = checkboxElement.checked;
@@ -543,22 +585,41 @@ function displayFilters(facets) {
       selectedFilters.push(key);
       selectedFilters.push(value);
       currentNarrow.push(selectedFilters);
-    } else {
-      checkboxElement.classList.remove('fs_checkbox_selected');
-      let unselectedFilters = [];
-      unselectedFilters.push(key);
-      unselectedFilters.push(value);
-      for (let i = 0; i < currentNarrow.length; i++) {
-        console.log('compare', currentNarrow[i], unselectedFilters);
-        const jsonunselectedFilters = JSON.stringify(unselectedFilters);
-        if (JSON.stringify(currentNarrow[i]) == jsonunselectedFilters) {
-          currentNarrow.splice(i, 1);
-        }
+      let removableTagsMainContainer = document.querySelector('.removable_tags_container')
+      if(!checkIfRemovableTagExistCheckBox(removableTagsMainContainer,key, value)){
+        createRemovableTag(
+          checkboxElement,
+          key,
+          checkboxElement.closest('.fs_filter_checkbox_wrap').querySelector('.fs_filter_checkbox_label').textContent,
+            value
+        )
       }
+
+    } else {
+      unCheckedCheckBox(checkboxElement, key, value)
     }
     saveCheckboxState();
   }
   // loadCheckboxState();
+}
+
+function unCheckedCheckBox(checkboxElement, key, value){
+  let unselectedFilters = [];
+  unselectedFilters.push(key);
+  unselectedFilters.push(value);
+  deleteRemovableTag(
+      key,
+      checkboxElement.closest('.fs_filter_checkbox_wrap').querySelector('.fs_filter_checkbox_label').textContent,
+      value
+  );
+  let currentFilters = JSON.parse(url.searchParams.get(filtersUrlParam));
+  for (let i = 0; i < currentFilters.length; i++) {
+    const jsonunselectedFilters = JSON.stringify(unselectedFilters);
+    if (JSON.stringify(currentFilters[i]) == jsonunselectedFilters) {
+      currentFilters.splice(i, 1);
+    }
+  }
+  setUrlParam(filtersUrlParam, JSON.stringify(currentFilters));
 }
 
 let refreshResultTimeout = 0;

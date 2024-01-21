@@ -26,7 +26,7 @@ function renderCategoriesMenu() {
                     searchResultsContainer.classList.remove('fs_search');
                 }
                 currentNarrow = [];
-                clearFilters();
+                clearUrlSearchParams();
                 setUrlParam('collectionID', collectionID, true);
             });
 
@@ -36,16 +36,23 @@ function renderCategoriesMenu() {
     }, true);
 };
 
-function clearFilters() {
+function clearUrlSearchParams(clearOnlyFiltersParams = false) {
+    console.log('insert clear')
+    if(!clearOnlyFiltersParams) {
+        url.searchParams.delete('search');
+        url.searchParams.delete('page');
+        url.searchParams.delete('collectionID');
+        url.searchParams.delete('sortBy');
+        searchInput.value = '';
+    }
+    url.searchParams.delete('size');
     url.searchParams.delete('color');
     url.searchParams.delete('min_price');
     url.searchParams.delete('max_price');
     url.searchParams.delete('checkboxState');
     url.searchParams.delete(filtersUrlParam);
-    url.searchParams.delete('size');
-    url.searchParams.delete('search');
-    url.searchParams.delete('page');
-    url.searchParams.delete('collectionID');
-    url.searchParams.delete('sortBy');
-    searchInput.value = '';
+
+    if(clearOnlyFiltersParams){
+         window.history.pushState(null, null, convertUrl())
+    }
 }

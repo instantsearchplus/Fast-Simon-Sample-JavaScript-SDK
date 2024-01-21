@@ -16,7 +16,7 @@ function removeUrlParam(paramName, refresh = true) {
     url.searchParams.delete(paramName);
     // let new_url = dumpNarrow(url.searchParams);
     if(refresh) {
-        window.history.replaceState(null, null, convertUrl());
+        window.history.pushState(null, null, convertUrl());
     }
 }
 function convertUrl() {

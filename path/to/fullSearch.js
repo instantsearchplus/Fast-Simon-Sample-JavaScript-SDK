@@ -53,7 +53,7 @@
         searchResultsContainer.classList.remove('fs_collections');
       }
       const searchTerm = searchInput.value;
-      clearFilters();
+      clearUrlSearchParams();
       setUrlParam('search', searchTerm);
       currentNarrow = [];
     }

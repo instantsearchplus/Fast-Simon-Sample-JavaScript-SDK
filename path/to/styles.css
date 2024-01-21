@@ -731,3 +731,69 @@ input[type="range"] {
 .fs_color_swatch {
     cursor: pointer;
 }
+
+/* removable tags */
+.removable_tags_wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.removable_tags_container {
+    display: flex;
+}
+
+.clear_all_removable_tags {
+    border: 1px solid transparent;
+    width: fit-content;
+    padding: 5px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s opacity ease-in-out;
+}
+
+.removable_tag {
+    border: 1px solid #ccc;
+    box-shadow: unset;
+    color: #000000;
+    letter-spacing: 0.25px;
+    font-size: 14px;
+    font-weight:400;
+    width: fit-content;
+    padding: 5px;
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: .8;
+    transition: .2s opacity ease-in-out;
+    border-radius: 25px;
+    height: 22px;
+}
+
+.removable_tag:hover {
+    border-color: grey;
+}
+
+.removable_tag_remove_button {
+    width: 14px;
+    height: 14px;
+    fill: gray;
+    color: gray;
+    display: flex;
+    align-self: center;
+    cursor: pointer;
+}
+
+.removable_tag_text {
+    margin-right: 5px;
+    text-transform: capitalize;
+    height: 14px;
+}
