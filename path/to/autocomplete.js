@@ -66,6 +66,19 @@ function displayAutocomplete(response, searchTerm) {
             productContainer.appendChild(productComparePrice);
         }
 
+        // add report for product click
+        productContainer.addEventListener("click",()=>{
+            window.FastSimonSDK.event({
+                eventName: window.FastSimonEventName.AutocompleteProductClicked,
+                data: {
+                    query: searchTerm, // (Required)
+                    productID: product.id, // (Required)
+                    productQuery: product.s, // product's 's' key (Required)
+                }
+            });
+        });
+
+
         // Append the product container to the search results container
         productList.appendChild(productContainer);
     });
@@ -93,6 +106,17 @@ function displayAutocomplete(response, searchTerm) {
                     collectionLink.addEventListener('click', function(event) {
                         console.log('collection btn clicked');
                         event.preventDefault();
+
+                        // add report for category click
+                        window.FastSimonSDK.event({
+                            eventName: window.FastSimonEventName.AutocompleteCategoryClicked,
+                            data: {
+                                query: searchTerm, // (Required)
+                                collectionID: category.id, // (Required)
+                            }
+                        });
+                        
+
                         collectionID = collectionLink.getAttribute("id");
                         searchResultsContainer.classList.add('fs_collections');
                         if (searchResultsContainer.classList.contains('fs_search')) {
@@ -126,6 +150,16 @@ function displayAutocomplete(response, searchTerm) {
                     popularSearchLink.addEventListener('click', function(event) {
                         console.log('popularSearchLink btn clicked');
                         event.preventDefault();
+
+                        // add report for popular click
+                        window.FastSimonSDK.event({
+                            eventName: window.FastSimonEventName.AutocompletePopularClicked,
+                            data: {
+                                query: searchTerm, // (Required)
+                                term: popularSearch.l // (Required)
+                            }
+                        });
+
                     });
                     popularSearchesLinks.appendChild(popularSearchLink);
                     counter++;
