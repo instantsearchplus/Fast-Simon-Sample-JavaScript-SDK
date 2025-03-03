@@ -29,15 +29,12 @@ function getOptimizedImageURL(url) {
 }
 
 function fetchProducts() {
-    window.FastSimonSDK.productRecommendation({
+    window.FastSimonSDK.productRecommendationByWidget({
         productID: "6567320748239",
-        specs: [
-            {
-                sources: ['related_recently_viewed', 'related_views', 'similar_products_by_attributes', 'related_cart', 'related_purchase', 'related_recent_products', 'related_top_products'],
-                maxSuggestions: 12,
-                widgetID: "my-widget"
-            }
-        ],
+        withAttributes: true,
+        ///recent:["12345","67890"],  // optional to pass recent viewed products
+        widgetsIDS: ["123457878"],  // the widget id's that build at the dashboard
+
         callback: (response) => {
             const payload = response.payload;
             if (payload.length > 0) {
@@ -147,7 +144,7 @@ function renderRecommendationWidget(recommendationItems) {
         paginationWrapper.appendChild(paginationContainer);
 
         // Iterate through the recommendation items and create list items
-        recommendationItems.forEach((item) => {
+        recommendationItems.forEach((item,index) => {
             const listItem = document.createElement('div')
             listItem.className = 'recommendation-item'
 
@@ -182,6 +179,21 @@ function renderRecommendationWidget(recommendationItems) {
             if (item && item.vra && item.vra.length > 1) {
               showColorswatches(item, listItem);
             }
+
+            // click event
+            listItem.addEventListener("click",()=>{
+                window.FastSimonSDK.event({
+                    eventName: window.FastSimonEventName.RecommendationProductClicked,
+                    data: {
+                        productID: item.id, // the id of the clicked product (Required)
+                        position: index, // the position of the product in the widget / popup (counted from 1)
+                        sourceProductID: window.location.href // source product ID (example product page product ID)
+                    }
+                }); 
+
+                // other click event stuff
+            });
+
             // Append the list item to the recommendation list
             recommendationList.appendChild(listItem)
         })
