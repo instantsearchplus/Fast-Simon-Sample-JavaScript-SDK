@@ -2,6 +2,9 @@ function displaySearchResults(results, container, searchQuery) {
   // Clear previous search results
   container.innerHTML = '';
 
+  // indicator if its search page or collection
+  let isSearchPage= window.location.href.indexOf("search")>-1;
+
   //find search results title
   let searchTitle = document.querySelector('.fs_search_results_summary');
   let products = results.products;
@@ -21,7 +24,7 @@ function displaySearchResults(results, container, searchQuery) {
   searchResultsWrapper.classList.add('fs_search_results_wrapper');
 
   // Iterate over the products and create the necessary HTML elements
-  products.forEach((product) => {
+  products.forEach((product,index) => {
     // Create a container for each product
     const productContainer = document.createElement('div');
     productContainer.classList.add('fs_product');
@@ -97,6 +100,70 @@ function displaySearchResults(results, container, searchQuery) {
       showColorswatches(product, productContainer);
 
     }
+
+    //click event to the product
+    productContainer.addEventListener("click",()=>{
+      //if it is SERP
+      if(isSearchPage)
+      {
+        if(product.promotile)
+        {
+          window.FastSimonSDK.event({
+              eventName: window.FastSimonEventName.SerpPromoTileClicked,
+              data: {
+                  query: searchQuery, // (Required)
+                  productID: product.id, // (Required)
+                  position: index, // counted from 1
+                  imageID: product?.l, // if using image optimization it will be included in the response
+                  link: product?.link, //link of the turbolink
+                  thumbnail: product?.image //thumbnail of the turbolink
+                                    
+              }
+          }); 
+        }
+        else{
+          window.FastSimonSDK.event({
+              eventName: window.FastSimonEventName.SerpProductClicked,
+              data: {
+                  query: searchQuery, // (Required)
+                  productID: product.id, // (Required)
+                  position: index, // counted from 1
+              }
+          }); 
+        }
+      }
+      //if its collection
+      else{
+        if(product.promotile)
+        {
+          window.FastSimonSDK.event({
+              eventName: window.FastSimonEventName.CollectionPromoTileClicked,
+              data: {
+                  collectionID: getUrlParam('collectionID'), // (Required)
+                  productID: product.id, // (Required)
+                  position: index, // counted from 1
+                  query: undefined, // Default = Collection_Name 
+                  imageID:product?.l, // if using image optimization it will be included in the response
+                  link: product?.link, //link of the turbolink
+                  thumbnail:product?.image //thumbnail of the turbolink
+              }
+          }); 
+        }
+        else{
+          window.FastSimonSDK.event({
+              eventName: window.FastSimonEventName.CollectionProductClicked,
+              data: {
+                  collectionID: getUrlParam('collectionID'), // (Required)
+                  productID: product.id, // (Required)
+                  position: index, // counted from 1
+                  query: undefined, // Default = Collection_Name 
+              }
+          }); 
+        }
+      }
+
+      // other click event stuff
+    });
 
     // Append the product container to the search results container
     searchResultsWrapper.appendChild(productContainer);

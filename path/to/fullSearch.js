@@ -30,18 +30,36 @@
           displaySearchResults(searchResults, searchResultsContainer, searchPageTitle);
           console.log('products only');
         }
+
+        //Search Result page viewed event
+        let promotilesArray = [];
+        if(response.products && response.products.filter(product=>product.promotile))
+        {
+          const responsePromotile=response.products.filter(product=>product.promotile);
+          responsePromotile.forEach(promo=>{
+            promotilesArray.push({
+              id: promo.id,
+              name: promo.title,
+              link: promo.link,
+              thumbnail: promo.image
+            });
+          });
+          
+        }
+
+        window.FastSimonSDK.event({
+          eventName: window.FastSimonEventName.SearchPerformed,
+          data: {
+            query: searchQuery, // (Required)
+            narrowBy: currentNarrow,
+            sortBy: sortBy,
+            promoTiles: promotilesArray // (Optional)
+          }
+        });
         afterInit();
       }
     });
-    //Search Result page viewed event
-    window.FastSimonSDK.event({
-      eventName: window.FastSimonEventName.SearchPerformed,
-      data: {
-        query: searchQuery, // (Required)
-        narrowBy: currentNarrow,
-        sortBy: sortBy
-      }
-    });
+
   }
   searchForm.addEventListener('submit', function (event) {
     event.preventDefault();
