@@ -28,6 +28,10 @@ function displaySearchResults(results, container, searchQuery) {
     // Create a container for each product
     const productContainer = document.createElement('div');
     productContainer.classList.add('fs_product');
+    
+    //viewport impression tracking
+    window.FastSimonSDK.trackViewportImpression(productContainer, product.id, index+1);
+   
 
     // Add product information to the container
     const productImage = document.createElement('img');
