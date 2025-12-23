@@ -1,17 +1,16 @@
 // SDK Fast Simon recommendations usage
+// Store the current widget ID and source product ID for event reporting
+let currentWidgetId = null;
+let currentSourceProductId = "6567320748239"; // Default source product ID
+
 function recommendationsInit() {
     const widgetContainer = document.querySelector('.fs-recommendation-widget')
     widgetContainer.innerHTML = '';
+    // SDK is already initialized in index.html, no need to re-initialize
+    // Just fetch products directly
     setTimeout(() => {
-        window.FastSimonSDK.initialization({
-            storeID: 55906173135, // store-id,
-            uuid: "3eb6c1d2-152d-4e92-9c29-28eecc232373", // uuid
-            type: 'SPA', // multi page application ("MPA") or single page application("SPA") (for reporting)
-            onReady: () => {
-                fetchProducts()
-            },
-        })
-    }, 200)
+        fetchProducts();
+    }, 200);
 }
 
 function getOptimizedImageURL(url) {
@@ -29,33 +28,54 @@ function getOptimizedImageURL(url) {
 }
 
 function fetchProducts() {
+    const sourceProductID = "6567320748239";
+    const widgetIDs = ["123457878"];
+
     window.FastSimonSDK.productRecommendationByWidget({
-        productID: "6567320748239",
+        productID: sourceProductID,
         withAttributes: true,
         ///recent:["12345","67890"],  // optional to pass recent viewed products
-        widgetsIDS: ["123457878"],  // the widget id's that build at the dashboard
+        widgetsIDS: widgetIDs,  // the widget id's that build at the dashboard
 
         callback: (response) => {
             const payload = response.payload;
             if (payload.length > 0) {
                 for (let i = 0; i < payload.length; i++) {
-                    const widgetPayload = payload[0].payload;
+                    const widgetData = payload[i];
+                    const widgetPayload = widgetData.payload;
+                    // Store widget ID and source product ID for event reporting
+                    currentWidgetId = widgetData.widget_id || widgetIDs[i] || "123457878";
+                    currentSourceProductId = sourceProductID;
+
                     if (widgetPayload) {
                         const recommendationItems = widgetPayload.map(item => {
                             const productDetail = item;
                             return {
                                 id: +productDetail.id,
-                                variantId: productDetail.vra[0][0],
+                                variantId: productDetail.vra && productDetail.vra[0] ? productDetail.vra[0][0] : null,
                                 title: productDetail.l,
                                 price: "$" + productDetail.p,
                                 regularPrice: "$" + productDetail.p_c,
                                 imageUrl: productDetail.t,
                                 imageUrl2: productDetail.t2,
                                 href: productDetail.u,
-                                vra: productDetail.vra
+                                vra: productDetail.vra,
+                                // Keep original product data for RecommendationsProductsShown event
+                                originalData: productDetail
                             };
                         });
-                        renderRecommendationWidget(recommendationItems);
+
+                        // Report RecommendationsProductsShown event
+                        window.FastSimonSDK.event({
+                            eventName: window.FastSimonEventName.RecommendationsProductsShown,
+                            data: {
+                                products: widgetPayload, // Array of recommended products shown
+                                widget_id: currentWidgetId,
+                                sourceProductID: currentSourceProductId
+                            }
+                        });
+
+                        renderRecommendationWidget(recommendationItems, currentWidgetId, currentSourceProductId);
                     }
                 }
             }
@@ -111,7 +131,7 @@ function onPaginationButtonClick(paginationContainer, buttonElement, position, i
     });
 }
 
-function renderRecommendationWidget(recommendationItems) {
+function renderRecommendationWidget(recommendationItems, widgetId, sourceProductId) {
     const mainWidgetContainer = document.querySelector('.fs-recommendation-widget');
     const carouselContainer = document.createElement('div');
     carouselContainer.className = 'carousel-container';
@@ -186,10 +206,11 @@ function renderRecommendationWidget(recommendationItems) {
                     eventName: window.FastSimonEventName.RecommendationProductClicked,
                     data: {
                         productID: item.id, // the id of the clicked product (Required)
-                        position: index, // the position of the product in the widget / popup (counted from 1)
-                        sourceProductID: window.location.href // source product ID (example product page product ID)
+                        widget_id: widgetId || currentWidgetId, // widget identifier (Required)
+                        position: index + 1, // the position of the product in the widget (counted from 1)
+                        sourceProductID: sourceProductId || currentSourceProductId // source product ID
                     }
-                }); 
+                });
 
                 // other click event stuff
             });

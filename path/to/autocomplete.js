@@ -7,9 +7,14 @@ searchInput.addEventListener('input', function(event) {
     // Use the following code for every keystroke shoppers perform in a searchbox.
     window.FastSimonSDK.instantSearch({
         query: searchTerm,
+        is_content: true,
         callback: (response) => {
             console.log(response);
             displayAutocomplete(response.payload, searchTerm);
+        },
+        articlesCallback: (response) => {
+            console.log('Articles loaded:', response);
+            displayArticles(response.payload.articles, searchTerm);
         }
     });
     console.log(searchTerm);
@@ -160,6 +165,14 @@ function displayAutocomplete(response, searchTerm) {
                             }
                         });
 
+                        // Navigate to search results for the popular search term
+                        searchResultsContainer.classList.add('fs_search');
+                        if (searchResultsContainer.classList.contains('fs_collections')) {
+                            searchResultsContainer.classList.remove('fs_collections');
+                        }
+                        clearUrlSearchParams();
+                        setUrlParam('search', popularSearch.l);
+                        currentNarrow = [];
                     });
                     popularSearchesLinks.appendChild(popularSearchLink);
                     counter++;
@@ -180,7 +193,7 @@ function displayAutocomplete(response, searchTerm) {
             response.turbolinks.forEach(turbolink => {
                 if (counter < 3) {
                     let turboLink = document.createElement('a');
-                    turboLink.classList.add('fs_autocomplete_link', 'fs_popularSearch_link');
+                    turboLink.classList.add('fs_autocomplete_link', 'fs_turbolink_link');
                     turboLink.innerText = turbolink.l;
                     turboLink.href = turbolink.u;
                     turboLink.target = '_blank';
@@ -207,6 +220,37 @@ function displayAutocomplete(response, searchTerm) {
         productModal.style.zIndex = 100;
     } else {
         productModal.style.display = 'none';
+    }
+}
+
+// Display articles from articlesCallback
+function displayArticles(articles, searchTerm) {
+    // Remove existing articles container if present
+    const existingArticles = linksContainer.querySelector('.fs_articles_links');
+    if (existingArticles) {
+        existingArticles.remove();
+    }
+
+    if (articles && articles.length > 0) {
+        let articlesLinks = document.createElement('div');
+        articlesLinks.classList.add('fs_autocomplete_links', 'fs_articles_links');
+        let articlesLinksTitle = document.createElement('div');
+        articlesLinksTitle.classList.add('fs_autocomplete_links_title', 'fs_articles_links_title');
+        articlesLinksTitle.innerText = 'articles:';
+        articlesLinks.appendChild(articlesLinksTitle);
+        let counter = 0;
+        articles.forEach(article => {
+            if (counter < 3) {
+                let articleLink = document.createElement('a');
+                articleLink.classList.add('fs_autocomplete_link', 'fs_article_link');
+                articleLink.innerText = article.l;
+                articleLink.href = article.u;
+                articleLink.target = '_blank';
+                articlesLinks.appendChild(articleLink);
+                counter++;
+            }
+        });
+        linksContainer.appendChild(articlesLinks);
     }
 }
 

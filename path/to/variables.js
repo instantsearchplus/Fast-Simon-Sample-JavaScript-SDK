@@ -3,7 +3,7 @@ const searchForm = document.getElementById('searchForm');
 const searchResultsContainer = document.getElementById('searchResults');
 let url = new URL(window.location.href);
 let currentNarrow = [];
-let searchResults;;
+let searchResults;
 let minPrice;
 let maxPrice;
 let priceSlider;

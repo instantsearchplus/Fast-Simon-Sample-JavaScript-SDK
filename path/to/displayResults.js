@@ -105,6 +105,22 @@ function displaySearchResults(results, container, searchQuery) {
 
     }
 
+    // Add to Cart button
+    const addToCartBtn = document.createElement('button');
+    addToCartBtn.classList.add('fs_add_to_cart_btn');
+    addToCartBtn.textContent = 'Add to Cart';
+    addToCartBtn.setAttribute('data-product-id', product.id);
+    addToCartBtn.addEventListener('click', function(event) {
+      event.stopPropagation(); // Prevent triggering product click event
+      reportAddToCart(product.id);
+      // Visual feedback
+      addToCartBtn.textContent = 'Added!';
+      setTimeout(() => {
+        addToCartBtn.textContent = 'Add to Cart';
+      }, 1500);
+    });
+    productContainer.appendChild(addToCartBtn);
+
     //click event to the product
     productContainer.addEventListener("click",()=>{
       //if it is SERP
@@ -117,13 +133,13 @@ function displaySearchResults(results, container, searchQuery) {
               data: {
                   query: searchQuery, // (Required)
                   productID: product.id, // (Required)
-                  position: index, // counted from 1
+                  position: index+1, // counted from 1
                   imageID: product?.l, // if using image optimization it will be included in the response
-                  link: product?.link, //link of the turbolink
-                  thumbnail: product?.image //thumbnail of the turbolink
+                  link: product?.link, //link of the promotile
+                  thumbnail: product?.image //thumbnail of the promotile
                                     
               }
-          }); 
+          });
         }
         else{
           window.FastSimonSDK.event({
@@ -131,9 +147,9 @@ function displaySearchResults(results, container, searchQuery) {
               data: {
                   query: searchQuery, // (Required)
                   productID: product.id, // (Required)
-                  position: index, // counted from 1
+                  position: index + 1, // counted from 1 (1-based index)
               }
-          }); 
+          });
         }
       }
       //if its collection
@@ -145,13 +161,13 @@ function displaySearchResults(results, container, searchQuery) {
               data: {
                   collectionID: getUrlParam('collectionID'), // (Required)
                   productID: product.id, // (Required)
-                  position: index, // counted from 1
+                  position: index+1, // counted from 1
                   query: undefined, // Default = Collection_Name 
                   imageID:product?.l, // if using image optimization it will be included in the response
-                  link: product?.link, //link of the turbolink
-                  thumbnail:product?.image //thumbnail of the turbolink
+                  link: product?.link, //link of the promotile
+                  thumbnail:product?.image //thumbnail of the promotile
               }
-          }); 
+          });
         }
         else{
           window.FastSimonSDK.event({
@@ -159,10 +175,10 @@ function displaySearchResults(results, container, searchQuery) {
               data: {
                   collectionID: getUrlParam('collectionID'), // (Required)
                   productID: product.id, // (Required)
-                  position: index, // counted from 1
-                  query: undefined, // Default = Collection_Name 
+                  position: index + 1, // counted from 1 (1-based index)
+                  query: undefined, // Default = Collection_Name
               }
-          }); 
+          });
         }
       }
 

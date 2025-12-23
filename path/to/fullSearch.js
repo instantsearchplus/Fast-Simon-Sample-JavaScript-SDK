@@ -13,29 +13,32 @@
       sortBy: sortBy,
       page: page,
       productsPerPage: 15,
-      callback: (response) => {
-        console.log(response);
+      onFacetsLoaded: (response) => {
+        console.log('Facets loaded:', response);
+        searchFilters = response.payload.facets;
+        displayFilters(searchFilters);
+      },
+      onProductsLoaded: (response) => {
+        console.log('Products loaded:', response);
+
+        // Handle turbolink redirect
+        if (response.action === "turbolink" && response.payload.turbolink?.u) {
+          window.location.href = response.payload.turbolink.u;
+          return;
+        }
+
         if (searchResultsContainer.classList.contains('fs_products_loaded')) {
           searchResultsContainer.classList.remove('fs_products_loaded')
         }
         searchResults = response.payload;
-        searchFilters = response.payload.facets;
-        if (response.action == fastSimonResponseAction) {
-          console.log(fastSimonResponseAction);
-          displayFilters(searchFilters);
-          if (!searchResultsContainer.classList.contains('fs_products_loaded')) {
-            displaySearchResults(searchResults, searchResultsContainer, searchPageTitle);
-          }
-        } else {
-          displaySearchResults(searchResults, searchResultsContainer, searchPageTitle);
-          console.log('products only');
-        }
+        displaySearchResults(searchResults, searchResultsContainer, searchPageTitle);
 
         //Search Result page viewed event
         let promotilesArray = [];
-        if(response.products && response.products.filter(product=>product.promotile))
+        const products = response.payload.products || [];
+        if(products && products.filter(product=>product.promotile))
         {
-          const responsePromotile=response.products.filter(product=>product.promotile);
+          const responsePromotile = products.filter(product=>product.promotile);
           responsePromotile.forEach(promo=>{
             promotilesArray.push({
               id: promo.id,
@@ -44,8 +47,11 @@
               thumbnail: promo.image
             });
           });
-          
+
         }
+
+        // Extract product IDs for reporting
+        const productIDs = products.map(p => p.id);
 
         window.FastSimonSDK.event({
           eventName: window.FastSimonEventName.SearchPerformed,

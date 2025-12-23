@@ -52,6 +52,21 @@
     margin-bottom: 0px;
 }
 
+.fs_add_to_cart_btn {
+    background-color: #212529;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.fs_add_to_cart_btn:hover {
+    background-color: #495057;
+}
+
 .fs_product_title_ac {
     margin: 8px 0 5px 0;
 }
