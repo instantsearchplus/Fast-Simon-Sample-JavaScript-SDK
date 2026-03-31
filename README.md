@@ -1,12 +1,12 @@
-# Fast Simon Sample Code for JavaScript SDK
+# [Fast Simon](https://www.fastsimon.com/) Sample Code for JavaScript SDK
 
-Sample eCommerce Site using Fast Simon JavaScript SDK
+Sample eCommerce Site using [Fast Simon](https://www.fastsimon.com/) JavaScript SDK
 
 ## Description
 
-This project is a sample site for eCommerce that demonstrates the use of the Fast Simon JavaScript SDK. The Fast Simon SDK provides developers with the tools to create powerful Autocomplete, Search Results, Collection Pages, and Upsell & Recommendations widgets. By utilizing the SDK, developers can easily jumpstart their efforts to enhance their eCommerce platforms.
+This project is a sample site for eCommerce that demonstrates the use of the [Fast Simon](https://www.fastsimon.com/) JavaScript SDK. The [Fast Simon](https://www.fastsimon.com/) SDK provides developers with the tools to create powerful Autocomplete, Search Results, Collection Pages, and Upsell & Recommendations widgets. By utilizing the SDK, developers can easily jumpstart their efforts to enhance their eCommerce platforms.
 
-The sample code included in this project showcases various features such as product grids, filters, pagination, swatches, and more. It serves as a comprehensive reference for developers looking to implement these functionalities using the Fast Simon JavaScript SDK.
+The sample code included in this project showcases various features such as product grids, filters, pagination, swatches, and more. It serves as a comprehensive reference for developers looking to implement these functionalities using the [Fast Simon](https://www.fastsimon.com/) JavaScript SDK.
 
 ## Installation
 
@@ -20,14 +20,14 @@ To get started with the project, follow these steps:
 
 ## Usage
 
-After completing the installation steps, you can explore the sample eCommerce site and interact with various widgets powered by the Fast Simon JavaScript SDK. The site demonstrates the following functionalities:
+After completing the installation steps, you can explore the sample eCommerce site and interact with various widgets powered by the [Fast Simon](https://www.fastsimon.com/) JavaScript SDK. The site demonstrates the following functionalities:
 
 - Autocomplete: Provides real-time suggestions as users type in the search bar.
 - Search Results: Displays relevant products based on user search queries.
 - Collection Pages: Presents a curated collection of products based on specific criteria.
 - Upsell & Recommendations: Offers personalized product recommendations to users based on their browsing and purchasing history.
 
-Feel free to modify the code and customize the widgets according to your requirements. Refer to the Fast Simon JavaScript SDK documentation at [docs.fastsimon.com/sdk/docs/introduction-and-installation](https://docs.fastsimon.com/sdk/docs/introduction-and-installation) for detailed information on available methods and configurations.
+Feel free to modify the code and customize the widgets according to your requirements. Refer to the [Fast Simon](https://www.fastsimon.com/) JavaScript SDK documentation at [docs.fastsimon.com/sdk/docs/introduction-and-installation](https://docs.fastsimon.com/sdk/docs/introduction-and-installation) for detailed information on available methods and configurations.
 
 ## Contributing
 
@@ -48,7 +48,7 @@ Please ensure that your contributions align with the project's coding convention
 
 ## Acknowledgments
 
-We would like to express our gratitude to the developers of Fast Simon for providing an excellent JavaScript SDK and supporting documentation. Their contributions have greatly simplified the process of implementing powerful eCommerce widgets.
+We would like to express our gratitude to the developers of [Fast Simon](https://www.fastsimon.com/) for providing an excellent JavaScript SDK and supporting documentation. Their contributions have greatly simplified the process of implementing powerful eCommerce widgets.
 
 ## Contact
 
